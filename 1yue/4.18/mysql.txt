@@ -1,0 +1,14 @@
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database 1511phpC' at line 
+1Database           |
++--------------------+
+| information_schema |
+| 1511phpc           |
+| mysql              |
+| test               |
++--------------------+
+4 rows in set (0.00 sec)
+create table student(
+	username varchar(50),
+	sex carchar(30),
+	age int(10)
+)
