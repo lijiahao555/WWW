@@ -1,0 +1,85 @@
+{% extends 'public/base.html' %}
+
+{% block body %}
+<body>
+	<form action="/Admin/weixin/set_menu/" method="post">{% csrf_token %}
+		<b>父级菜单最多3个，每个菜单最多4个汉字</b>
+		<br>
+		<br>
+		<b>每个父级下的自己菜单最多5个，每个菜单最多7个汉字</b>
+		<br>
+		<br>
+		您的token是：<td><input type="text" id="access_token" name="access_token" value=""></td><a href="javascript:void(0);" id="getToken">获取token</a>
+		<br>
+		<br>
+		<a href="#" id="father">增加父级菜单</a>
+		<br>
+		<br>
+		<div item="0">
+			父级菜单：<input type="text" name="father_name[]">&nbsp;&nbsp;
+			事件类型：
+			<select name="father_type[]">
+				<option value="parent">父级菜单</option>
+				<option value="click">点击事件</option>
+				<option value="view">视图时间</option>
+			</select>&nbsp;&nbsp;
+			事件内容：<input type="text" name="father_content[]" >&nbsp;&nbsp;<a href="javascript:void(0)" id="c_1">[+]</a>
+		</div>
+		<input type="submit" id="bnt" value="提交">
+	</form>
+</body>
+
+<script src="/Static/js/jquery.js"></script>
+<script>
+	var num = 0;
+	$(document).on('click', '#father', function() {
+		num++;
+		if (num > 2) {
+			alert('不能超3个');
+			return;
+		}
+		var div = '<br><div item="'+num+'">'+
+						'父级菜单：<input type="text" name="father_name[]">'+
+						'事件类型：'+
+						'<select name="father_type[]">'+
+							'<option value="parent">父级菜单</option>'+
+							'<option value="click">点击事件</option>'+
+							'<option value="view">视图时间</option>'+
+						'</select>&nbsp;&nbsp;'+
+						'事件内容：<input type="text" name="father_content[]" >&nbsp;&nbsp;<a href="javascript:void(0)" id="c_1">[+]</a>'+
+					'</div>';
+		$('#bnt').before(div);
+	});
+	$(document).on('click', '#c_1', function() {
+		var unique = $(this).parents('div').attr('item');
+
+		var str = '<span id="del"><br>'+
+				'&nbsp;&nbsp;&nbsp;&nbsp;字集菜单：<input type="text" name="child_name['+unique+'][]">&nbsp;&nbsp;'+
+				'事件类型：'+
+				'<select name="child_type['+unique+'][]">'+
+					'<option value="click">点击事件</option>'+
+					'<option value="view">视图事件</option>'+
+				'</select>&nbsp;&nbsp;'+
+				'事件内容：<input type="text" name="child_content['+unique+'][]">&nbsp;&nbsp;<a href="#" id="del_child">[-]</a></span>';
+
+		$(this).parent().append(str)
+	});
+
+	$(document).on('click', '#del_child', function() {
+		$(this).parents('#del').remove();
+	});
+
+	$(document).on('click', '#getToken', function() {
+        var csrfmiddlewaretoken = $('input:hidden').val()
+        $.ajax({
+            url: '/Admin/weixin/token/',
+            type: 'POST',
+            dataType: 'json',
+            data: {type:1, csrfmiddlewaretoken:csrfmiddlewaretoken},
+            success:function(msg){
+                $('#access_token').val(msg['access_token'])
+            }
+        })
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'public/base.html' %}
+
+{% block body %}
+
+   <div class="main-title">
+
+        <div id="update_remind" style="clear:both; margin-bottom:10px;border:1px solid #33ab07; padding:10px; background-color:#d8f9cc; color:#33ab07; position:relative; display:none">
+        	<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/update/index.html">WeiPHP出升级包了，请及时升级！</a>
+            <a href="javascript:;" title="关闭" style="color:#999; font-size:12px; position:absolute; top:5px; right:10px; text-decoration:none" onclick="set_cookie_close_version();">X</a>
+        </div>
+        <h2>网站设置</h2>
+	</div>
+		<div class="tab-wrap">
+		<ul class="tab-nav nav">
+		<li class="current"><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/1.html">基本配置</a></li><li ><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/3.html">用户配置</a></li><li ><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/6.html">开发配置</a></li><li ><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/99.html">高级配置</a></li>		</ul>
+		<div class="tab-content">
+	<form action="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html" method="post" class="form-horizontal">
+	<div class="form-item">
+			<label class="item-label">网站标题<span class="check-tips">（网站标题前台显示标题）</span> </label>
+			<div class="controls">
+			<input type="text" class="text input-large" name="config[WEB_SITE_TITLE]" value="weiphp4.00">
+			</div>
+		</div><div class="form-item">
+			<label class="item-label">网站LOGO的URL<span class="check-tips">（填写LOGO的网址，为空时默认显示weiphp的logo）</span> </label>
+			<div class="controls">
+			<input type="text" class="text input-large" name="config[SYSTEM_LOGO]" value="">
+			</div>
+		</div><div class="form-item">
+			<label class="item-label">登录界面背景图<span class="check-tips">（请输入图片网址，为空时默认使用自带的背景图）</span> </label>
+			<div class="controls">
+			<input type="text" class="text input-large" name="config[LOGIN_BACKGROUP]" value="">
+			</div>
+		</div><div class="form-item">
+			<label class="item-label">关闭站点<span class="check-tips">（站点关闭后其他用户不能访问，管理员可以正常访问）</span> </label>
+			<div class="controls">
+			<select name="config[WEB_SITE_CLOSE]">
+				<option value="0" >关闭</option><option value="1" selected>开启</option>			</select>
+			</div>
+		</div><div class="form-item">
+			<label class="item-label">版权信息 </label>
+			<div class="controls">
+			<input type="text" class="text input-large" name="config[COPYRIGHT]" value="版本由圆梦云科技有限公司所有">
+			</div>
+		</div><div class="form-item">
+			<label class="item-label">网站关键字<span class="check-tips">（网站搜索引擎关键字）</span> </label>
+			<div class="controls">
+			<label class="textarea input-large">
+				<textarea name="config[WEB_SITE_KEYWORD]">weiphp,微信开源开发框架,小程序开发框架</textarea>
+			</label>
+			</div>
+		</div><div class="form-item">
+			<label class="item-label">网站描述<span class="check-tips">（网站搜索引擎描述）</span> </label>
+			<div class="controls">
+			<label class="textarea input-large">
+				<textarea name="config[WEB_SITE_DESCRIPTION]">WeiPHP4.0，为移动应用提供后端运营管理的CMS系统</textarea>
+			</label>
+			</div>
+		</div><div class="form-item">
+			<label class="item-label">网站备案号<span class="check-tips">（设置在网站底部显示的备案号，如“沪ICP备12007941号-2）</span> </label>
+			<div class="controls">
+			<input type="text" class="text input-large" name="config[WEB_SITE_ICP]" value="">
+			</div>
+		</div><div class="form-item">
+			<label class="item-label">后台色系<span class="check-tips">（后台颜色风格）</span> </label>
+			<div class="controls">
+			<select name="config[COLOR_STYLE]">
+				<option value="default_color" selected>默认</option><option value="blue_color" >紫罗兰</option>			</select>
+			</div>
+		</div><div class="form-item">
+			<label class="item-label">敏感词<span class="check-tips">（当出现有敏感词的地方，会用*号代替, (多个敏感词用 , 隔开 )）</span> </label>
+			<div class="controls">
+			<input type="text" class="text input-large" name="config[SENSITIVE_WORDS]" value="bitch,shit">
+			</div>
+		</div>		<div class="form-item">
+			<label class="item-label"></label>
+			<div class="controls">
+				<button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+                			</div>
+		</div>
+	</form>
+			</div>
+	</div>
+
+
+
+
+{% endblock %}

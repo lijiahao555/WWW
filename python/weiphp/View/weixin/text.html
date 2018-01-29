@@ -1,0 +1,103 @@
+{% extends 'public/base.html' %}
+{% block body %}
+<body>
+    <table>{% csrf_token %}
+        <tr>
+            <td>access_token</td>
+            <td><input type="text" id="access_token" name="access_token" value="{{access_token}}"></td>
+        </tr>
+        <tr>
+            <td>群发内容</td>
+            <td><textarea name="content" id="content" cols="30" rows="5">{{content}}</textarea></td>
+        </tr>
+    </table>
+    <button id="choise"><h3>选发</h3></button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="all"><h3>群发</h3></button>
+    <table >
+        <th></th>
+        <th>用户openid</th>
+        {% for v in data %}
+        <tr>
+            <td><input type="checkbox" id="open_id" name="open_id" value="{{v.open_id}}"></td>
+            <td>{{v.open_id}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <hr>
+    <font color="red" id="over"></font>
+</body>
+
+
+<script src="/Static/js/jquery.js"></script>
+<script>
+    $(document).on('click', '#choise', function() {
+        var id = new Array();
+        var csrfmiddlewaretoken = $('input:hidden').val()
+        var access_token = $('#access_token').val();
+        var content = $('#content').val();
+        if (access_token=='') {
+            alert('内容不能为空')
+            return
+        }
+        if (content=='') {
+            alert('内容不能为空')
+            return
+        }
+        var id2 = '","';
+        $('input[name="open_id"]:checked').each(function() {
+            id.push($(this).val());
+            id2 += $(this).val()+'","'
+        });
+
+        if (id.length < 2) {
+            alert('请勾选,最少2位')
+            return
+        }
+
+"oTSE21N_SKj-Dfnn-O-LBWtpSZ5w","oTSE21MHy6Tj_yuktLr3_Ub3cUaM","oTSE21NKWtiE57VQ3OuG2FzpQLys"
+// string(63) "["oTSE21MHy6Tj_yuktLr3_Ub3cUaM","oTSE21NKWtiE57VQ3OuG2FzpQLys"]"
+
+        $.ajax({
+            url: "/text/",
+            type: 'post',
+            dataType: 'json',
+            data: {id:id2, content:content, access_token:access_token, type:0, csrfmiddlewaretoken:csrfmiddlewaretoken},
+            success:function(msg){
+                console.log(msg)
+                if (msg['errcode']==0) {
+                    $('#over').html('errcode:'+msg['errcode']+'<br/>errmsg:'+msg['errmsg']+'msg_id:'+msg['msg_id'])
+                } else {
+                    $('#over').html('errcode:'+msg['errcode']+'<br/>errmsg:'+msg['errmsg'])
+                }
+            }
+        })
+    });
+
+    $(document).on('click', '#all', function() {
+        var csrfmiddlewaretoken = $('input:hidden').val()
+        var access_token = $('#access_token').val();
+        var content = $('#content').val();
+        if (access_token=='') {
+            alert('内容不能为空')
+            return
+        }
+        if (content=='') {
+            alert('内容不能为空')
+            return
+        }
+
+        $.ajax({
+            url: "/text/",
+            type: 'post',
+            dataType: 'json',
+            data: {type:1, content:content, access_token:access_token, csrfmiddlewaretoken:csrfmiddlewaretoken},
+            success:function(msg){
+                if (msg['errcode']==0) {
+                    $('#over').html('errcode:'+msg['errcode']+'<br/>errmsg:'+msg['errmsg']+'msg_id:'+msg['msg_id'])
+                } else {
+                    $('#over').html('errcode:'+msg['errcode']+'<br/>errmsg:'+msg['errmsg'])
+                }
+            }
+        })
+    });
+</script>
+{% endblock %}

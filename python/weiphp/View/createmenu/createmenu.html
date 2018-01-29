@@ -1,0 +1,68 @@
+{% extends 'public/base.html' %}
+
+{% block body %}
+<!-- 内容区 -->
+	<form action="weixin.php" method="post">
+		<p>父级菜单最多3个，每个菜单最多4个汉字</p>
+		<p>每个父级下的子级菜单最多5个，每个菜单最多最多7个汉字</p>
+		token：<input type="text" value="" name="token"><br>
+		<a href="javascript:;">增加父级菜单</a>
+		<div id="0">
+			菜单：<input type="text" name="menu[]">
+			事件类型：<select name="type[]"><option value="parent">父级菜单</option><option value="click">点击事件</option><option value="view">视图事件</option></select>
+			事件内容：<input type="text" name="val[]">
+			<span class="add">+</span>
+		</div>
+		<input type="submit" value="确认">
+	</form>
+</body>
+<!--<script src="../jquery.js"></script>-->
+<script>
+	var d_id = 0
+
+	$(document).on('click', 'a', function(e){
+		var obj = $(this)
+		// var d_val = $('#div1').html()
+		d_id ++
+		num = d_id-1
+		var str = ''
+		str +='<div id="'+d_id+'">\
+			菜单：<input type="text" name="menu[]">\
+			事件类型：<select name="type[]"><option value="parent">父级菜单</option><option value="click">点击事件</option><option value="view">视图事件</option></select>\
+			事件内容：<input type="text" name="val[]" id="val[]">\
+			<span class="add">+</span>\
+			</div>'
+
+
+		if (d_id < 4) {
+			// var div = '<div id="div'+d_id+'">'+d_val+'</div>'
+			$('#'+num).after(str)
+		}else{
+			alert('父级菜单最多3个')
+		}
+
+
+
+	})
+
+	$(document).on('click', '.add', function(e){
+		var obj = $(this).parent()
+		var str = ''
+		var c_id = obj.attr('id')
+
+		str +='<p>子级菜单：<input type="text" name="n_menu['+c_id+'][]">\
+		事件类型：<select name="n_type['+c_id+'][]"><option value="click">点击事件</option><option value="view">视图事件</option></select>\
+		事件内容：<input type="text" name="n_val['+c_id+'][]">\
+		<span class="del">-</span></p>'
+		obj.append(str)
+
+
+	})
+
+	$(document).on('click', '.del', function(e){
+		var obj = $(this)
+		obj.parent().remove()
+	})
+</script>
+
+{% endblock %}

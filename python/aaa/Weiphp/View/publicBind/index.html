@@ -1,0 +1,134 @@
+{% extends 'public/base.html' %}
+
+{% block body %}
+<!-- 内容区 -->
+<div id="main-content">
+  <div id="top-alert" class="fixed alert alert-error" style="display: none;">
+    <button class="close fixed" style="margin-top: 4px;">&times;</button>
+    <div class="alert-content">这是内容</div>
+  </div>
+  <div id="main" class="main">
+
+      <!-- nav -->
+            <!-- nav -->
+
+
+  <div class="main-title">
+    <h2>当前状态：一键绑定
+      关闭
+            </h2>
+  </div>
+  <form action="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/PublicBind/index.html" method="post" class="form-horizontal">
+    <div class="form-item">
+      <label class="item-label">AppID<span class="check-tips">开放平台创建应用后生成的APPID</span></label>
+      <div class="controls">
+        <input type="text" class="text input-large" name="appid" value="">
+      </div>
+    </div>
+    <div class="form-item">
+      <label class="item-label">AppSecret<span class="check-tips">开放平台创建应用后生成的AppSecret</span></label>
+      <div class="controls">
+        <input type="text" class="text input-large" name="appsecret" value="">
+      </div>
+    </div>
+    <div class="form-item">
+      <input type="hidden" name="status" value="1">
+        <button class="btn submit-btn ajax-post mt30" id="submit" type="submit" target-form="form-horizontal">确认开启</button>
+            </div>
+  </form>
+  <h2 class="mb30 mt30" style="font-weight:400;">开发资料</h2>
+  <div>注意：本地网址(localhost)不可用，一定要部署到正式环境有正式域名再配置</div>
+  </div>
+  <div class="cont-ft">
+    <div class="copyright">
+      <div class="fl">感谢使用<a href="http://www.weiphp.cn" target="_blank">WeiPHP</a>管理平台</div>
+      <div class="fr">V20170720</div>
+    </div>
+  </div>
+</div>
+<!-- /内容区 -->
+<script type="text/javascript">
+	var  IMG_PATH = "/month10/weiphp4.0-master/Public/Admin/images";
+	var  STATIC = "/month10/weiphp4.0-master/Public/static";
+	var  ROOT = "/month10/weiphp4.0-master";
+	var  UPLOAD_PICTURE = "http://localhost/month10/weiphp4.0-master/index.php?s=/w0/home/File/uploadPicture/session_id/8l88il91bsi44hc8truthld6h7.html";
+	var  UPLOAD_FILE = "http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/File/upload/session_id/8l88il91bsi44hc8truthld6h7.html";
+    (function(){
+        var ThinkPHP = window.Think = {
+            "ROOT"   : "/month10/weiphp4.0-master", //当前网站地址
+            "APP"    : "/month10/weiphp4.0-master/index.php?s=", //当前项目地址
+            "PUBLIC" : "/month10/weiphp4.0-master/Public", //项目公共目录地址
+            "DEEP"   : "/", //PATHINFO分割符
+            "MODEL"  : ["3", "", "html"],
+            "VAR"    : ["m", "c", "a"]
+        }
+    })();
+    </script>
+<script type="text/javascript" src="/month10/weiphp4.0-master/Public/static/think.js?v=1515136748"></script>
+<script type="text/javascript" src="/month10/weiphp4.0-master/Public/Admin/js/common.js?v=1515136748"></script>
+<script type="text/javascript">
+        +function(){
+            var $window = $(window), $subnav = $("#subnav"), url;
+            $window.resize(function(){
+                $("#main").css("min-height", $window.height() - 130);
+            }).resize();
+
+            /* 左边菜单显示收起 */
+            $("#subnav").on("click", "h3", function(){
+                var $this = $(this);
+                $this.find(".icon").toggleClass("icon-fold");
+                $this.next().slideToggle("fast").siblings(".side-sub-menu:visible").
+                      prev("h3").find("i").addClass("icon-fold").end().end().hide();
+            });
+
+            $("#subnav h3 a").click(function(e){e.stopPropagation()});
+
+            /* 头部管理员菜单 */
+            $(".user-bar").mouseenter(function(){
+                var userMenu = $(this).children(".user-menu ");
+                userMenu.removeClass("hidden");
+                clearTimeout(userMenu.data("timeout"));
+            }).mouseleave(function(){
+                var userMenu = $(this).children(".user-menu");
+                userMenu.data("timeout") && clearTimeout(userMenu.data("timeout"));
+                userMenu.data("timeout", setTimeout(function(){userMenu.addClass("hidden")}, 100));
+            });
+
+	        /* 表单获取焦点变色 */
+	        $("form").on("focus", "input", function(){
+		        $(this).addClass('focus');
+	        }).on("blur","input",function(){
+				        $(this).removeClass('focus');
+			        });
+		    $("form").on("focus", "textarea", function(){
+			    $(this).closest('label').addClass('focus');
+		    }).on("blur","textarea",function(){
+			    $(this).closest('label').removeClass('focus');
+		    });
+
+            // 导航栏超出窗口高度后的模拟滚动条
+            var sHeight = $(".sidebar").height();
+            var subHeight  = $(".subnav").height();
+            var diff = subHeight - sHeight; //250
+            var sub = $(".subnav");
+            if(diff > 0){
+                $(window).mousewheel(function(event, delta){
+                    if(delta>0){
+                        if(parseInt(sub.css('marginTop'))>-10){
+                            sub.css('marginTop','0px');
+                        }else{
+                            sub.css('marginTop','+='+10);
+                        }
+                    }else{
+                        if(parseInt(sub.css('marginTop'))<'-'+(diff-10)){
+                            sub.css('marginTop','-'+(diff-10));
+                        }else{
+                            sub.css('marginTop','-='+10);
+                        }
+                    }
+                });
+            }
+        }();
+    </script>
+
+{% endblock %}

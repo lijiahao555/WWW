@@ -1,0 +1,412 @@
+{% extends 'public/base.html' %}
+
+{% block body %}
+
+<div id="main-content">
+  <div id="top-alert" class="fixed alert alert-error" style="display: none;">
+    <button class="close fixed" style="margin-top: 4px;">&times;</button>
+    <div class="alert-content">这是内容</div>
+  </div>
+  <div id="main" class="main">
+
+      <!-- nav -->
+            <!-- nav -->
+
+
+	<div class="main-title">
+		<h2>配置管理 [ <strong>全部</strong>&nbsp;<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/index/group/1.html">基本</a>&nbsp;<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/index/group/3.html">用户</a>&nbsp;<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/index/group/6.html">开发</a>&nbsp;<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/index/group/99.html">高级</a>&nbsp; ]</h2>
+	</div>
+
+	<div class="cf">
+		<a class="btn" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/add.html">新 增</a>
+		<a class="btn" href="javascript:;">删 除</a>
+		<button class="btn list_sort" url="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/sort">排序</button>
+
+		<!-- 高级搜索 -->
+		<div class="search-form fr cf">
+			<div class="sleft">
+				<input type="text" name="name" class="search-input" value="" placeholder="请输入配置名称">
+				<a class="sch-btn" href="javascript:;" id="search" url="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/config/index.html"><i class="btn-search"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="data-table table-striped">
+		<table>
+			<thead>
+				<tr>
+					<th class="row-selected">
+						<input class="checkbox check-all" type="checkbox">
+					</th>
+					<th>ID</th>
+					<th>名称</th>
+					<th>标题</th>
+					<th>分组</th>
+					<th>类型</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="1"></td>
+						<td>1</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/1.html">WEB_SITE_TITLE</a></td>
+						<td>网站标题</td>
+						<td>基本</td>
+						<td>字符</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/1.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/1.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="2"></td>
+						<td>2</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/2.html">WEB_SITE_DESCRIPTION</a></td>
+						<td>网站描述</td>
+						<td>基本</td>
+						<td>文本</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/2.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/2.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="3"></td>
+						<td>3</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/3.html">WEB_SITE_KEYWORD</a></td>
+						<td>网站关键字</td>
+						<td>基本</td>
+						<td>文本</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/3.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/3.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="4"></td>
+						<td>4</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/4.html">WEB_SITE_CLOSE</a></td>
+						<td>关闭站点</td>
+						<td>基本</td>
+						<td>枚举</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/4.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/4.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="9"></td>
+						<td>9</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/9.html">CONFIG_TYPE_LIST</a></td>
+						<td>配置类型列表</td>
+						<td>开发</td>
+						<td>数组</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/9.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/9.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="10"></td>
+						<td>10</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/10.html">WEB_SITE_ICP</a></td>
+						<td>网站备案号</td>
+						<td>基本</td>
+						<td>字符</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/10.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/10.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="11"></td>
+						<td>11</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/11.html">DOCUMENT_POSITION</a></td>
+						<td>文档推荐位</td>
+						<td></td>
+						<td>数组</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/11.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/11.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="12"></td>
+						<td>12</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/12.html">DOCUMENT_DISPLAY</a></td>
+						<td>文档可见性</td>
+						<td></td>
+						<td>数组</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/12.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/12.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="13"></td>
+						<td>13</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/13.html">COLOR_STYLE</a></td>
+						<td>后台色系</td>
+						<td>基本</td>
+						<td>枚举</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/13.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/13.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="20"></td>
+						<td>20</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/20.html">CONFIG_GROUP_LIST</a></td>
+						<td>配置分组</td>
+						<td>开发</td>
+						<td>数组</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/20.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/20.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="21"></td>
+						<td>21</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/21.html">HOOKS_TYPE</a></td>
+						<td>钩子的类型</td>
+						<td></td>
+						<td>数组</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/21.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/21.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="22"></td>
+						<td>22</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/22.html">AUTH_CONFIG</a></td>
+						<td>Auth配置</td>
+						<td></td>
+						<td>数组</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/22.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/22.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="23"></td>
+						<td>23</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/23.html">OPEN_DRAFTBOX</a></td>
+						<td>是否开启草稿功能</td>
+						<td></td>
+						<td>枚举</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/23.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/23.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="24"></td>
+						<td>24</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/24.html">DRAFT_AOTOSAVE_INTERVAL</a></td>
+						<td>自动保存草稿时间</td>
+						<td></td>
+						<td>数字</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/24.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/24.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="25"></td>
+						<td>25</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/25.html">LIST_ROWS</a></td>
+						<td>后台每页记录数</td>
+						<td></td>
+						<td>数字</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/25.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/25.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="26"></td>
+						<td>26</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/26.html">USER_ALLOW_REGISTER</a></td>
+						<td>是否允许用户注册</td>
+						<td>用户</td>
+						<td>枚举</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/26.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/26.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="27"></td>
+						<td>27</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/27.html">CODEMIRROR_THEME</a></td>
+						<td>预览插件的CodeMirror主题</td>
+						<td></td>
+						<td>枚举</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/27.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/27.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="32"></td>
+						<td>32</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/32.html">DEVELOP_MODE</a></td>
+						<td>开启开发者模式</td>
+						<td>开发</td>
+						<td>枚举</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/32.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/32.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="33"></td>
+						<td>33</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/33.html">ALLOW_VISIT</a></td>
+						<td>不受限控制器方法</td>
+						<td></td>
+						<td>数组</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/33.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/33.html">删除</a>
+						</td>
+					</tr><tr>
+						<td><input class="ids row-selected" type="checkbox" name="id[]" value="34"></td>
+						<td>34</td>
+						<td><a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/34.html">DENY_VISIT</a></td>
+						<td>超管专限控制器方法</td>
+						<td></td>
+						<td>数组</td>
+						<td>
+							<a title="编辑" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/edit/id/34.html">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/del/id/34.html">删除</a>
+						</td>
+					</tr>							</tbody>
+		</table>
+		<!-- 分页 -->
+	    <div class="page">
+	        <div>  <span class="current">1</span><a class="num" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/index/mdm/367%7C372/p/2.html">2</a><a class="num" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/index/mdm/367%7C372/p/3.html">3</a> <a class="next" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/Config/index/mdm/367%7C372/p/2.html">>></a>  <span class="rows">共 50 条记录</span></div>	    </div>
+	</div>
+
+  </div>
+  <div class="cont-ft">
+    <div class="copyright">
+      <div class="fl">感谢使用<a href="http://www.weiphp.cn" target="_blank">WeiPHP</a>管理平台</div>
+      <div class="fr">V20170720</div>
+    </div>
+  </div>
+</div>
+<!-- /内容区 -->
+<script type="text/javascript">
+	var  IMG_PATH = "/month10/weiphp4.0-master/Public/Admin/images";
+	var  STATIC = "/month10/weiphp4.0-master/Public/static";
+	var  ROOT = "/month10/weiphp4.0-master";
+	var  UPLOAD_PICTURE = "http://localhost/month10/weiphp4.0-master/index.php?s=/w0/home/File/uploadPicture/session_id/8l88il91bsi44hc8truthld6h7.html";
+	var  UPLOAD_FILE = "http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/File/upload/session_id/8l88il91bsi44hc8truthld6h7.html";
+    (function(){
+        var ThinkPHP = window.Think = {
+            "ROOT"   : "/month10/weiphp4.0-master", //当前网站地址
+            "APP"    : "/month10/weiphp4.0-master/index.php?s=", //当前项目地址
+            "PUBLIC" : "/month10/weiphp4.0-master/Public", //项目公共目录地址
+            "DEEP"   : "/", //PATHINFO分割符
+            "MODEL"  : ["3", "", "html"],
+            "VAR"    : ["m", "c", "a"]
+        }
+    })();
+    </script>
+<script type="text/javascript" src="/month10/weiphp4.0-master/Public/static/think.js?v=1515132815"></script>
+<script type="text/javascript" src="/month10/weiphp4.0-master/Public/Admin/js/common.js?v=1515132815"></script>
+<script type="text/javascript">
+        +function(){
+            var $window = $(window), $subnav = $("#subnav"), url;
+            $window.resize(function(){
+                $("#main").css("min-height", $window.height() - 130);
+            }).resize();
+
+            /* 左边菜单显示收起 */
+            $("#subnav").on("click", "h3", function(){
+                var $this = $(this);
+                $this.find(".icon").toggleClass("icon-fold");
+                $this.next().slideToggle("fast").siblings(".side-sub-menu:visible").
+                      prev("h3").find("i").addClass("icon-fold").end().end().hide();
+            });
+
+            $("#subnav h3 a").click(function(e){e.stopPropagation()});
+
+            /* 头部管理员菜单 */
+            $(".user-bar").mouseenter(function(){
+                var userMenu = $(this).children(".user-menu ");
+                userMenu.removeClass("hidden");
+                clearTimeout(userMenu.data("timeout"));
+            }).mouseleave(function(){
+                var userMenu = $(this).children(".user-menu");
+                userMenu.data("timeout") && clearTimeout(userMenu.data("timeout"));
+                userMenu.data("timeout", setTimeout(function(){userMenu.addClass("hidden")}, 100));
+            });
+
+	        /* 表单获取焦点变色 */
+	        $("form").on("focus", "input", function(){
+		        $(this).addClass('focus');
+	        }).on("blur","input",function(){
+				        $(this).removeClass('focus');
+			        });
+		    $("form").on("focus", "textarea", function(){
+			    $(this).closest('label').addClass('focus');
+		    }).on("blur","textarea",function(){
+			    $(this).closest('label').removeClass('focus');
+		    });
+
+            // 导航栏超出窗口高度后的模拟滚动条
+            var sHeight = $(".sidebar").height();
+            var subHeight  = $(".subnav").height();
+            var diff = subHeight - sHeight; //250
+            var sub = $(".subnav");
+            if(diff > 0){
+                $(window).mousewheel(function(event, delta){
+                    if(delta>0){
+                        if(parseInt(sub.css('marginTop'))>-10){
+                            sub.css('marginTop','0px');
+                        }else{
+                            sub.css('marginTop','+='+10);
+                        }
+                    }else{
+                        if(parseInt(sub.css('marginTop'))<'-'+(diff-10)){
+                            sub.css('marginTop','-'+(diff-10));
+                        }else{
+                            sub.css('marginTop','-='+10);
+                        }
+                    }
+                });
+            }
+        }();
+    </script>
+
+<script type="text/javascript">
+$(function(){
+	//搜索功能
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+
+	//点击排序
+	$('.list_sort').click(function(){
+		var url = $(this).attr('url');
+		var ids = $('.ids:checked');
+		var param = '';
+		if(ids.length > 0){
+			var str = new Array();
+			ids.each(function(){
+				str.push($(this).val());
+			});
+			param = str.join(',');
+		}
+
+		if(url != undefined && url != ''){
+			window.location.href = url + '/ids/' + param;
+		}
+	});
+});
+</script>
+{% endblock %}

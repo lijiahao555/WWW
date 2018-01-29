@@ -1,0 +1,70 @@
+{% extends 'public/base.html' %}
+{% block body %}
+<body>
+    <table>{% csrf_token %}
+        <tr>
+            <td>access_token</td>
+            <td><input type="text" id="access_token" name="access_token" value=""><button id="getToken">获取token</button></td>
+        </tr>
+        <tr></tr>
+
+    </table>
+    <br>
+    <ul>
+        {% for v in data %}
+        <li>
+            <input type="checkbox" id="content" value="{{v.content}}">
+            <span>{{v.content}}</span><button id="all">群发</button>
+        </li>
+        <br>
+        {% endfor %}
+    </ul>
+    <hr>
+    <font color="red" id="over"></font>
+</body>
+
+
+<script src="/Static/js/jquery.js"></script>
+<script>
+    $(document).on('click', '#all', function() {
+        var csrfmiddlewaretoken = $('input:hidden').val()
+        var access_token = $('#access_token').val();
+        var content = $(this).prev('span').text();
+
+        if (access_token=='') {
+            alert('access_token内容不能为空')
+            return
+        }
+        if (content=='') {
+            alert('content内容不能为空')
+            return
+        }
+
+        $.ajax({
+            url: "/Admin/weixin/show_text/",
+            type: 'post',
+            dataType: 'json',
+            data: {type:1, content:content, access_token:access_token, csrfmiddlewaretoken:csrfmiddlewaretoken},
+            success:function(msg){
+                if (msg['errcode']==0) {
+                    $('#over').html('errcode:'+msg['errcode']+'<br/>errmsg:'+msg['errmsg']+'msg_id:'+msg['msg_id'])
+                } else {
+                    $('#over').html('errcode:'+msg['errcode']+'<br/>errmsg:'+msg['errmsg'])
+                }
+            }
+        })
+    });
+    $(document).on('click', '#getToken', function() {
+        var csrfmiddlewaretoken = $('input:hidden').val()
+        $.ajax({
+            url: '/Admin/weixin/token/',
+            type: 'POST',
+            dataType: 'json',
+            data: {type:1, csrfmiddlewaretoken:csrfmiddlewaretoken},
+            success:function(msg){
+                $('#access_token').val(msg['access_token'])
+            }
+        })
+    });
+</script>
+{% endblock %}

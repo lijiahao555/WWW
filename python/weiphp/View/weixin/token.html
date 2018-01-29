@@ -1,0 +1,40 @@
+{% extends 'public/base.html' %}
+
+{% block body %}
+<body>
+<h3><a href="/text">去群发</a></h3>
+        <table>
+            <tr>
+                <td>appid</td>
+                <td><input type="text" id="appid" value="wx65c96fa613ac4f0e"></td>{% csrf_token %}
+            </tr>
+            <tr>
+                <td>appsecret</td>
+                <td><input type="text" id="appsecret" value="5a62ea768f0ab48cd9e7a289515ae953"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="bnt">获取</button></td>
+            </tr>
+        </table>
+        <hr>
+        您的token是：<span id="token"></span>
+</body>
+<script src="/Static/js/jquery.js"></script>
+<script>
+    $(document).on('click', '#bnt', function() {
+        var csrfmiddlewaretoken = $('input:hidden').val()
+        var appid = $('#appid').val()
+        var appsecret = $('#appsecret').val()
+        $.ajax({
+            url: '/Admin/weixin/token/',
+            type: 'POST',
+            dataType: 'json',
+            data: {appid:appid, appsecret:appsecret, csrfmiddlewaretoken:csrfmiddlewaretoken},
+            success:function(msg){
+                $('#token').html(msg['access_token'])
+            }
+        })
+    });
+</script>
+{% endblock %}

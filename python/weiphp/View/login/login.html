@@ -1,0 +1,180 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta content="weiphp,微信开源开发框架,小程序开发框架" name="keywords"/>
+<meta content="WeiPHP4.0，为移动应用提供后端运营管理的CMS系统" name="description"/>
+<link rel="shortcut icon" href="http://localhost/Static/favicon.ico">
+<title>weiphp4.0</title>
+<link href="/Static/Public/static/font-awesome/css/font-awesome.min.css?v=1515072635" rel="stylesheet">
+<link href="/Static/Public/Home/css/base.css?v=1515072635" rel="stylesheet">
+<link href="/Static/Public/Home/css/module.css?v=1515072635" rel="stylesheet">
+<link href="/Static/Public/Home/css/weiphp.css?v=1515072635" rel="stylesheet">
+<link href="/Static/Public/static/emoji.css?v=1515072635" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="/Static/Public/static/bootstrap/js/html5shiv.js?v=1515072635"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/Static/Public/static/jquery-1.10.2.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script type="text/javascript" src="/Static/Public/static/jquery-2.0.3.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/Static/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="/Static/Public/static/uploadify/jquery.uploadify.min.js"></script>-->
+<!--引入JS-->
+<script type="text/javascript" src="/Static/Public/static/webuploader-0.1.5/webuploader.min.js"></script>
+
+<script type="text/javascript" src="/Static/Public/static/clipboard.min.js"></script>
+<script type="text/javascript" src="/Static/Public/Home/js/dialog.js?v=1515072635"></script>
+<script type="text/javascript" src="/Static/Public/Home/js/admin_common.js?v=1515072635"></script>
+<script type="text/javascript" src="/Static/Public/Home/js/admin_image.js?v=1515072635"></script>
+<script type="text/javascript" src="/Static/Public/static/masonry/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="/Static/Public/static/jquery.dragsort-0.5.2.min.js"></script>
+<script type="text/javascript">
+var  IMG_PATH = "/Static/Public/Home/images";
+var  STATIC = "/Static/Public/static";
+var  ROOT = "/Static";
+var  UPLOAD_PICTURE = "http://localhost/Static/index.php?s=/w0/Home/File/uploadPicture/session_id/rf28enicfj64rcnaq0d3grl8t5.html";
+var  UPLOAD_FILE = "http://localhost/Static/index.php?s=/w0/Home/File/upload/session_id/rf28enicfj64rcnaq0d3grl8t5.html";
+var  UPLOAD_DIALOG_URL = "http://localhost/Static/index.php?s=/w0/Home/File/uploadDialog/session_id/rf28enicfj64rcnaq0d3grl8t5.html";
+</script>
+<!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
+
+<!-- 提示 -->
+<div id="top-alert" class="top-alert-tips alert-error" style="display:none">
+    <div class="code_box"></div>
+  <a class="close" href="javascript:;"><b class="fa fa-times-circle"></b></a>
+  <div class="alert-content"></div>
+</div>
+</head>
+<body id="login_body">
+    <div class="main_box">
+    <!-- 主体 -->
+
+<script type="text/javascript" src="/Static/Public/static/qrcode/qrcode.js"></script>
+<script type="text/javascript" src="/Static/Public/static/qrcode/jquery.qrcode.js"></script>
+<!-- 头部 -->
+<div class="login_header">
+
+    <div class="log_wrap">
+        <a href="/login" title="WeiPHP"><img class="logo" src="/Static/Public/Home/images/logo.png"/></a>
+    </div>
+
+</div>
+<!-- 介绍 -->
+
+        <div class="top_content">
+            <div class="log_wrap">
+                <div class="top_content_r">
+                    <img src="/Static/Public/Home/images/about/img/banner_pic.png?20150723"/>
+                </div>
+                <section class="login_box">
+                  <form class="login-form" action="login" id="submit" method="post">{% csrf_token %}
+                          <div class="form_body" id="input_login" style="display: ">
+                                <h6>欢迎使用WeiPHP!</h6>
+                                <div class="input_panel">
+                                  <div class="control-group">
+                                    <label class="control-label" for="inputEmail">用户名</label>
+                                    <div class="controls">
+                                      <span class="fa fa-user"></span>
+                                      <input type="text" id="inputEmail" class="span3" placeholder="请输入用户名"  id="username"  ajaxurl="/user/checkUserNameUnique.html" errormsg="请填写1-16位用户名" nullmsg="请填写用户名" datatype="*1-16" value="{{username}}" name="username">
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label class="control-label" for="inputPassword">密码</label>
+                                    <div class="controls">
+                                      <span class="fa fa-key"></span>
+                                      <input type="password" id="password" class="span3" placeholder="请输入密码"  errormsg="密码为6-20位" nullmsg="请填写密码" datatype="*6-20" name="password">
+                                    </div>
+                                  </div>
+                                    <font color="red">{{content2}}</font>
+                                  <div class="control-group">
+                                    <label class="control-label" for="inputPassword">验证码</label>
+                                    <div class="controls">
+                                      <span class="fa fa-keyboard-o"></span>
+                                      <input type="text" id="inputPassword"  class="span3" id="captcha" placeholder="请输入验证码"  errormsg="密码为6-20位" nullmsg="请填写密码" datatype="*6-20" name="captcha">
+                                    </div>
+                                  </div>
+                                    <font color="red">{{content}}</font>
+                                  <br>
+
+                                  <img src="captcha" id="verifycode" alt=""><span id='verifycodeChange'>看不清，换一个</span>
+                                                                 </div>
+                                                            <div class="controls Validform_checktip text-warning"></div>
+                              <div class="control-group">
+                                <div class="controls">
+                                 <input type="checkbox" id="checkbox"/><label for="checkbox">自动登录</label>
+                                </div>
+                                <div class="controls">
+                                  <button type="submit" class="btn btn-large">登 录</button>
+                                 </div>
+                                                                  <div class="controls">
+                                 还没账号?
+                                 </div>
+                                 <div class="controls">
+                                  <a style="width:266px;" class="btn border-btn-main btn-large" href="register">立 即 注 册</a>
+                                 </div>
+                                                               </div>
+                          </div>
+                                                 </form>
+                </section>
+            </div>
+        </div>
+
+
+
+    <!-- /主体 -->
+    </div>
+
+    <!-- 底部 -->
+    <div class="wrap bottom" style="background:none">
+    <p class="copyright">本系统由<a href="http://weiphp.cn" target="_blank">WeiPHP</a>强力驱动</p>
+</div>
+
+    <!-- /底部 -->
+    <script src="/Static/volidation/jquery.js"></script>
+  <script src="/Static/volidation/jquery.validate.min.js"></script>
+  <script type="text/javascript">
+      // 图片
+      $(document).on('click', '#verifycode', function(event) {
+          $('#verifycode').attr('src',$('#verifycode').attr('src')+'?'+1)
+      });
+
+      $('#verifycodeChange').css('cursor','pointer').click(function() {
+            $('#verifycode').attr('src',$('#verifycode').attr('src')+'?'+1)
+      });
+
+
+      $().ready(function() {
+      // 在键盘按下并释放及提交后验证提交表单
+        $("#submit").validate({
+            rules: {
+              username: "required",
+              password: "required",
+              captcha: {
+                required: true,
+                rangelength:[4, 4],
+              },
+            },
+            messages: {
+              username: "<font color='red'>请输入您的用户名</font>",
+              password: "<font color='red'>请输入您的密码</font>",
+              captcha: {
+                required: "<font color='red'>请输入验证码</font>",
+                rangelength: "<font color='red'>请输入正确的验证码</font>",
+              },
+              // range: "<font color='red'></font>",
+              // a: "<font color='red'>用于工作人员联系确认信息</font>"
+            }
+        });
+      });
+
+    </script>
+
+
+</body>
+</html>

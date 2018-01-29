@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>欢迎您登录WeiPHP管理平台</title>
+        <link rel="stylesheet" type="text/css" href="/Static/Public/Admin/css/login.css?v=1514881534" media="all">
+       	<link rel="stylesheet" type="text/css" href="/Static/Public/Admin/css/default_color.css?v=1514881534" media="all">
+    </head>
+    <body id="login-page">
+        <div id="main-content">
+
+            <!-- 主体 -->
+            <div class="login-body">
+                <div class="login-main pr">
+                    <form action="login-do" method="post" class="login-form">{% csrf_token %}
+                        <h3 class="welcome"><i class="login-logo"></i>WeiPHP管理平台</h3>
+                        <div id="itemBox" class="item-box">
+                            <div class="item">
+                                <i class="icon-login-user"></i>
+                                <input type="text" name="username" placeholder="请填写用户名" autocomplete="off" />
+                            </div>
+                            <span class="placeholder_copy placeholder_un">请填写用户名</span>
+                            <div class="item b0">
+                                <i class="icon-login-pwd"></i>
+                                <input type="password" name="password" placeholder="请填写密码" autocomplete="off" />
+                            </div>
+                            <span class="placeholder_copy placeholder_pwd">请填写密码</span>
+                                                    </div>
+                        <div class="login_btn_panel">
+                            <input class="login-btn" type="submit" value="登 录">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <script src="/Static/js/jquery.js"></script>
+
+	<!--[if lt IE 9]>
+    <script type="text/javascript" src="/Static/Public/static/jquery-1.10.2.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="/Static/Public/static/jquery-2.0.3.min.js"></script>
+
+    <!--<![endif]-->
+    <script type="text/javascript">
+    	/* 登陆表单获取焦点变色 */
+    </script>
+</body>
+</html>

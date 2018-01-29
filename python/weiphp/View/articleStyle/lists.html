@@ -1,0 +1,258 @@
+{% extends 'public/base.html' %}
+
+{% block body %}
+<!-- 内容区 -->
+<div id="main-content">
+  <div id="top-alert" class="fixed alert alert-error" style="display: none;">
+    <button class="close fixed" style="margin-top: 4px;">&times;</button>
+    <div class="alert-content">这是内容</div>
+  </div>
+  <div id="main" class="main">
+
+      <!-- nav -->
+            <!-- nav -->
+
+
+	<!-- 标题栏 -->
+	<div class="main-title">
+		<h2>图文样式管理</h2>
+	</div>
+	<div class="cf">
+		<div class="fl">
+            <a class="btn" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/add.html">新 增</a>
+            <a class="btn" href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/groupList.html">分组管理</a>
+        </div>
+
+        <!-- 高级搜索
+		<div class="search-form fr cf">
+			<div class="sleft">
+				<input type="text" name="nickname" class="search-input" value="" placeholder="请输入用户昵称或者ID">
+				<a class="sch-btn" href="javascript:;" id="search" url="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/index.html"><i class="btn-search"></i></a>
+			</div>
+		</div>
+         -->
+    </div>
+    <!-- 数据列表 -->
+    <div class="data-table table-striped">
+	<table class="">
+    <thead>
+        <tr>
+		<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
+		<th class="">分组</th>
+        <th class="">样式</th>
+		<th class="">操作</th>
+		</tr>
+    </thead>
+    <tbody>
+		<tr>
+            <td><input class="ids" type="checkbox" name="id[]" value="" /></td>
+			<td>标题</td>
+            <td><div style="width:600px; margin:0 auto;"><section style="border: 0px none; padding: 0px; box-sizing: border-box; margin: 0px; font-family: 微软雅黑;"><section class="main" style="border: none rgb(0,187,236); margin: 0.8em 5% 0.3em; box-sizing: border-box; padding: 0px;"><section class="main2 wxqq-color wxqq-bordertopcolor wxqq-borderleftcolor wxqq-borderrightcolor wxqq-borderbottomcolor" data-brushtype="text" style="color: rgb(0,187,236); font-size: 20px; letter-spacing: 3px; padding: 9px 4px 14px; text-align: center; margin: 0px auto; border: 4px solid rgb(0,187,236); border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; box-sizing: border-box;">理念<span class="main3 wxqq-color" data-brushtype="text" style="display: block; font-size: 10px; line-height: 12px; border-color: rgb(0,187,236); color: inherit; box-sizing: border-box; padding: 0px; margin: 0px;">PHILOSOPHY</span></section><section class="main4 wxqq-bordertopcolor wxqq-borderbottomcolor" style="width: 0px; margin-right: auto; margin-left: auto; border-top-width: 0.6em; border-top-style: solid; border-bottom-color: rgb(0,187,236); border-top-color: rgb(0,187,236); height: 10px; color: inherit; border-left-width: 0.7em !important; border-left-style: solid !important; border-left-color: transparent !important; border-right-width: 0.7em !important; border-right-style: solid !important; border-right-color: transparent !important; box-sizing: border-box; padding: 0px;" data-width="0px"></section></section></section></div></td>
+			<td>
+            	<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/edit/id/1.html">编辑</a>
+				<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/del/id/1.html" class="confirm ajax-get">删除</a>
+                </td>
+		</tr><tr>
+            <td><input class="ids" type="checkbox" name="id[]" value="" /></td>
+			<td>卡片</td>
+            <td><div style="width:600px; margin:0 auto;"><section label="Copyright © 2015 playhudong All Rights Reserved." style="
+margin:1em auto;
+padding: 1em 2em;
+border-style: none;" id="shifu_c_001"><span style="
+float: left;
+margin-left: 19px;
+margin-top: -9px;
+overflow: hidden;
+display:block;"><img style="
+vertical-align: top;
+display:inline-block;" src="http://1251001145.cdn.myqcloud.com/1251001145/style/images/card-3.gif"><section class="color" style="
+min-height: 30px;
+color: #fff;
+display: inline-block;
+text-align: center;
+background: #999999;
+font-size: 15px;
+padding: 7px 5px;
+min-width: 30px;"><span style="font-size:15px;"> 01 </span></section></span><section style="
+padding: 16px;
+padding-top: 28px;
+border: 2px solid #999999;
+width: 100%;
+font-size: 14px;
+line-height: 1.4;"><span>星期一天气晴我离开你／不带任何行李／除了一本陪我放逐的日记／今天天晴／心情很低／突然决定离开你</span></section></section></div></td>
+			<td>
+            	<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/edit/id/2.html">编辑</a>
+				<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/del/id/2.html" class="confirm ajax-get">删除</a>
+                </td>
+		</tr><tr>
+            <td><input class="ids" type="checkbox" name="id[]" value="" /></td>
+			<td>标题</td>
+            <td><div style="width:600px; margin:0 auto;"><section><section class="wxqq-borderleftcolor wxqq-borderRightcolor wxqq-bordertopcolor wxqq-borderbottomcolor" style="border:5px solid #A50003;padding:5px;width:100%;"><section class="wxqq-borderleftcolor wxqq-borderRightcolor wxqq-bordertopcolor wxqq-borderbottomcolor" style="border:1px solid #A50003;padding:15px 20px;"><p style="color:#A50003;text-align:center;border-bottom:1px solid #A50003"><span class="wxqq-color" data-brushtype="text" style="font-size:48px">情人节快乐</span></p><section data-style="color:#A50003;text-align:center;font-size:18px" style="color:#A50003;text-align:center;width:96%;margin-left:5px;"><p class="wxqq-color" style="color:#A50003;text-align:center;font-size:18px">happy valentine's day<span style="color:inherit; font-size:24px; line-height:1.6em; text-align:right; text-indent:2em"></span><span style="color:rgb(227, 108, 9); font-size:24px; line-height:1.6em; text-align:right; text-indent:2em"></span></p><section style="width:100%;"><section><section><p style="color:#000;text-align:left;">我们没有秘密，整天花前月下，别人以为我们不懂爱情，我们乐呵呵地笑大人们都太傻。</p></section></section></section></section></section></section></section></div></td>
+			<td>
+            	<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/edit/id/3.html">编辑</a>
+				<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/del/id/3.html" class="confirm ajax-get">删除</a>
+                </td>
+		</tr><tr>
+            <td><input class="ids" type="checkbox" name="id[]" value="" /></td>
+			<td>关注</td>
+            <td><div style="width:600px; margin:0 auto;"><p><img src="http://www.wxbj.cn//ys/gz/gx2.gif"></p></div></td>
+			<td>
+            	<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/edit/id/4.html">编辑</a>
+				<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/del/id/4.html" class="confirm ajax-get">删除</a>
+                </td>
+		</tr><tr>
+            <td><input class="ids" type="checkbox" name="id[]" value="" /></td>
+			<td>内容</td>
+            <td><div style="width:600px; margin:0 auto;"><section class="tn-Powered-by-XIUMI" style="margin-top: 0.5em; margin-bottom: 0.5em; border: none rgb(142, 201, 101); font-size: 14px; font-family: inherit; font-weight: inherit; text-decoration: inherit; color: rgb(142, 201, 101);"><img data-src="http://mmbiz.qpic.cn/mmbiz/4HiaqFGEibVwaxcmNMU5abRHm7bkZ9icUxC3DrlItWpOnXSjEpZXIeIr2K0923xw43aKw8oibucqm8wkMYZvmibqDkg/0?wx_fmt=png" class="tn-Powered-by-XIUMI" data-type="png" data-ratio="0.8055555555555556" data-w="36" _width="2.6em" src="https://mmbiz.qlogo.cn/mmbiz/4HiaqFGEibVwaxcmNMU5abRHm7bkZ9icUxC3DrlItWpOnXSjEpZXIeIr2K0923xw43aKw8oibucqm8wkMYZvmibqDkg/640?wx_fmt=png" style="float: right; width: 2.6em !important; visibility: visible !important; background-color: rgb(142, 201, 101);"><section class="tn-Powered-by-XIUMI" style="clear: both;"></section><section class="tn-Powered-by-XIUMI" style="padding-right: 10px; padding-left: 10px; text-align: center;"><section class="tn-Powered-by-XIUMI" style="text-align: left;">炎热的夏季，应该吃点什么好呢！我们为您打造7月盛夏美食狂欢季，清暑解渴的热带水果之王【芒果下午茶】，海鲜盛宴上的【生蚝狂欢】，肉食者的天堂【澳洲之夜】，呼朋唤友，户外聚餐的最佳攻略【夏季BBQ】，消暑瘦身利器【迷你冬瓜盅】，清淡亦或重口味，总有一款是你所爱！</section></section><img data-src="http://mmbiz.qpic.cn/mmbiz/4HiaqFGEibVwaxcmNMU5abRHm7bkZ9icUxCkEmrfLmAXYYOXO0q4RGYsQqfzhO6SOdoFCTqYqwlS87ovGrQjCYmWw/0?wx_fmt=png" class="tn-Powered-by-XIUMI" data-type="png" data-ratio="0.8055555555555556" data-w="36" _width="2.6em" src="https://mmbiz.qlogo.cn/mmbiz/4HiaqFGEibVwaxcmNMU5abRHm7bkZ9icUxCkEmrfLmAXYYOXO0q4RGYsQqfzhO6SOdoFCTqYqwlS87ovGrQjCYmWw/640?wx_fmt=png" style="width: 2.6em !important; visibility: visible !important; background-color: rgb(142, 201, 101);"><p><br></p></section></div></td>
+			<td>
+            	<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/edit/id/5.html">编辑</a>
+				<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/del/id/5.html" class="confirm ajax-get">删除</a>
+                </td>
+		</tr><tr>
+            <td><input class="ids" type="checkbox" name="id[]" value="" /></td>
+			<td>互推</td>
+            <td><div style="width:600px; margin:0 auto;"><blockquote class="wxqq-borderTopColor wxqq-borderRightColor wxqq-borderBottomColor wxqq-borderLeftColor" style="border: 3px dotted rgb(230, 37, 191); padding: 10px; margin: 10px 0px; font-weight: normal; border-top-left-radius: 5px !important; border-top-right-radius: 5px !important; border-bottom-right-radius: 5px !important; border-bottom-left-radius: 5px !important;"><h3 style="color:rgb(89,89,89);font-size:14px;margin:0;"><span class="wxqq-bg" style="background-color: rgb(230, 37, 191); color: rgb(255, 255, 255); padding: 2px 5px; font-size: 14px; margin-right: 15px; border-top-left-radius: 5px !important; border-top-right-radius: 5px !important; border-bottom-right-radius: 5px !important; border-bottom-left-radius: 5px !important;">微信编辑器</span>微信号：<span class="wxqq-bg" style="background-color: rgb(230, 37, 191); color: rgb(255, 255, 255); padding: 2px 5px; font-size: 14px; border-top-left-radius: 5px !important; border-top-right-radius: 5px !important; border-bottom-right-radius: 5px !important; border-bottom-left-radius: 5px !important;">wxbj.cn</span></h3><p style="margin:10px 0 5px 0;">微信公众号简介，欢迎使用微信在线图文排版编辑器助手！</p></blockquote></div></td>
+			<td>
+            	<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/edit/id/8.html">编辑</a>
+				<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/del/id/8.html" class="confirm ajax-get">删除</a>
+                </td>
+		</tr><tr>
+            <td><input class="ids" type="checkbox" name="id[]" value="" /></td>
+			<td>原文引导</td>
+            <td><div style="width:600px; margin:0 auto;"><p><img src="http://www.wxbj.cn/ys/gz/yw1.gif"></p></div></td>
+			<td>
+            	<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/edit/id/9.html">编辑</a>
+				<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/del/id/9.html" class="confirm ajax-get">删除</a>
+                </td>
+		</tr><tr>
+            <td><input class="ids" type="checkbox" name="id[]" value="" /></td>
+			<td>分割</td>
+            <td><div style="width:600px; margin:0 auto;"><p><img src="https://mmbiz.qlogo.cn/mmbiz/cZV2hRpuAPhuxibIOsThcH7HF1lpQ0Yvkvh88U3ia9AbTPJSmriawnJ7W7S5iblSlSianbHLGO6IvD0N4g2y2JEFRoA/0/mmbizgif"></p></div></td>
+			<td>
+            	<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/edit/id/7.html">编辑</a>
+				<a href="http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/del/id/7.html" class="confirm ajax-get">删除</a>
+                </td>
+		</tr>			</tbody>
+    </table>
+	</div>
+    <div class="page">
+            </div>
+
+  </div>
+  <div class="cont-ft">
+    <div class="copyright">
+      <div class="fl">感谢使用<a href="http://www.weiphp.cn" target="_blank">WeiPHP</a>管理平台</div>
+      <div class="fr">V20170720</div>
+    </div>
+  </div>
+</div>
+<!-- /内容区 -->
+<script type="text/javascript">
+	var  IMG_PATH = "/month10/weiphp4.0-master/Public/Admin/images";
+	var  STATIC = "/month10/weiphp4.0-master/Public/static";
+	var  ROOT = "/month10/weiphp4.0-master";
+	var  UPLOAD_PICTURE = "http://localhost/month10/weiphp4.0-master/index.php?s=/w0/home/File/uploadPicture/session_id/8l88il91bsi44hc8truthld6h7.html";
+	var  UPLOAD_FILE = "http://localhost/month10/weiphp4.0-master/index.php?s=/w0/Admin/File/upload/session_id/8l88il91bsi44hc8truthld6h7.html";
+    (function(){
+        var ThinkPHP = window.Think = {
+            "ROOT"   : "/month10/weiphp4.0-master", //当前网站地址
+            "APP"    : "/month10/weiphp4.0-master/index.php?s=", //当前项目地址
+            "PUBLIC" : "/month10/weiphp4.0-master/Public", //项目公共目录地址
+            "DEEP"   : "/", //PATHINFO分割符
+            "MODEL"  : ["3", "", "html"],
+            "VAR"    : ["m", "c", "a"]
+        }
+    })();
+    </script>
+<script type="text/javascript" src="/month10/weiphp4.0-master/Public/static/think.js?v=1515133748"></script>
+<script type="text/javascript" src="/month10/weiphp4.0-master/Public/Admin/js/common.js?v=1515133748"></script>
+<script type="text/javascript">
+        +function(){
+            var $window = $(window), $subnav = $("#subnav"), url;
+            $window.resize(function(){
+                $("#main").css("min-height", $window.height() - 130);
+            }).resize();
+
+            /* 左边菜单显示收起 */
+            $("#subnav").on("click", "h3", function(){
+                var $this = $(this);
+                $this.find(".icon").toggleClass("icon-fold");
+                $this.next().slideToggle("fast").siblings(".side-sub-menu:visible").
+                      prev("h3").find("i").addClass("icon-fold").end().end().hide();
+            });
+
+            $("#subnav h3 a").click(function(e){e.stopPropagation()});
+
+            /* 头部管理员菜单 */
+            $(".user-bar").mouseenter(function(){
+                var userMenu = $(this).children(".user-menu ");
+                userMenu.removeClass("hidden");
+                clearTimeout(userMenu.data("timeout"));
+            }).mouseleave(function(){
+                var userMenu = $(this).children(".user-menu");
+                userMenu.data("timeout") && clearTimeout(userMenu.data("timeout"));
+                userMenu.data("timeout", setTimeout(function(){userMenu.addClass("hidden")}, 100));
+            });
+
+	        /* 表单获取焦点变色 */
+	        $("form").on("focus", "input", function(){
+		        $(this).addClass('focus');
+	        }).on("blur","input",function(){
+				        $(this).removeClass('focus');
+			        });
+		    $("form").on("focus", "textarea", function(){
+			    $(this).closest('label').addClass('focus');
+		    }).on("blur","textarea",function(){
+			    $(this).closest('label').removeClass('focus');
+		    });
+
+            // 导航栏超出窗口高度后的模拟滚动条
+            var sHeight = $(".sidebar").height();
+            var subHeight  = $(".subnav").height();
+            var diff = subHeight - sHeight; //250
+            var sub = $(".subnav");
+            if(diff > 0){
+                $(window).mousewheel(function(event, delta){
+                    if(delta>0){
+                        if(parseInt(sub.css('marginTop'))>-10){
+                            sub.css('marginTop','0px');
+                        }else{
+                            sub.css('marginTop','+='+10);
+                        }
+                    }else{
+                        if(parseInt(sub.css('marginTop'))<'-'+(diff-10)){
+                            sub.css('marginTop','-'+(diff-10));
+                        }else{
+                            sub.css('marginTop','-='+10);
+                        }
+                    }
+                });
+            }
+        }();
+    </script>
+
+	<script src="/month10/weiphp4.0-master/Public/static/thinkbox/jquery.thinkbox.js?v=1515133748"></script>
+
+	<script type="text/javascript">
+	//搜索功能
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+	</script>
+{% endblock %}

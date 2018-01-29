@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>基本设置|WeiPHP管理平台</title>
+<link href="/Static/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="/Static/Public/Admin/css/base.css?v=1514979336" media="all">
+<link rel="stylesheet" type="text/css" href="/Static/Public/Admin/css/common.css?v=1514979336" media="all">
+<link rel="stylesheet" type="text/css" href="/Static/Public/Admin/css/module.css?v=1514979336" />
+<link rel="stylesheet" type="text/css" href="/Static/Public/Admin/css/style.css?v=1514979336" media="all">
+<link rel="stylesheet" type="text/css" href="/Static/Public/Admin/css/store.css?v=1514979336" media="all">
+<link rel="stylesheet" type="text/css" href="/Static/Public/Admin/css/default_color.css?v=1514979336" media="all">
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="/Static/Public/static/jquery-1.10.2.min.js"></script>
+    <![endif]--><!--[if gte IE 9]><!-->
+<script type="text/javascript" src="/Static/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/Static/Public/Admin/js/jquery.mousewheel.js?v=1514979336"></script>
+<!--<![endif]-->
+
+</head>
+<body><!-- 头部 -->
+<div class="header">
+  <!-- Logo -->
+    <span class="logo" style="float: left;margin-left: 2px;width: 198px;height: 49px;background:url('/Static/Public/Home/images/logo.png') no-repeat center; background-size: 158px;" >
+
+  <!--         <img style="height:49px;" src="/weiphp4.0/Public/Home/images/logo.png"> -->
+    </span>
+  <!-- /Logo -->
+
+  <!-- 主导航 -->
+  <ul class="main-nav">
+        <!--<li data-id="367" class="active current"><a href="http://localhost/Static/index.php?s=/w0/Admin/Config/group.html&mdm=367|371">系统</a></li>-->
+    {% for v in nav %}
+      <li data-id="{{ v.id }}" class="{{ v.class }}"><a href="/{{ v.url }}">{{ v.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <!-- /主导航 -->
+
+  <!-- 用户栏 -->
+  <div class="user-bar"> <a href="javascript:;" class="user-entrance"><i class="icon-user"></i></a>
+    <ul class="nav-list user-menu hidden">
+      <li class="manager">你好，<em title=""></em></li>
+      <li><a href="http://localhost/Static/index.php?s=/w0/Home/Index/index.html">返回前台</a></li>
+      <li><a href="http://localhost/Static/index.php?s=/w0/Admin/User/updatePassword.html">修改密码</a></li>
+      <li><a href="http://localhost/Static/index.php?s=/w0/Admin/User/updateNickname.html">修改昵称</a></li>
+      <li><a href="http://localhost/Static/index.php?s=/w0/Admin/Public/logout.html">退出</a></li>
+    </ul>
+  </div>
+</div>
+<!-- /头部 -->
+
+<!-- 边栏 -->
+        <div class="sidebar">
+  <!-- 子导航 -->
+
+    <div id="subnav" class="subnav">
+        <!-- 子导航 -->
+          <h3><i class="icon icon-unfold"></i>系统</h3>
+          <ul class="side-sub-menu">
+
+            {% for v in subnav %}
+              <li class="{{v.class}}" data-id="371"> <a class="item" href="/{{ v.url}}"> {{ v.title}} </a></li>
+            {% endfor %}
+          </ul>
+
+        <!-- /子导航 -->
+    </div>
+
+  <!-- /子导航 -->
+</div><!-- /边栏 -->
+
+<!-- 内容区 -->
+<div id="main-content">
+  <div id="top-alert" class="fixed alert alert-error" style="display: none;">
+    <button class="close fixed" style="margin-top: 4px;">&times;</button>
+    <div class="alert-content">这是内容</div>
+  </div>
+  <div id="main" class="main">
+
+      {% block body %} {% endblock %}
+
+  </div>
+  <div class="cont-ft">
+    <div class="copyright">
+      <div class="fl">感谢使用<a href="http://www.weiphp.cn" target="_blank">WeiPHP</a>管理平台</div>
+      <div class="fr">V20170720</div>
+    </div>
+  </div>
+</div>
+<!-- /内容区 -->
+<script type="text/javascript">
+	var  IMG_PATH = "/Static/Public/Admin/images";
+	var  STATIC = "/Static/Public/static";
+	var  ROOT = "/month10/weiphp4.0-master";
+	var  UPLOAD_PICTURE = "http://localhost/Static/index.php?s=/w0/home/File/uploadPicture/session_id/6difavui9ecfau228gtaj6r7f3.html";
+	var  UPLOAD_FILE = "http://localhost/Static/index.php?s=/w0/Admin/File/upload/session_id/6difavui9ecfau228gtaj6r7f3.html";
+    (function(){
+        var ThinkPHP = window.Think = {
+            "ROOT"   : "/month10/weiphp4.0-master", //当前网站地址
+            "APP"    : "/Static/index.php?s=", //当前项目地址
+            "PUBLIC" : "/Static/Public", //项目公共目录地址
+            "DEEP"   : "/", //PATHINFO分割符
+            "MODEL"  : ["3", "", "html"],
+            "VAR"    : ["m", "c", "a"]
+        }
+    })();
+    </script>
+<script type="text/javascript" src="/Static/Public/static/think.js?v=1514979336"></script>
+<script type="text/javascript" src="/Static/Public/Admin/js/common.js?v=1514979336"></script>
+<script type="text/javascript">
+        +function(){
+            var $window = $(window), $subnav = $("#subnav"), url;
+            $window.resize(function(){
+                $("#main").css("min-height", $window.height() - 130);
+            }).resize();
+
+            /* 左边菜单显示收起 */
+            $("#subnav").on("click", "h3", function(){
+                var $this = $(this);
+                $this.find(".icon").toggleClass("icon-fold");
+                $this.next().slideToggle("fast").siblings(".side-sub-menu:visible").
+                      prev("h3").find("i").addClass("icon-fold").end().end().hide();
+            });
+
+            $("#subnav h3 a").click(function(e){e.stopPropagation()});
+
+            /* 头部管理员菜单 */
+            $(".user-bar").mouseenter(function(){
+                var userMenu = $(this).children(".user-menu ");
+                userMenu.removeClass("hidden");
+                clearTimeout(userMenu.data("timeout"));
+            }).mouseleave(function(){
+                var userMenu = $(this).children(".user-menu");
+                userMenu.data("timeout") && clearTimeout(userMenu.data("timeout"));
+                userMenu.data("timeout", setTimeout(function(){userMenu.addClass("hidden")}, 100));
+            });
+
+	        /* 表单获取焦点变色 */
+	        $("form").on("focus", "input", function(){
+		        $(this).addClass('focus');
+	        }).on("blur","input",function(){
+				        $(this).removeClass('focus');
+			        });
+		    $("form").on("focus", "textarea", function(){
+			    $(this).closest('label').addClass('focus');
+		    }).on("blur","textarea",function(){
+			    $(this).closest('label').removeClass('focus');
+		    });
+
+            // 导航栏超出窗口高度后的模拟滚动条
+            var sHeight = $(".sidebar").height();
+            var subHeight  = $(".subnav").height();
+            var diff = subHeight - sHeight; //250
+            var sub = $(".subnav");
+            if(diff > 0){
+                $(window).mousewheel(function(event, delta){
+                    if(delta>0){
+                        if(parseInt(sub.css('marginTop'))>-10){
+                            sub.css('marginTop','0px');
+                        }else{
+                            sub.css('marginTop','+='+10);
+                        }
+                    }else{
+                        if(parseInt(sub.css('marginTop'))<'-'+(diff-10)){
+                            sub.css('marginTop','-'+(diff-10));
+                        }else{
+                            sub.css('marginTop','-='+10);
+                        }
+                    }
+                });
+            }
+        }();
+    </script>
+
+</body>
+</html>

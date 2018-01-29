@@ -1,0 +1,16 @@
+{% extends 'public/base.html' %}
+{% block body %}
+<form action="/Admin/weixin/add_text/" method="post">{% csrf_token %}
+    <table>
+        <tr>
+            <td>群发内容</td>
+            <td><textarea name="content" id="" cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button><input type="submit" value="提交" style="width: 100px;"></button></td>
+
+        </tr>
+    </table>
+</form>
+{% endblock %}
