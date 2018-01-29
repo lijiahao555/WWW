@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上传文件和图片</title>
+</head>
+<body>
+	<div id="div" style="width: 500px;height: 400px;border: 1px red dashed">
+		请将需要上传的文件拖到此处
+	</div>
+	<progress value="0" max="100"></progress><span>0</span>%
+</body>
+</html>
+<script src="./jquery.js"></script>
+<script>
+	$(function(){
+		//阻止浏览器触发事件
+		$('#div').on({
+			dragenter:function(e){
+				// 拖进
+				e.preventDefault();
+			},
+			dragleave:function(e){
+				// 拖出
+				e.preventDefault();
+			},
+			dragover:function(e){
+				// 拖来拖去
+				e.preventDefault();
+			},
+			drop:function(e){
+				// 放下
+				e.preventDefault();
+			}
+		});
+
+		// js实现      jqery没有addEventListener
+		var box = document.getElementById('div');
+		box.addEventListener('drop', function(e){
+			//获取信息
+			files = e.dataTransfer.files;
+
+			//判断上传的是否是png或者mp4格式
+			if (files[0].type != 'image/png' && files[0].type != 'video/mp4') {
+				alert('请上传正确的文件或视频');
+				return false;
+			}
+
+			if (files[0].type == 'image/png') {
+				var url = window.URL.createObjectURL(files[0]);
+				var html = '<img src="'+url+'" width="500" height="300px">';
+			}else{
+				var url = window.URL.createObjectURL(files[0]);
+				var html = '<video src="'+url+'" controls width="500px" height="300px"></video>';
+			}
+
+			//展示
+			$(this).html(html);
+
+
+
+
+			//伪造form
+			var form = new FormData();
+			//添加数据
+			form.append('file',files[0]);
+
+			//上传监听
+			var xhrOnProgress=function(fun) {
+				xhrOnProgress.onprogress = fun; //绑定监听
+				//使用闭包实现监听绑
+				return function() {
+					//通过$.ajaxSettings.xhr();获得XMLHttpRequest对象
+					var xhr = $.ajaxSettings.xhr();
+					//判断监听函数是否为函数
+					if (typeof xhrOnProgress.onprogress !== 'function')
+						return xhr;
+					//如果有监听函数并且xhr对象支持绑定时就把监听函数绑定上去
+					if (xhrOnProgress.onprogress && xhr.upload) {
+						xhr.upload.onprogress = xhrOnProgress.onprogress;
+					}
+					return xhr;
+				}
+			}
+
+			$.ajax({
+				url: './demo.php',
+				type: 'post',
+				data:form,
+				processData:false,			//阻止事件
+				cache:false,				//阻止事件
+				contentType:false,			//阻止事件
+				xhr:xhrOnProgress(function(e){//监听状态
+					var num = (e.loaded/e.total)*100;
+					num = Math.ceil(num);
+					$('span').html(num)
+					$('progress').val(num)
+				})
+			})
+
+		})
+	});
+</script>

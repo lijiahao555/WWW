@@ -1,0 +1,1535 @@
+
+string(66992) "
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=GBK">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>�ѹ�����������php</title>
+<link rel="shortcut icon" href="http://logo.www.sogou.com/images/logo2014/new/favicon.ico" type="image/x-icon">
+
+
+<link type="text/css" rel="stylesheet" href="/cssnew/base_common_new.min.v.5.css"/>
+<link type="text/css" rel="stylesheet" href="/cssnew/msg.css"/>
+<link type="text/css" rel="stylesheet" href="/cssnew/suggestion.min.v.1.css"/>
+<link type="text/css" rel="stylesheet" href="/cssnew/news151102.min.v.1.css"/>
+<script type="text/javascript" src="/js/jquery-1.11.0.min.js" ></script>
+<script>var uuid="bc6c0f4e-b407-40e8-b595-270a89c4f885";</script>
+
+
+<script>
+    function getCookie(name) {
+        var dc = document.cookie;
+        var prefix = name + "=";
+        var begin = dc.indexOf("; " + prefix);
+        if (begin == -1) {
+            begin = dc.indexOf(prefix);
+            if (begin != 0) return null;
+        } else {
+            begin += 2;
+        }
+        var end = document.cookie.indexOf(";", begin);
+        if (end == -1) {
+            end = dc.length;
+        }
+        return decodeURIComponent(dc.substring(begin + prefix.length, end));
+    }
+    function imgLoadOk(imgEle){
+        return (imgEle && imgEle.complete);
+    }
+    function dissatisfied(formname, isSite){
+        //$s.$ = document.getElementById;
+        //�����url��ѯ����Ҫ����query��refer��uuid��queryurl�ĸ�����
+        $s.$(formname).target='_blank';
+        var bodyHTML = document.body.innerHTML;
+        var fankui_begin = bodyHTML.indexOf('<!-- a -->');
+        var fankui_end = bodyHTML.indexOf('<!-- z -->');
+        if(fankui_begin!=-1 && fankui_end > fankui_begin)
+            $s.$(formname).scenehtml.value = bodyHTML.substring(fankui_begin+8,fankui_end);
+        else
+            $s.$(formname).scenehtml.value = '';
+        $s.$(formname).action='http://news.sogou.com/complain/feedback.php?v=1';
+        $s.$(formname).submit();
+    }
+</script>
+</head>
+
+    <body>
+
+<div class="wrap">
+
+
+
+<form type="hidden" name="navf" id="navf" method="get" action="">
+    <input type="hidden" id="navq" name="query">
+    <input type="hidden" id="navp" name="p">
+    <input type="hidden" id="navw" name="w">
+</form>
+<form type="hidden" name="navf" id="sform" method="get" action="" accept-charset="UTF-8">
+    <input type="hidden" id="scid" name="cid">
+    <input type="hidden" id="ssp" name="sp">
+    <input type="hidden" id="sw" name="w">
+</form>
+<script type="text/javascript">
+if(!!window.ActiveXObject){
+    if(document.charset!='gb2312'){document.charset='gb2312';location.reload();}
+    setTimeout(function(){if(document.charset!='gb2312'){document.charset='gb2312';location.reload();}},50);
+}
+var $s = (function(){
+    var version = "0.1.0",
+            that = {},
+            funcs = {};
+
+    //extension js address
+    that.ext_js = "/js/sext.js";
+
+    //default objects
+    var $d = that.$d = document,js_hash = {}
+
+    /*
+    * call a function that will be defined in another js
+    * @method call_from_js
+    * @param function_name {string} a name for future calling
+    * @param js_address {string} address of the js file
+    * @param initFunc {function} function to call when js is ready
+    * @return null.
+    */
+    function call_from_js(function_name, js_address, initFunc){
+        var that = this; //save caller
+        var args = Array.prototype.slice.call(arguments,3); //get extra arguments
+        if (typeof window[function_name] == "function") { //if this function is already there
+            if (js_hash[js_address] == "1"){
+                js_hash[js_address] = "2";
+                if (typeof initFunc == "function") {
+                    initFunc.apply(that, args);
+                }
+            }
+            window[function_name].apply(that, args)
+        } else {
+            if (!js_hash[js_address]) {
+                //if js is not loading, then load it
+                var js = $d.createElement("script");
+                js_hash[js_address]="1";
+                js.type = "text/javascript";
+                js.src = js_address;
+                if ($s.ua&&$s.ua.ie6){
+                    setTimeout(function(){
+                        $s.$h().appendChild(js);
+                    }, 50);
+                }else{
+                    $s.$h().appendChild(js);
+                }
+            }
+            args = Array.prototype.slice.call(arguments,0);
+            setTimeout(function() {
+                call_from_js.apply(that, args);
+            }, 50);
+        }
+    }
+    that.cjs = call_from_js;
+
+    //common functions
+    that.$ = function(id){
+        return $d.getElementById(id);
+    }
+    that.$$ = function(obj, tag_name){
+        if (obj){
+            return obj.getElementsByTagName(tag_name);
+        }else{
+            return $d.getElementsByTagName(tag_name);
+        }
+    }
+    that.$b = function(elem, evts, funcs){
+        if (elem){
+            for (var i in evts){
+                if (window.attachEvent){
+                    elem.attachEvent("on"+evts[i],funcs[i]);
+                }else{
+                    elem.addEventListener(evts[i],funcs[i],false);
+                }
+            }
+        }
+    }
+    that.$c = function(tag_name, obj, cname, jssrc){
+        var tmp = $d.createElement(tag_name);
+        if (jssrc){
+            tmp.type = "text/javascript";
+            tmp.src = jssrc;
+        }
+        if (obj){
+            obj.appendChild(tmp);
+        }
+        if (cname){
+            tmp.className = cname;
+        }
+        return tmp;
+    }
+    that.$h = function(){
+        return that.$$($d, "head")[0];
+    }
+    that.t = function(){
+        return (new Date()).getTime();
+    }
+    //simple ua detect function
+    that.ua = (function(){
+        var ua_text = window.navigator.userAgent.toLowerCase();
+        var ua = {};
+        if (window.opera) {
+            ua["opera"] = true;
+        } else if (ua_text.indexOf("msie") != -1) {
+            ua["ie"] = true;
+            var ie_version = /msie\s+(.)/.exec(ua_text);
+            if (ie_version){
+                ua["ie"+ie_version[1]] = true;
+            }
+        } else if (ua_text.indexOf("webkit") != -1) {
+            ua["webkit"] = true;
+            if (ua_text.indexOf("chrome") != -1) {
+                ua["chrome"] = true;
+            } else if (ua_text.indexOf("ipad") != -1) {
+                ua["ipad"] = true;
+                ua["ios"] = true;
+            } else if (ua_text.indexOf("safari") != -1) {
+                ua["safari"] = true;
+            }
+        } else if (ua_text.indexOf("gecko") != -1) {
+            ua["gecko"] = true;
+            if (ua_text.indexOf("firefox") != -1) {
+                ua["firefox"] = true;
+            }
+        }
+        if (ua_text.indexOf("android") != -1){
+            ua["and"] = true;
+        }
+        if (ua_text.indexOf("iphone") != -1){
+            ua["ios"] = true;
+        }
+        return ua;
+    })();
+    that.wait = function(objid, func){
+        var div = $s.$(objid);
+        if (div){
+            return func(div)
+        }
+        setTimeout(function(){that.wait(objid, func)}, 100)
+    }
+
+    //preload javasript as image or object
+    //code from http://stevesouders.com/controljs/index.php
+    that.preload = function(js_addr){
+        if ( $s.ua.ie || $s.ua.opera ) {
+            var img = new Image();
+            img.src = js_addr;
+        }
+        else {
+            if ( "undefined" === typeof($d.body) || ! $d.body ) {
+                setTimeout("$s.preload('" + js_addr + "')", 50);
+                return;
+            }
+            var obj = $d.createElement('object');
+            obj.data = js_addr;
+            obj.width  = 0;
+            obj.height = 0;
+            $d.body.appendChild(obj);
+
+        }
+    }
+
+    //preload extend functions
+    that.extend = function(callback){
+        call_from_js("$s_ext", $s.ext_js, callback);
+    }
+
+    //add remove class
+    that.cls = function(node, cls, isAdd){
+        if (node){
+            var className = node.className;
+            className = className.replace( cls , '' );
+            if (isAdd){
+                className = className+" "+cls;
+            }
+            node.className = className;
+        }
+    }
+
+    that.viewport = function(){
+        var e = window, a = 'inner';
+        if ( !( 'innerWidth' in window ) ){
+            a = 'client';
+            e = $d.documentElement || $d.body;
+        }
+        return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
+    }
+
+    return that;
+})();
+function navSubmit(el, target, pval, wval) {
+    el.href="###";
+    var f = document.getElementById("navf"); f.action = target;
+    var q = document.getElementById("navq"); var iq = document.getElementById("upquery"); q.value = iq.value;
+    var p = document.getElementById("navp"); p.value = pval;
+    var w = document.getElementById("navw"); w.value = wval;
+    f.submit();
+    return false;
+}
+function navBar(c,a,b){var e=c.href.split(a),d=$s.$("searchForm").query.value;if(b){d=encodeURIComponent(d)}c.href=[e[0],a,d,"&",e[1].split("&").slice(1).join("&")].join("")}
+function sosoSubmit(el, target, pval) {
+    el.href="###";
+    var iq = document.getElementById("upquery");
+    var f = document.getElementById("sform"); f.action = target;
+    var p = document.getElementById("scid"); p.value = pval;
+    var sp = document.getElementById("ssp"); sp.value = "S" + iq.value;
+    var w = document.getElementById("sw"); w.value = iq.value;
+    if(!!window.ActiveXObject)
+        document.charset='UTF-8';
+    f.submit();
+    if(!!window.ActiveXObject)
+                document.charset='gb2312';
+    return false;
+}
+function tp(d){
+    if(document.searchForm.query.value.length>=0){
+        var a=document.searchForm.query.value;
+        if(d.href.indexOf("wenwen")!=-1){
+            d.href="http://wenwen.sogou.com/s/?cid=newssearch2ww&w="+encodeURIComponent(a)
+        }else if(d.href.indexOf("baike")!=-1){
+            d.href="http://baike.sogou.com/Search.e?cid=newssearch2bk&sp=S"+encodeURIComponent(a)
+        }
+    }
+}
+$s.wait("searchnav", function(){
+    var btn = $s.$("navibtn"), div = $s.$("navimore"), timer;
+    if (btn && div){
+        btn.onclick = function(){
+            if (div.style.display == "block"){
+                //uigsPB("intclose");
+                btn.className = "";
+                div.style.display = "none";
+            }else{
+                //uigsPB("intmore");
+                div.style.display = "block";
+                btn.className = "on";
+            }
+            return false;
+        }
+        btn.parentNode.onmouseout = function(){
+            clearTimeout(timer);
+            timer = setTimeout(function(){
+                if (div.style.display == "block"){
+                    //uigsPB("intclose");
+                    div.style.display = "none";
+                    btn.className = "";
+                }
+            }, 100);
+        }
+        btn.parentNode.onmouseover = function(){
+            clearTimeout(timer);
+        }
+    }
+});
+//fix body width
+var noresize = false;
+function fixBodyClass(){
+    $s.wait("upquery", function(obj){
+        obj.blur();
+    })
+    try{
+        if ($s.$("sugc")){
+            var tmp = $s.$("sugc").parentNode.parentNode;
+            tmp.style.display = "none";
+            tmp = tmp.parentNode.getElementsByTagName("iframe");
+            if (tmp.length > 0){
+                tmp[0].style.display = "none";
+            }
+        }
+        if (noresize){return}
+        if($s.viewport().width < 1200) {
+            $s.cls(document.body, "vr1024", 1);
+        }else{
+            $s.cls(document.body, "vr1024");
+        }
+    }catch(E){
+
+    }
+}
+function resizeWindow(){
+    var fn=function(){
+        if($s.viewport().width < 1200) {
+            $s.cls(document.body, "vr1024", 1);
+        }else{
+            $s.cls(document.body, "vr1024");
+        }
+    }
+    if(window.addEventListener){
+        window.addEventListener('resize', function(){ fn(); });
+    }else if(window.attachEvent){
+        window.attachEvent('onresize', function(){ fn(); });
+    }
+    fn();
+}
+var imgIdArr=[];
+function checkImgLoad(trys){
+    if( trys >= 20 || imgIdArr.length == 0) return;
+    for(var i = 0 ; i < imgIdArr.length ; i ++ ){
+         if( document.getElementById("imgID" + imgIdArr[i]).width>0 ){
+            document.getElementById("imgboxID" + imgIdArr[i]).style.display = "block";
+            imgIdArr.splice(i,1);i--;
+         }
+    }
+    if( imgIdArr.length > 0 )
+        setTimeout( function(){checkImgLoad( trys?trys+1:1);},10 );
+}
+function len(str){
+    if(str)
+        return str.replace(/<.*?>/g, "").replace(/[^\x00-\xff]/g,"rr").replace(/&nbsp;/g, " ").length;
+    return 0;
+}
+function cutLength(str, maxLen, appended, appendLength){
+    appended = appended||"...";
+    appendLength = appendLength||2;
+    str=str.replace(/<!.*?>/g, "");
+    if (len(str) > maxLen){
+        do{
+            str = str.substring(0, str.length-1);
+        }while(str && (len(str)+appendLength > maxLen));
+        if (str.lastIndexOf("</") != str.lastIndexOf("<")){
+            str = str.substring(0, str.lastIndexOf("<"))+str.substring(str.lastIndexOf(">")+1);
+        }
+        return str+appended;
+    }
+    return str;
+}
+fixBodyClass();
+resizeWindow();
+function focusInput(that){
+    var qboarder = that;
+    that.onblur = function(){
+        qboarder.className = "qborder";
+    };
+    that.onfocus = function(){
+        qboarder.className = "qborder blueQborder";
+    };
+    if (that.getAttribute('ov')){
+        setTimeout(function(){
+            if(that.value!=that.getAttribute('ov')){
+                that.value=that.getAttribute('ov')
+            };
+            document.searchForm.setAttribute('reseted', 1);
+        }, 50);
+    }
+    qboarder.className = "qborder blueQborder";
+}
+
+function clickHide(btn, div, pbName){
+    var timer, nohide = false;
+    btn.onmouseover = function(){};
+    if (btn && div){
+        var $div = $(div);
+        function hide(event){
+            if (event) {
+                if ($div.find($(event.target)).length > 0) return;
+            }
+
+            if ($div.is(":visible")){
+                uigsPB("intclose_"+pbName);
+                $div.hide();
+            }
+        }
+
+        $(btn).on("click", function(event) {
+            nohide = true;
+            if ($div.is(":visible")) {
+                $div.hide();
+                uigsPB("intclose_"+pbName);
+            } else {
+                $div.show();
+                uigsPB("intmore_"+pbName);
+            }
+            event.stopPropagation();
+        });
+//        btn.onclick = function(){
+//            nohide = true;
+//            if (div.style.display != "none"){
+//                uigsPB("intclose_"+pbName);
+//                div.style.display = "none";
+//            }else{
+//                uigsPB("intmore_"+pbName);
+//                div.style.display = "block";
+//            }
+//            return false;
+//        };
+        div.onmouseout = btn.onmouseout = function(){
+            clearTimeout(timer);
+            timer = setTimeout(hide, 100);
+        };
+        div.onmouseover = btn.onmouseover = function(){
+            clearTimeout(timer);
+        };
+        $(document).bind("click", hide);
+    }
+}
+
+function setCookie(name, value, expires, path, domain, secure) {
+    var today = new Date();
+    today.setTime( today.getTime() );
+    var expires_date = new Date( today.getTime() + (expires) );
+    document.cookie= name + "=" + escape(value) +
+        ((expires) ? "; expires=" + expires_date.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+}
+</script>
+
+<div class="header">
+    <a  href="http://news.sogou.com/?w=03021800" title="�ص��ѹ�������ҳ" class="logo" id="resultlogo"><img src="/images/logo_xinwen.png" alt="�ѹ�����" srcset="/images/logo_xinwen2.png 2x"/></a>
+    <form name="searchForm" id="searchForm" class="searchForm">
+        <div class="querybox">
+            <div class="qborder blueQborder">
+                <div class="qborder2">
+                    <input type="text" id="upquery" class="query" name="query" onfocus="focusInput(this.parentNode.parentNode)" ov="php" value="php" autocomplete="off">
+                    <a href="javascript:void(0)" class="qreset2"></a>
+                </div>
+            </div>
+
+            <input type="hidden" name="_ast" value="1507512704"><input type="hidden" name="_asf" value="news.sogou.com"><input type="hidden" name="time" value="0"><input type="hidden" name="w" value="03009900"><input type="hidden" name="sort" value="1"><input type="hidden" name="mode" id="mode" value="2"><input type="hidden" name="manual" value=""/>
+            <input type="hidden" name="dp" value="1"/>
+            <input type="submit" value="�ѹ�����" class="sbtn1" uigs="searchBtn" onmouseover="this.className='btnactive'" onmouseup="this.className='sbtn1'" onmouseout="this.className='sbtn1'">
+        </div>
+    </form>
+    <ul class="searchnav">
+        <li><a href="http://www.sogou.com/web?query=php&w=03021800&ie=utf8" id="news_www" onclick="navBar(this,'query=',true)">��ҳ</a></li><li class="cur"><a href="#">����</a></li><li><a href="http://weixin.sogou.com/weixin?p=42341200&query=php&type=2&ie=utf8" id="news_weixin" onclick="navBar(this,'query=',true)">΢��</a></li><li><a href="http://zhihu.sogou.com/zhihu?p=42351201&query=php&ie=utf8" id="news_zhihu" onclick="navBar(this,'query=',true)">֪��</a></li><li><a href="http://pic.sogou.com/pics?query=php&w=03021800&ie=utf8" id="news_pic" onclick="navBar(this,'query=',true)">ͼƬ</a></li><li><a href="http://v.sogou.com/v?query=php&ie=utf8" id="news_video" onclick="navBar(this,'query=',true)">��Ƶ</a></li><li><a href="http://mingyi.sogou.com/mingyi?query=php&w=03021800&ie=utf8" id="news_mingyi" onclick="navBar(this,'query=',true)">��ҽ</a></li><li><a href="http://english.sogou.com/english?ie=utf8&query=php&w=03021800&ie=utf8" id="news_english" onclick="navBar(this,'query=',true)">Ӣ��</a></li><li><a href="http://wenwen.sogou.com/s/?ch=newssearch&w=php" id="news_wenwen" onclick="navBar(this,'w=',true)">����</a></li><li><a href="http://scholar.sogou.com/xueshu?ie=utf-8&query=php" id="news_xueshu" onclick="navBar(this,'query=',true)">ѧ��</a></li><li class="navMore">
+            <a href="javascript:;" id="searchnav-more" class="more-btn">����<i class="arrow-down"></i></a>
+            <div class="top-bar-pop" style="display: none;" id="searchnav-more-list">
+                <i></i>
+                <a href="http://map.sogou.com/#lq=php" id=sogou_maps onclick="navBar(this,'#lq=',false)">��ͼ</a>
+                <a onclick="navBar(this,'query=',true)" id="result_more_gouwu_ABC" href="http://gouwu.sogou.com/shop?ie=utf8&query=php&p=40251501">����</a>
+                <a onclick="navBar(this,'sp=S', true)" id="result_more_baike_ABC" href="http://baike.sogou.com/Search.e?sp=Sphp&p=40351210">�ٿ�</a>
+                <a onclick="navBar(this,'query=', true)" id="result_more_zhishi_ABC" href="http://www.sogou.com/sogou?query=php&ie=utf8&pid=sogou-wsse-926c11cc055de9b8&interation=196636&chuidq=28">֪ʶ</a>
+                <a onclick="navBar(this,'query=', true)" id="result_more_music_ABC" href="http://mp3.sogou.com/music.so?query=php&p=40350200">����</a>
+                <a onclick="navBar(this,'query=', true)" id="result_more_appli_ABC" href="http://as.sogou.com/so?query=php&p=40351212">Ӧ��</a>
+                <a onclick="navBar(this,'keyword=', true)" id="result_more_fanyi_ABC" href="http://fanyi.sogou.com/?fr=common_index_nav_pc_result&keyword=php&p=40351212">����</a>
+                <a id="result_more_index_ABC" href="http://index.sogou.com">ָ��</a>
+                <span class="all"><a href="http://www.sogou.com/docs/more.htm?v=1&kw=php" id="top-more" onclick="navBar(this,'kw=',true)" target="_blank">ȫ��</a></span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- </div> -->
+    <div id="wrapper" class="wrapper">
+
+<div class="header-filt">
+
+    <span class="filt-result">�ҵ��������Լ5,179ƪ</span>
+
+    <div class="filt-type">
+
+        <label for="mode_in_content" class="filt-news"><input type="radio" id="mode_in_content" class="filt-radio" value="news">����ȫ��</label><label for="mode_in_title" class="filt-title"><input type="radio" id="mode_in_title" class="filt-radio" name="tn" value="newstitle" checked="checked">���ű���</label>
+
+    </div><span class="filt-line">|</span>
+    <div class="filt-sort">
+
+        <span onmouseover="clickHide(this, this.nextSibling, 'filter')">��ʱ������</span><div class="filt-pop" id="filt_pop" style="display:none"><a href="javascript:void(0)" id="news_sortbyrelative" onclick="switchsort(this);return false;">����������</a><a href="javascript:void(0)" id="news_sortbytime" class="cur">��ʱ������</a></div>
+
+    </div>
+    <div class="filt-sort filt-sort-from">
+        <span onmouseover="clickHide(this, this.nextSibling, 'time')">ȫ����Դ</span><div class="filt-pop popMore" style="display:none;">
+        <a href="?query=site:sohu.com%20php&manual=true&mode=2&sort=1&p=42230302">�Ѻ�</a><a href="?query=site:qq.com%20php&manual=true&mode=2&sort=1&p=42230302">��Ѷ</a><a href="?query=site:sina.com.cn%20php&manual=true&mode=2&sort=1&p=42230302">����</a><a href="?query=site:ifeng.com%20php&manual=true&mode=2&sort=1&p=42230302">���</a><a href="?query=site:163.com%20php&manual=true&mode=2&sort=1&p=42230302">����</a>
+    </div>
+    </div>
+</div>
+<script>
+    function select(modevalue){document.getElementById("mode").value=modevalue;document.getElementById('searchForm').submit();}
+    $s.$("mode_in_content").onclick= function(){
+        select('1');
+    };
+    $s.$("mode_in_title").onclick= function(){
+        select('2');
+    };
+    function switchsort(obj){
+        if(obj.id=="news_sortbytime"){
+            window.location.href="./news?&clusterId=&p=42230305&time=0&query=php&mode=2&media=&sort=1";
+        }else{
+            window.location.href="./news?&clusterId=&p=42230304&time=0&query=php&mode=2&media=&sort=0";
+        }
+    }
+</script>
+        <div id="main" class="main">
+
+<script>function saveTimeSort(){
+    setCookie("sortcookie","1",1000 * 60 * 60 * 24 * 365 * 10,"/","sogou.com",null);
+    $s.$("timeSortTip").style.display = "none";
+    $s.$("timeSortAssure").style.display = "block";
+}
+function clearTimeSort(){
+    setCookie("sortcookie","1",-1,"/","sogou.com",null);
+    $s.$("timeSortTip").style.display = "none";
+}
+</script>
+<div id="timeSortTip" class="filter_box" style="display:block">���Ѹ���Ϊ��ʱ�����򣬼�ס��ѡ����<a href="javascript:saveTimeSort();">ȷ��</a><a href="javascript:clearTimeSort();">ȡ��</a></div>
+<div id="timeSortAssure" class="filter_box newsSort_time" style="display:none">
+    <div class="newsSort">����Ĭ�������Ѹ�Ϊ��ʱ������</div>
+</div>
+<div class="results">
+<!-- a -->
+
+
+<!--m--><!--ID:0--><!--resulttitle:��������Դ����PHP��-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://finance.huagu.com/work86=17826056.html" id="uigs_0" target="_blank">��������Դ��<em><!--red_beg-->PHP<!--red_end--></em></a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://finance.huagu.com/work86=17826056.html" id="imgboxID0"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID0" src="http://img04.sogoucdn.com/v2/thumb/resize/w/120/h/80/ir/3/zi/on/iw/120/ih/80/crop/x/0/y/0/w/120/h/80/retype/ext/jpg?t=2&amp;appid=200660&amp;url=http%3A%2F%2Ffinance.huagu.com%2Fimg%2Fi035.jpg"><script>
+                                var img0 = document.getElementById("imgID0");
+                                img0.onload = function(){
+                                    var a = document.getElementById("imgID0");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">���ɲƾ�&nbsp;8Сʱǰ<!--resultinfodate:8Сʱǰ--></p>
+<p class="news-txt">
+<span id="summary_0"> ��������Դ��<em><!--red_beg-->PHP<!--red_end--></em> ����Ԫ�Ĵ����أ�&rdquo;��������˹�����ݵĹ�Ա�����������ʷ�Ե�&rdquo;������ʾ����ڸ��ݾ�����һ�������&rdquo;�¼������ر�ֽ���ܶ��ֻ������ڱ�...</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(0);
+                            </script><a id="news_similar" href="?query=php&amp;clusterId=http%3A%2F%2Ffinance.huagu.com%2Fwork86%3D17826056.html&amp;ct=1&amp;sort=1&amp;mode=2&amp;w=1507512644013&amp;dr=1&amp;dp=1&amp;p=sogou__free">
+                                        &gt;&gt;3����ͬ����
+                                    </a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+
+<!--m--><!--ID:1--><!--resulttitle:ʱʱ����php������-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://www.luaninfo.com/tdOful/Default.aspx" id="uigs_1" target="_blank">ʱʱ��<em><!--red_beg-->php<!--red_end--></em>����</a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://www.luaninfo.com/tdOful/Default.aspx" id="imgboxID1"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID1" src=""><script>
+                                var img1 = document.getElementById("imgID1");
+                                img1.onload = function(){
+                                    var a = document.getElementById("imgID1");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">����������&nbsp;2017-10-7<!--resultinfodate:1��ǰ--></p>
+<p class="news-txt">
+<span id="summary_1">�������������е�����һŮ��๤�����ݾ���Ź���������Ϊ&ldquo;���˶���&rdquo;�������ݾ���δ�ܴ����������ع����ֹ�����Ա7��22�ջ�Ӧ�������ţ�www....</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(1);
+                            </script>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+
+<!--m--><!--ID:2--><!--resulttitle:��php��ʱʱ��Դ������-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://www.luaninfo.com/OafqD/Default.aspx" id="uigs_2" target="_blank"><em><!--red_beg-->php<!--red_end--></em>ʱʱ��Դ������</a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://www.luaninfo.com/OafqD/Default.aspx" id="imgboxID2"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID2" src=""><script>
+                                var img2 = document.getElementById("imgID2");
+                                img2.onload = function(){
+                                    var a = document.getElementById("imgID2");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">����������&nbsp;2017-10-7<!--resultinfodate:2��ǰ--></p>
+<p class="news-txt">
+<span id="summary_2">11��4�գ�2016�����ʡ����̬��Ŀ�ߵ������ش���Ŀǭ�������ֳ����п�����ʽ���������ͽ�����С� ǭ������ί����ǡ��ݳ�����Ӣ������Ŀ���п�����...</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(2);
+                            </script>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+
+<!--m--><!--ID:3--><!--resulttitle:��������˹����ֹ�������ʹ��Linux��Crontab��ʱִ����PHP���ű��ķ���-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://money.huagu.com/maxwelllkpl/4" id="uigs_3" target="_blank">��������˹����ֹ�������ʹ��Linux��Crontab��ʱִ��<em><!--red_beg-->PHP<!--red_end--></em>�ű��ķ���</a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://money.huagu.com/maxwelllkpl/4" id="imgboxID3"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID3" src=""><script>
+                                var img3 = document.getElementById("imgID3");
+                                img3.onload = function(){
+                                    var a = document.getElementById("imgID3");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">���ɲƾ�&nbsp;2017-10-7<!--resultinfodate:2��ǰ--></p>
+<p class="news-txt">
+<span id="summary_3">���ʹ��Linux��Crontab��ʱִ��<em><!--red_beg-->PHP<!--red_end--></em>�ű��ķ���ӭ��������Ф���أ� ��Ф����Ӫ����13���¼�˰��8500�� ���º� ...żȻ����Ļ��룬����Ϊ��һ�両Ƽ��һ...</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(3);
+                            </script>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+
+<!--m--><!--ID:4--><!--resulttitle:�������ƽ̨ 696121���ʹ��Linux��Crontab��ʱִ����PHP���ű��ķ���-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://money.huagu.com/maxwell2188oy/p" id="uigs_4" target="_blank">�������ƽ̨ 696121���ʹ��Linux��Crontab��ʱִ��<em><!--red_beg-->PHP<!--red_end--></em>�ű��ķ���</a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://money.huagu.com/maxwell2188oy/p" id="imgboxID4"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID4" src=""><script>
+                                var img4 = document.getElementById("imgID4");
+                                img4.onload = function(){
+                                    var a = document.getElementById("imgID4");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">���ɲƾ�&nbsp;2017-10-6<!--resultinfodate:2��ǰ--></p>
+<p class="news-txt">
+<span id="summary_4">���ʹ��Linux��Crontab��ʱִ��<em><!--red_beg-->PHP<!--red_end--></em>�ű��ķ���&amp;#0;&amp;#0����=2.2 ����=73.5CM 30 ��=2.3 ����=77CM 31 ��=2.4 ����=80CM ...A �����ͷ��ࣺ A �쳣�� ...</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(4);
+                            </script>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+
+<!--m--><!--ID:5--><!--resulttitle:�����ϻ��������Ƽ���վ_��php�� �÷�_������-vita-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://money.huagu.com/80f1psmol/wz/692726.htm" id="uigs_5" target="_blank">�����ϻ��������Ƽ���վ_<em><!--red_beg-->php<!--red_end--></em> �÷�_������-vita</a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://money.huagu.com/80f1psmol/wz/692726.htm" id="imgboxID5"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID5" src="http://img03.sogoucdn.com/v2/thumb/resize/w/120/h/80/ir/3/zi/on/iw/120/ih/80/crop/x/0/y/0/w/120/h/80/retype/ext/jpg?t=2&amp;appid=200660&amp;url=http%3A%2F%2Fsm.uploads.im%2FytI4f.jpg"><script>
+                                var img5 = document.getElementById("imgID5");
+                                img5.onload = function(){
+                                    var a = document.getElementById("imgID5");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">���ɲƾ�&nbsp;2017-10-6<!--resultinfodate:2017-10-06--></p>
+<p class="news-txt">
+<span id="summary_5">��ICP��11011084��-1 �ص㣺Ȫ���������м佻ͨ����¥C�� �ʱࣺ362000 ���ɷ磺0595-22108006 ����֧�֣�Ȫ������ά�ռ�����...��Ȩ���У�c��2012 ��...</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(5);
+                            </script>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+
+<!--m--><!--ID:6--><!--resulttitle:������ʷ��ɱ���_���ʹ��Linux��Crontab��ʱִ����PHP���ű��ķ���...-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://money.huagu.com/maxwelljbn/jMwz/692064.htm" id="uigs_6" target="_blank">������ʷ��ɱ���_���ʹ��Linux��Crontab��ʱִ��<em><!--red_beg-->PHP<!--red_end--></em>�ű��ķ���...</a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://money.huagu.com/maxwelljbn/jMwz/692064.htm" id="imgboxID6"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID6" src="http://img02.sogoucdn.com/v2/thumb/crop/x/0/y/0/w/220/h/146/resize/w/120/h/80/ir/3/zi/on/iw/120/ih/80/retype/ext/jpg?t=2&amp;appid=200660&amp;url=http%3A%2F%2Fwww.16120.cn%2Finstall%2F0060%2Ft%2F231.jpg"><script>
+                                var img6 = document.getElementById("imgID6");
+                                img6.onload = function(){
+                                    var a = document.getElementById("imgID6");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">���ɲƾ�&nbsp;2017-10-6<!--resultinfodate:2017-10-06--></p>
+<p class="news-txt">
+<span id="summary_6">��������ע��ӭ38 �������ֳ� .com ΢�ռ� �������� �������� ΢�����������ӱ�վ���ɴ������ð�Ȩ��̸�� ����ǩ��������ҵ...wwwASiacom sm����žž��...</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(6);
+                            </script>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+
+<!--m--><!--ID:7--><!--resulttitle:ʱʱ����php��ʱʱ��Դ��-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://www.luaninfo.com/enLgqAX/Default.aspx" id="uigs_7" target="_blank">ʱʱ��<em><!--red_beg-->php<!--red_end--></em>ʱʱ��Դ��</a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://www.luaninfo.com/enLgqAX/Default.aspx" id="imgboxID7"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID7" src=""><script>
+                                var img7 = document.getElementById("imgID7");
+                                img7.onload = function(){
+                                    var a = document.getElementById("imgID7");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">����������&nbsp;2017-10-6<!--resultinfodate:2017-10-06--></p>
+<p class="news-txt">
+<span id="summary_7">ʱʱ��<em><!--red_beg-->php<!--red_end--></em>ʱʱ��Դ��  ������������11��7�ձ��� ����ʱ��פ��Լ���� �־��� ��Լ���� ��������&ldquo;���ºڿ������öԶ���˹��������ս��׼����&rdquo;5�գ�����...</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(7);
+                            </script>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+
+<!--m--><!--ID:8--><!--resulttitle:��php����ѵ��Ŷ���Ǯ��-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://www.zgswcn.com/xazx/20036027.html" id="uigs_8" target="_blank"><em><!--red_beg-->php<!--red_end--></em>��ѵ��Ŷ���Ǯ��</a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://www.zgswcn.com/xazx/20036027.html" id="imgboxID8"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID8" src=""><script>
+                                var img8 = document.getElementById("imgID8");
+                                img8.onload = function(){
+                                    var a = document.getElementById("imgID8");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">�й�����&nbsp;2017-10-5<!--resultinfodate:2017-10-05--></p>
+<p class="news-txt">
+<span id="summary_8">�μ�<em><!--red_beg-->PHP<!--red_end--></em>��ѵѧ��Ҫ���٣�Դ��ʱ�� &emsp;&emsp;�ڶ���ʦ���Ŷӣ�ʦ���� <em><!--red_beg-->PHP<!--red_end--></em>��ѵ�շѵ�һ��������Ҫ�ı�׼����Ϊʦ����һ��<em><!--red_beg-->PHP<!--red_end--></em>��ѵ�����ĺ�����Դ��һ���ϸ�...</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(8);
+                            </script>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+
+<!--m--><!--ID:9--><!--resulttitle:��ʤ������_�������PHP�������������ݿ��Ӯ��-->
+        <div class="vrwrap">
+<div class="news151102">
+<h3 class="vrTitle">
+<a href="http://money.huagu.com/maxwell86nk/Lj" id="uigs_9" target="_blank">��ʤ������_�����<em><!--red_beg-->PHP<!--red_end--></em>�����������ݿ��Ӯ��</a>
+</h3>
+<div class="news-detail">
+<a class="news-pic" target="_blank" href="http://money.huagu.com/maxwell86nk/Lj" id="imgboxID9"><img border="0" onerror="this.parentNode.style.display='none'" id="imgID9" src="http://img01.sogoucdn.com/v2/thumb/resize/w/120/h/80/ir/3/zi/on/iw/120/ih/80/crop/x/0/y/0/w/120/h/80/retype/ext/jpg?t=2&amp;appid=200660&amp;url=http%3A%2F%2Fwww.16120.cn%2Finstall%2F0060%2Ft%2F237.jpg"><script>
+                                var img9 = document.getElementById("imgID9");
+                                img9.onload = function(){
+                                    var a = document.getElementById("imgID9");
+                                    if(a.height>a.width&&navigator.userAgent.indexOf("MSIE 6")!=-1&&!window.opera)
+                                        a.className="nimg2";
+                                    if( navigator.userAgent.indexOf("MSIE 8") != -1 ) {
+                                        var hint = document.getElementById("hint_container");
+                                        if( hint) hint.style.display="none";
+                                            var page = document.getElementById("pagebar_container");
+                                        if( page ) page.style.display="none";
+                                        window.ie8Timer1 && clearTimeout( window.ie8Timer1 );
+                                        window.ie8Timer1 = setTimeout( function(){
+                                            var hint = document.getElementById("hint_container");
+                                            if( hint) hint.style.display="table";
+                                            var page = document.getElementById("pagebar_container");
+                                            if( page ) page.style.display="block";
+                                        }, 10 );
+                                    }
+                                }
+                            </script></a>
+<div class="news-info">
+<p class="news-from">���ɲƾ�&nbsp;2017-10-4<!--resultinfodate:2017-10-04--></p>
+<p class="news-txt">
+<span id="summary_9">fhwqq.com����ַΪ����Ӧ���µĿ������ۡ�����ͼƬ������������Ѷ�Լ���������Ŀ�����̳����ĸ��...��ַ����ӭ8-88Ԫ�������Զ���� fhqqs.com����ַΪ...</span><script>
+                                (function(rank){
+                                var id = 'summary_'+rank;
+                                document.getElementById(id).innerHTML = cutLength(document.getElementById(id).innerHTML,144);
+                                })(9);
+                            </script>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        <!--n-->
+
+
+<!-- z -->
+
+
+
+    <script>
+    window.imgrecom = true;
+    function recomimg_resize(obj, wsize, hsize){
+        var w=obj.width||0;
+        var h=obj.height||0;
+        var iebug = false;
+        if(w == 0 || h == 0){
+            iebug = true;
+            var clone = obj.cloneNode(true);
+            clone.style.visibility = 'hidden';
+            document.body.appendChild(clone);
+            w = clone.width;
+            h = clone.height;
+            document.body.removeChild(clone);
+        }
+
+        if(w>wsize && h > hsize){
+            if(w/h <= wsize/hsize){ //resize by height
+                obj.style.width = wsize+"px";
+                obj.style.height = "auto";
+            }
+            else{
+                obj.style.height = hsize+"px";
+                obj.style.width = "auto";
+            }
+        }
+        //  obj.height=180;
+        obj.style.marginLeft='auto';
+        obj.style.marginRight='auto';
+        obj.style.visibility = 'visible';
+        obj.style.display='block';
+    }
+    </script>
+<div class="vrwrap">
+   <div class="news151102">
+        <table id="hint_container" class="imgnews_more">
+            <caption>���������Ƽ�</caption>
+            <tr>
+
+                <td><a id="recomimg_0" href="http://news.ifeng.com/a/20171008/52450366_0.shtml" class="imgarea" target="_blank" title="�����֡�һ���족 ȫ������ӭ���̿���ʵ��"><img src="http://img02.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fd.ifengimg.com%2Fmw978_mh598%2Fp3.ifengimg.com%2Fcmpp%2F2017%2F10%2F08%2F09%2Fa9e294d9-fd1a-4eef-a64c-c043469a3bf7_size203_w743_h1024.jpg&appid=10020002" alt="" onload="recomimg_resize(this, 120, 90)"><span class="bg_imgnews_text"></span><span class="imgnews_text">�����֡�һ����...</span></a></td>
+
+                <td><a id="recomimg_1" href="http://news.sina.com.cn/c/nd/2017-10-07/doc-ifymrcmm9018913.shtml" class="imgarea" target="_blank" title="������޵��й����Ĵ��� ������ڱ������?"><img src="http://img02.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fn.sinaimg.cn%2Fnews%2Fcrawl%2F20171007%2FnPAB-fymrcpw5074289.jpg&appid=10020002" alt="" onload="recomimg_resize(this, 120, 90)"><span class="bg_imgnews_text"></span><span class="imgnews_text">������޵��й�...</span></a></td>
+
+                <td><a id="recomimg_2" href="http://news.ifeng.com/a/20171007/52436569_0.shtml" class="imgarea" target="_blank" title="��۶θ����г�������"><img src="http://img03.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fp1.ifengimg.com%2Fa%2F2017_40%2F93f70fd157e9df0_size219_w608_h434.jpg&appid=10020002" alt="" onload="recomimg_resize(this, 120, 90)"><span class="bg_imgnews_text"></span><span class="imgnews_text">��۶θ����г���...</span></a></td>
+
+                <td><a id="recomimg_3" href="http://news.ycwb.com/2017-10/08/content_25568672.htm" class="imgarea" target="_blank" title="12.5���ο��ιٹ���Ǯ������һ�߳���"><img src="http://img04.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fimg.ycwb.com%2Fnews%2Fattachement%2Fjpg%2Fsite2%2F20171008%2F4ccc6a36151d1b43c5eb2f.jpg&appid=10020002" alt="" onload="recomimg_resize(this, 120, 90)"><span class="bg_imgnews_text"></span><span class="imgnews_text">12.5���ο��ι�...</span></a></td>
+
+            </tr>
+            <tr>
+                <td colspan="4"><a id="recomimg_more" class="imgnews_link" target="_blank" href="/image.shtml?type=1&rank=0" class="imgnews_link">�����������&gt;&gt;</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</div>
+</div>
+        <script type="text/javascript">
+        function getRandomString(len){
+            var chars = '1234567890ABCDEF';
+            var ret = "";
+            for(var i = 0; i < len; i ++)
+                ret += chars.charAt(Math.floor(Math.random()*chars.length));
+            return ret;
+        }
+        function deleteCookie(name, path, domain) {
+            if (getCookie(name)) {
+                document.cookie = name + "=" +
+                    ((path) ? "; path=" + path : "") +
+                    ((domain) ? "; domain=" + domain : "") +
+                    "; expires=Thu, 01-Jan-1970 00:00:01 GMT";
+            }
+        }
+        function showBrandAD(pid, pos, callback) {
+            var div = "sogouFrag_" + pos;
+            var adid = "ADID_" + pos;
+            if (!document.getElementById(adid)) {
+                var html_doc = document.getElementsByTagName('head')[0];
+                //js = document.createElement('script');
+                //html_doc.appendChild(js);
+                //js.setAttribute('id', adid);
+                //js.setAttribute('type', 'text/javascript');
+                //var urlBuff = ["http://sig.brand.sogou.com/cpc_brand?&pid="+pid+"&position="];
+                var urlBuff = ["http://sig.brand.sogou.com/cpc_brand?pid="+pid+"&position="];
+                urlBuff.push(pos);
+                urlBuff.push("&div=");
+                urlBuff.push(div);
+                urlBuff.push("&suid=");
+                var SUID = getCookie("SUID");
+                if(document.cookie.indexOf("suid") != null){
+                    document.cookie = "suid=;path=/;domain=.soso.com;expires=Thu, 01-Jan-1970 00:00:01 GMT"
+                    SUID = getRandomString(32);
+                }
+                urlBuff.push(SUID);
+                urlBuff.push("&page_id=");
+                urlBuff.push("bc6c0f4e-b407-40e8-b595-270a89c4f885");
+                urlBuff.push("&ads_cnt=3");
+                urlBuff.push("&url=");
+                urlBuff.push(escape(window.location.href));
+                urlBuff.push("&showcx=1");
+                //js.setAttribute('src', urlBuff.join(""));
+                var content = '<scr' + 'ipt type="text/javascript" src="' + urlBuff.join("") + '"></scr' + 'ipt>';
+                   document.write(content);
+            }
+            if (typeof (callback) == "function")
+                callback();
+        }
+    </script>
+    <div id="right" class="right" >
+        <div class="rvr-model">
+    <h3 class="rvr-atAdBranch">�����ȵ�<a href="/" class="newshome" target="_blank">������ҳ&gt;&gt;</a></h3>
+    <ol class="music-recommend"><li class="music-tit">�ؼ���<span>�ȶ�</span></li><li id="tpw1"><span class="ranklist_span">9982</span><span class="mus-pub mus-top1">1</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%CA%C0%BD%E7%B8%F7%B5%D8%CD%CB%D0%DD%C7%F7%CA%C6" target="_blank">���������������</a></li><li id="tpw2"><span class="ranklist_span">9655</span><span class="mus-pub mus-top2">2</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%C3%C0%B3%C7%CA%D0%BD%AB%C3%E6%C1%D9%C6%C6%B2%FA" target="_blank">�����н������Ʋ�</a></li><li id="tpw3"><span class="ranklist_span">9471</span><span class="mus-pub mus-top3">3</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%BB%F0%D0%C7%CF%D635%D2%DA%C4%EA%BA%D3%C1%F7" target="_blank">������35�������</a></li><li id="tpw4"><span class="ranklist_span">9036</span><span class="mus-pub">4</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%B0%CB%D1%AE%C4%CC%C4%CC%D6%B1%B2%A5%D0%D2%B8%A3" target="_blank">��Ѯ����ֱ���Ҹ�</a></li><li id="tpw5"><span class="ranklist_span">8810</span><span class="mus-pub">5</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%D3%A1%B6%C8%C9%D9%C5%AE%B1%BB%C6%C8%CA%DC%B4%F2" target="_blank">ӡ����Ů�����ܴ�</a></li><li id="tpw6"><span class="ranklist_span">8634</span><span class="mus-pub">6</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%D2%BB%BC%D2%C6%DF%BF%DA%D6%D0%C7%EF%BE%AA%BB%EA" target="_blank">һ���߿����ﾪ��</a></li><li id="tpw7"><span class="ranklist_span">8479</span><span class="mus-pub">7</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%B4%F2%C2%E9%BD%AB%B1%EF%B3%F6%C9%F6%D1%D7" target="_blank">���齫�������</a></li><li id="tpw8"><span class="ranklist_span">8396</span><span class="mus-pub">8</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%D0%A1%D1%A7%D2%FD%BD%F8%D5%BE%C1%A2%BF%CE%D7%C0" target="_blank">Сѧ����վ������</a></li><li id="tpw9"><span class="ranklist_span">8201</span><span class="mus-pub">9</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%CB%CD%CE%CF%C5%A3%CF%F1%BC%DE%C5%AE%B6%F9" target="_blank">����ţ���Ů��</a></li><li id="tpw10"><span class="ranklist_span">8030</span><span class="mus-pub">10</span><a href="http://news.sogou.com/news?pid=sogou-brse-596dedf4498e258e&p=99350101&query=%CE%DD%B6%A5%D6%D6%BB%A8%CE%FC%D2%FD%BF%D7%C8%B8" target="_blank">�ݶ��ֻ�������ȸ</a></li></ol><div class="hot-rukou">��Դ��<a href="http://top.sogou.com/?fr=news_right" target="_blank" id="sogou_hotwords">�ѹ����Ѱ�</a> - <a href="http://top.sogou.com/hot/shishi_1.html?fr=news_right" target="_blank" id="realtime_hotwords">ʵʱ�ȵ�</a></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="rvr-model">
+            <div style="width:200px;">
+                <div style="margin-bottom:35px;">
+                    <script type="text/javascript">
+                        var sogou_brand_ad_id = 'sogoubrand_position_25529';
+                        var sogou_brand_ad_posid = 1;
+                        var sogou_brand_ad_width = 200;
+                        var sogou_brand_ad_height = 200;
+                    </script>
+                    <script language="JavaScript" type="text/javascript" src="http://galaxy.sogoucdn.com/galaxy/sogouAD.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="rvr-model">
+            <div style="width:200px;">
+                <div style="margin-bottom:35px;">
+                    <script type="text/javascript">
+                        var sogou_brand_ad_id = 'sogoubrand_position_25529';
+                        var sogou_brand_ad_posid = 2;
+                        var sogou_brand_ad_width = 200;
+                        var sogou_brand_ad_height = 200;
+                    </script>
+                    <script language="JavaScript" type="text/javascript" src="http://galaxy.sogoucdn.com/galaxy/sogouAD.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <div class="rvr-model">
+            <div style="width:200px;">
+                <div style="margin-bottom:35px;">
+                    <script type="text/javascript">
+                        var sogou_brand_ad_id = 'sogoubrand_position_25529';
+                        var sogou_brand_ad_posid = 3;
+                        var sogou_brand_ad_width = 200;
+                        var sogou_brand_ad_height = 200;
+                    </script>
+                    <script language="JavaScript" type="text/javascript" src="http://galaxy.sogoucdn.com/galaxy/sogouAD.js"></script>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+<div class="hintBox">
+
+  <table id="hint_container" class="hint">
+    <caption>�������</caption>
+    <tr><td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=0&query=php%CA%C7%CA%B2%C3%B4&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_1">php��ʲô</a></td>
+                    <td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=1&query=php%BD%CC%B3%CC&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_2">php�̳�</a></td>
+                    <td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=2&query=php%CE%C4%BC%FE%D4%F5%C3%B4%B4%F2%BF%AA&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_3">php�ļ���ô��</a></td>
+                    <td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=3&query=php%CE%C4%BC%FE&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_4">php�ļ�</a></td>
+                    <td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=4&query=php%D4%B4%C2%EB&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_5">phpԴ��</a></td>
+                    </tr><tr><td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=5&query=php%CF%C2%D4%D8&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_6">php����</a></td>
+                    <td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=6&query=forum+php&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_7">forum php</a></td>
+                    <td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=7&query=php%CD%F8%D5%BE%D4%B4%C2%EB&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_8">php��վԴ��</a></td>
+                    <td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=8&query=php%CA%D3%C6%B5%BD%CC%B3%CC&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_9">php��Ƶ�̳�</a></td>
+                    <td><a href="?user_ip=221.221.152.137&sourceid=hint&bh=1&hintidx=9&query=php%B3%CC%D0%F2%D4%B1&&p=42230305&dp=1&w=01020600&amp;czgd=0" id="sogou_99999_10">php����Ա</a></td>
+                    </tr></table>
+    </div><!--hint:php��ʲô#*#php�̳�#*#php�ļ���ô��#*#php�ļ�#*#phpԴ��#*#php����#*#forum php#*#php��վԴ��#*#php��Ƶ�̳�#*#php����Ա#*#-->
+
+
+<div class="p" id="pagebar_container">
+
+    <span>1</span>
+
+     <a id="sogou_page_2" href="?mode=2&media=&query=php&time=0&clusterId=&sort=1&page=2&p=42230305&dp=1">2</a> <a id="sogou_page_3" href="?mode=2&media=&query=php&time=0&clusterId=&sort=1&page=3&p=42230305&dp=1">3</a> <a id="sogou_page_4" href="?mode=2&media=&query=php&time=0&clusterId=&sort=1&page=4&p=42230305&dp=1">4</a> <a id="sogou_page_5" href="?mode=2&media=&query=php&time=0&clusterId=&sort=1&page=5&p=42230305&dp=1">5</a> <a id="sogou_page_6" href="?mode=2&media=&query=php&time=0&clusterId=&sort=1&page=6&p=42230305&dp=1">6</a> <a id="sogou_page_7" href="?mode=2&media=&query=php&time=0&clusterId=&sort=1&page=7&p=42230305&dp=1">7</a> <a id="sogou_page_8" href="?mode=2&media=&query=php&time=0&clusterId=&sort=1&page=8&p=42230305&dp=1">8</a> <a id="sogou_next" href="?mode=2&media=&query=php&time=0&clusterId=&sort=1&page=2&p=42230305&dp=1" class="np">��һҳ</a>
+
+      </div>
+
+
+    <div class="foot">
+    <form name="searchForm1" id="searchForm1"><div class="qborder"><div class="qborder2"><input id="bottom_form_querytext" name="query" type="text" class="query" size="32" onfocus="focusInput(this.parentNode.parentNode)" ov="php" value="php" autocomplete="off"/><a href="javascript:void(0)" class="qreset2"></a></div></div><input type="hidden" name="mode" value="2"/><input type="hidden" name="sort" value="1"/><input type="hidden" name="num" value="10"/><input type="hidden" name="p" value="42230305"/><input type="hidden" name="dp" value="1"/><input type="hidden" name="w" value="01029902"/><input type="hidden" name="tsn" value="0">
+
+            <input id="left_gengduo_state1" type="hidden" name="czgd" value="0">
+
+        <input id="left_gengduo_state1" type="hidden" name="czgd" value="0">
+        <input type="hidden" name="_ast" value="1507512704"><input type="hidden" name="_asf" value="news.sogou.com"><input id="bottom_form_searchBt" type="submit" uigs="searchBtBottom" class="sbtn1" onmouseout="this.className='sbtn1'" onmouseup="this.className='sbtn1'" onmousedown="this.className='btnactive'" value="�ѹ�����"/></form></div>
+
+    <div class="cr" id="footer">
+    <!--[if IE]><a id="sogou_hpfooter" href="#pageEnd" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://news.sogou.com');">��Ϊ��ҳ</a> <![endif]-->
+    <a id="sogou_newshelp" href="http://help.sogou.com/news.html?v=1" target="_blank">��������</a>  <a id="news_feedbackdown" href="http://fankui.help.sogou.com/index.php/web/web/index?type=4&stype=news" target="_blank">���������Ͷ��</a> <a id="news_from_record" href="http://fankui.help.sogou.com/index.php/web/web/index?type=9" target="_blank">����Դ��¼</a> <a target="_blank" href="http://e.weibo.com/sogou" id="sogouweibo">�ٷ�΢��</a> &copy; 2017 SOGOU.COM <a class="g" href="http://www.sogou.com/docs/terms.htm?v=1" target="_blank">��������</a> <a class="g" href="http://corp.sogou.com/private.html " target="_blank">��˽����</a>
+    <form id="fankuiform" method="post" accept-charset="gbk"><input type="hidden" name="cause" value="����" /><input type="hidden" name="query" value="php" /><input type="hidden" name="refer" value="null" /><input type="hidden" name="uuid" value="bc6c0f4e-b407-40e8-b595-270a89c4f885" /><input type="hidden" name="scenehtml" id="scenehtml" /><input type="hidden" name="queryurl" value="" /></form>
+</div>
+
+<script>
+
+//reset related function
+var queryList = ["upquery", "bottom_form_querytext"];
+
+for (var i = 0; i < queryList.length; i++){
+    $s.wait(queryList[i], function(query){
+        var resetBtn = $s.$$(query.parentNode.parentNode, "a")[0];
+        if (!resetBtn) {
+            resetBtn = $s.$$(query.parentNode.parentNode, "img")[0];
+        }
+        if (resetBtn){
+            function showImgHl(){
+                resetBtn.style.display = query.value?"block":"none";
+                setTimeout(showImgHl, 100);
+            }
+            showImgHl();
+            resetBtn.onclick = function(){
+                query.value = "";
+                query.setAttribute("ov", "");
+                query.focus();
+                uigsPB("clearImg"+query.id);
+            }
+        }
+    });
+}
+//������ʾ�Ҳ�
+//$s.wait("right",function(b){var a=$(".no-result");if(a.length == 0){$s.$("right").style.display="";}});
+
+var wendaList = [];
+var smallImageList = [];
+var imageSuccessList = [];
+</script>
+<script>var leftIsHidden = false;
+(function(){
+    function setCookie(value) {
+        document.cookie="columnnum="+value+"; expires=Thu, 21-Jul-2020 00:00:00 GMT; path=/;domain=sogou.com;";
+    }
+    $s.wait("switchcolimg", function(obj) {
+        function closeLeft(isclose){
+            var fold = false;
+            if (isclose || document.body.className.indexOf('hideside') < 0) {
+                $s.cls(document.body, "hideside", 1);
+                fold = true;
+                leftIsHidden = true;
+            } else {
+                $s.cls(document.body, "hideside");
+            }
+            setCookie(fold?"2":"1");
+            if (!isclose){
+                uigsPB('leftColumn_'+(fold?"close":"open"));
+            }
+        }
+
+        if (screen.width <= 800 && document.cookie.indexOf("columnnum") < 0){
+            closeLeft(true);
+        }
+        obj.onclick = function(){closeLeft()};
+    })
+})();
+if (typeof sogou_news_top_words_encoded == "undefined"){
+    var sctop =document.createElement("script");
+    sctop.charset="gb2312";
+    sctop.src="http://top.sogou.com/news_top_index.js?v="+((new Date()).getTime());
+    var head = document.head || document.getElementsByTagName('head')[0];
+    head.appendChild(sctop);
+}
+
+function showMenu(btn, content) {
+    var $btn = $(btn),
+        $content = $(content),
+        timer = null;
+    if(!($btn.length && $content.length)){
+        return;
+    }
+
+    function addShowClass() {
+        //$btn.removeClass('hide-more').addClass('show-more');
+        var iRot = $btn.find(".arrow-down");
+        if(iRot.length > 0){
+            iRot.addClass("arrow-up")
+        }
+    }
+
+    function addHideClass() {
+        //$btn.removeClass('show-more').addClass('hide-more');
+        var iRot = $btn.find(".arrow-down");
+        if(iRot.length > 0){
+            iRot.removeClass("arrow-up")
+        }
+    }
+
+    $btn.on('mouseover', function(event) {
+        clearTimeout(timer);
+        $content.show();
+
+        addShowClass();
+
+        event.stopPropagation();
+    });
+
+    $btn.on('mouseout', function() {
+        timer = setTimeout(function() {
+            $content.hide();
+            addHideClass();
+        }, 50);
+    });
+
+    $content.on('mouseover', function(event){
+        clearTimeout(timer);
+
+        event.stopPropagation();
+    });
+
+    $btn.on('click', function(event) {
+        $content.show();
+        addShowClass();
+        event.stopPropagation();
+    });
+
+    $(document).on('click', hide).on('mouseover', hide);
+
+    function hide() {
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+            $content.hide();
+            addHideClass();
+        }, 50);
+    }
+}
+showMenu('#searchnav-more', '#searchnav-more-list');
+
+(function () {
+    var div, form, d = $s.$d, inited = false, gotopBtn,
+        getstop = function () {
+            return ((d.body && d.body.scrollTop) || (d.documentElement && d.documentElement.scrollTop) || 0);
+        },
+        getsleft = function () {
+            return ((d.body && d.body.scrollLeft) || (d.documentElement && d.documentElement.scrollLeft) || 0);
+        },
+        scrolltop, oldtop = -1, i, childs,
+        showForm = 38;
+
+    function init(f) {
+        inited = true;
+        form = f;
+        div = form.parentNode;
+        setTimeout(onscroll, 50);
+
+        div.onmouseover = function () {
+            if (this.className == "headsearch") {
+                this.style.backgroundColor = '#f5f5f5';
+            }
+        };
+        div.onmouseout = function () {
+            this.style.backgroundColor = '';
+        }
+
+    }
+
+    function onscroll() {
+        if (!inited) {
+            $s.wait("searchForm", init);
+            return;
+        }
+
+        scrolltop = getstop();
+        if (oldtop == scrolltop) {
+            return;
+        }
+        var isMoveUp = false;//�Ƿ����Ϲ���
+        var isShowUpHint = $s.$("float_uphint") && $s.$("stable_uphint");//����ж���hint��Ĭ��Ϊ��ʾ
+        if (isShowUpHint) {
+            isMoveUp = scrolltop < oldtop;//��ǰ�����ĸ߶�С���ϴι����ĸ߶�
+        }
+
+        oldtop = scrolltop;
+        var tmp = -1;
+
+        if (scrolltop >= showForm) {
+            if (div.className.indexOf('headsearch') < 0) {
+                tmp = 1;
+            } else {
+                tmp = isMoveUp ? 2 : 1;//tmp=1:�����ƶ����и���������û�и�����uphint��tmp=2:�����ƶ����и���������Ҳ�и�����uphint
+            }
+        } else {
+            if (div.className.indexOf('headsearch') >= 0) {
+                tmp = 0;//tmp=0:û���и��������򣨵�ȻҲû�и�����uphint��
+            }
+        }
+
+        if (tmp > -1) {
+            childs = div.childNodes;
+            if (tmp > 0) {
+                var winHeight = window.innerHeight || ((document.body) && (document.body.clientHeight));
+                if (winHeight == document.body.offsetHeight && document.documentElement && document.documentElement.offsetHeight) {
+                    winHeight = document.documentElement.offsetHeight;
+                }
+                if (winHeight && document.body.offsetHeight - winHeight < 50) {
+                    return;
+                }
+
+                div.className = "header headsearch";
+                form.className = "hsform";
+                if (isShowUpHint) {
+                    if (tmp == 1) {
+                        $s.$("float_uphint").style.display = "none";
+                        $s.$("stable_uphint").style.display = "none";
+                    } else if (tmp == 2) {
+                        $s.$("float_uphint").style.display = "";
+                        $s.$("stable_uphint").style.display = "none";
+                    }
+                }
+            } else {
+                div.className = "header";
+                form.className = "";
+//              $s.$("main").parentNode.style.paddingTop = "";
+                if (isShowUpHint) {
+                    $s.$("float_uphint").style.display = "none";
+                    $s.$("stable_uphint").style.display = "";
+                }
+            }
+            $s.$("upquery").value = $s.$("upquery").value;
+            if ($s.$("vl")) {
+                $s.$("vl").style.display = "none";
+            }
+
+        }
+    }
+
+    $s.$b(window, ["scroll", "resize"], [onscroll, function () {
+        setTimeout(onscroll, 50)
+    }]);
+    setTimeout(onscroll, 50);
+
+})();
+
+uigs_para={"uigs_productid":"news","uigs_pbtag":"A",query:'php',page:1,sort:1,mode:2,'abtest':'b','leftIsHidden':leftIsHidden,'inttab':'0','intcat':'news','rn':'5179', 'hint':'1','hasTrendsResult':typeof hasTrendsResult != "undefined"?"true":"false", "zhuanti_title":typeof zhuanti_title != "undefined"?zhuanti_title:"","imgrecom":window.imgrecom?"true":"false"};
+SugPara = {"domain":"w.sugg.sogou.com",sugType:"news",productId:"news", inputid:"upquery", suggestRid:"01025001", normalRid:"01029901",  useParent:1, oms:1,"frpage":"result"};
+</script>
+<script>
+    $( window ).on( "orientationchange", function() {
+        var sugg = document.getElementsByClassName("suggestion");
+        if (sugg.length > 0) {
+            sugg[0].style.width = document.getElementsByClassName("qborder")[0].scrollWidth;
+        }
+    });
+</script>
+<script type='text/javascript' src='/js/pb_v.1.8.js'></script>
+<script type="text/javascript" src="/js/sugg_pcresult.min.v.0.1.js"></script>
+
+</div>
+
+    </body>
+
+</html>
+
+<!--STATUS total 10 time 111 page 3 maxEnd 71 totalItems 5179-->
+<!--real_pageno:1-->
+<!--zly-->
+
+
+
+
+
+"

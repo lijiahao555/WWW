@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+    <ul>
+      <li>
+        <h1>demo1</h1>
+        <div class="div" style="display: none">
+          <dl>
+            <dd><a href="">demo11</a></dd>
+            <dd><a href="">demo11</a></dd>
+            <dd><a href="">demo11</a></dd>
+          </dl>
+        </div>
+      </li>
+      <li>
+        <h1>demo2</h1>
+        <div class="div" style="display: none">
+          <dl>
+            <dd><a href="">demo11</a></dd>
+            <dd><a href="">demo11</a></dd>
+            <dd><a href="">demo11</a></dd>
+          </dl>
+        </div>
+      </li>
+      <li>
+        <h1>demo3</h1>
+        <div class="div" style="display: none">
+          <dl>
+            <dd><a href="">demo11</a></dd>
+            <dd><a href="">demo11</a></dd>
+            <dd><a href="">demo11</a></dd>
+          </dl>
+        </div>
+      </li>
+    </ul>
+</body>
+</html>
+<script src="../public/jquery.js"></script>
+<script>
+  $(document).ready(function(){
+    $('ul li').hover(
+      function () {
+        $(this).find('div').show();
+      },
+      function () {
+        $(this).find('div').hide();
+      }
+    );
+  });
+</script>

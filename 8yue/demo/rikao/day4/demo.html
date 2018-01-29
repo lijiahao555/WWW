@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		td{width: 100px;}
+		tr{height: 100px;}
+	</style>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
+<script src="../public/jquery.js"></script>
+<script>
+   	arr = [1,2,3,4,5,6,7,8,9];
+	arr.sort(function() {
+	     return (0.5-Math.random());
+	})
+	$.each(arr, function(index, val) {
+		 $('td').eq(index).html(val);
+	});
+
+	j=0
+	$(document).on('click', 'td', function() {
+		num = $(this).text();
+		if (num == 1) {
+			j=0
+		}
+		j++
+
+
+		if (num == j) {
+		 	var r=Math.floor(Math.random()*256);
+		   	var g=Math.floor(Math.random()*256);
+		   	var b=Math.floor(Math.random()*256);
+			$(this).attr('bgcolor','#'+r+g+b);
+			if (num == 1 ) {
+				time1 = new Date().getTime()
+				mydate = new Date();
+				f1 = mydate.getSeconds();
+				hm1 = mydate.getMilliseconds();
+			}else if (num ==9 ) {
+				mydate2 = new Date();
+				f2 = mydate2.getSeconds();
+				hm2 = mydate2.getMilliseconds();
+				f3 = parseInt(f2)-parseInt(f1);
+				hm3 = parseInt(hm2)-parseInt(hm1);
+				alert("用时"+f3+'秒'+Math.ceil(hm3))
+			}
+		 }else{
+		 	$('td').attr('bgcolor', '#ffffff');
+			alert('连击失败')
+		 }
+	});
+
+</script>
+
+

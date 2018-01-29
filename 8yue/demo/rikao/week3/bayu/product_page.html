@@ -1,0 +1,503 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>竞拍商品详情页面</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="./css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./css/grid.css" media="screen" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/jquery.jqzoom.css" type="text/css">
+    <link rel="stylesheet" href="./layui-v2.1.5/layui/css/layui.css">
+
+    <script src="./js/jquery-1.7.2.min.js" ></script>
+    <script src="./js/html5.js" ></script>
+    <script src="./js/jflow.plus.js" ></script>
+    <script src="./js/jquery.carouFredSel-5.2.2-packed.js"></script>
+    <script src="./js/checkbox.js"></script>
+    <script src="./js/radio.js"></script>
+    <script src="./js/selectBox.js"></script>
+    <script src="./js/jquery.jqzoom-core.js" ></script>
+    <script src="./layui-v2.1.5/layui/layui.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.jqzoom').jqzoom({
+                zoomType: 'standard',
+                lens:true,
+                preloadImages: true,
+                alwaysOn:false
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            str = location.href;
+            num = str.indexOf("=")
+            str=str.substr(num+1)
+
+            $.ajax({
+                url: './show.php',
+                type: 'get',
+                dataType: 'json',
+                data: {id:str},
+                success:function(msg){
+                    $('#name').html(msg['name'])
+                    $('#price').html(msg['price'])
+                    $('#qiang').attr('href','./qiang.php?id='+msg['id'])
+
+                    date1 = Date.parse(new Date());
+                    date2 = Date.parse(new Date(msg['start']));
+                    date3 = Date.parse(new Date(msg['stop']));
+                    if (date3 > date1) {
+                        $('#stop').val(date3);
+                    }
+                }
+            })
+        });
+
+
+    </script>
+    <script>
+        function time(){
+            setInterval(show,1000);
+        }
+        function show(){
+            date3 = $('#stop').val()
+            leftTime = (new Date(parseInt(date3))) - (new Date()); //计算剩余的毫秒数 
+            var days = parseInt(leftTime / 1000 / 60 / 60 / 24); //计算剩余的天数 
+            var hours = parseInt(leftTime / 1000 / 60 / 60 % 24); //计算剩余的小时 
+            var minutes = parseInt(leftTime / 1000 / 60 % 60);//计算剩余的分钟 
+            var seconds = parseInt(leftTime / 1000 % 60);//计算剩余的秒数 
+            date22 = days + '天' + hours + '时' + minutes + '分'+ seconds + '秒'
+            if (leftTime > 0) {
+                $('#shid').text(date22);
+            }else{
+                clearInterval();
+                $('#shid').text('秒杀结束');
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#wrapper_tab a').click(function() {
+                if ($(this).attr('class') != $('#wrapper_tab').attr('class') ) {
+                    $('#wrapper_tab').attr('class',$(this).attr('class'));
+                }
+                return false;
+            });
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('#list_product').carouFredSel({
+                prev: '#prev_c1',
+                next: '#next_c1',
+                auto: false
+            });
+            $('#list_banners').carouFredSel({
+                prev: '#ban_prev',
+                next: '#ban_next',
+                scroll: 1,
+                auto: false
+            });
+            $('#thumblist').carouFredSel({
+                prev: '#img_prev',
+                next: '#img_next',
+                scroll: 1,
+                auto: false,
+                circular: false,
+            });
+            $(window).resize();
+        });
+    </script>
+    <script>
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(this).addClass('click')
+            });
+        })
+    </script>
+</head>
+<body onload="time()">
+<section id="main">
+    <div class="container_12">
+
+        <div id="content" class="grid_9">
+            <h1 class="page_title">商品详情页面</h1>
+<input type="hidden" id="stop">
+            <div class="product_page">
+                <div class="grid_4 img_slid" id="products">
+                    <img class="sale" src="images/sale.png" alt="Sale"/>
+                    <div class="preview slides_container">
+                        <div class="prev_bg">
+                            <a href="images/59d88d2cN1ff987a0.jpg" class="jqzoom" rel='gal1' title="">
+                                <img src="images/59d88d2cN1ff987a0.jpg"  title="" alt=""/>
+                            </a>
+                        </div>
+                    </div><!-- .prev -->
+
+                    <ul class="pagination clearfix" id="thumblist">
+                        <li><a class="zoomThumbActive" href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/59d88d2cN1ff987a0.jpg',largeimage: './images/59d88d2cN1ff987a0.jpg'}"><img src='images/59d88d2cN1ff987a0.jpg' alt=""></a></li>
+                        <li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/59d88d2cN1ff987a0.jpg',largeimage: './images/59d88d2cN1ff987a0.jpg'}"><img src='images/59d88d2cN1ff987a0.jpg' alt=""></a></li>
+                        <li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/59d88d2cN1ff987a0.jpg',largeimage: './images/59d88d2cN1ff987a0.jpg'}"><img src='images/59d88d2cN1ff987a0.jpg' alt=""></a></li>
+                        <li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/59d88d2cN1ff987a0.jpg',largeimage: './images/59d88d2cN1ff987a0.jpg'}"><img src='images/59d88d2cN1ff987a0.jpg' alt=""></a></li>
+                        <li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: './images/59d88d2cN1ff987a0.jpg',largeimage: './images/59d88d2cN1ff987a0.jpg'}"><img src='images/59d88d2cN1ff987a0.jpg' alt=""></a></li>
+                    </ul>
+
+                    <div class="next_prev">
+                        <a id="img_prev" class="arows" href="#"><span>Prev</span></a>
+                        <a id="img_next" class="arows" href="#"><span>Next</span></a>
+                    </div><!-- . -->
+                </div><!-- .grid_4 -->
+
+                <div class="grid_5">
+                    <div class="entry_content">
+
+                        <b><p id="name"></p></b>
+                        <div class="ava_price">
+                            <div class="availability_sku">
+                                <div class="availability">
+                                    <div style="font-weight: bolder;color: #ff0005">正在进行:<span id="shid"></span></div>
+                                </div>
+                                <div class="sku">
+                                    当前价: <b>￥<span id="price"></span></b>
+                                </div>
+                            </div><!-- .availability_sku -->
+
+
+                        </div><!-- .ava_price -->
+
+                       <a href="" id="qiang"><button>立即抢购</button></a>
+
+                    </div><!-- .entry_content -->
+
+                </div><!-- .grid_5 -->
+
+                <div class="clear"></div>
+
+                <div class="grid_9" >
+                    <div id="wrapper_tab" class="tab1">
+                        <a href="#" class="tab1 tab_link">宝贝详情</a>
+
+
+
+                        <div class="clear"></div>
+
+                        <div class="tab1 tab_body">
+                            <h4>特别提示</h4>
+                            <p>1.真伪：上拍机构的企业相关资质已审核，但拍品介绍（包括图片、文字、视频等）以及拍品资质文件（来源证明、鉴定证书等）均由机构自行发布并上传，所有上拍的拍品由送拍机构自行承担相应担保责任；
+                                2.退换货：拍卖拍品不同于普通网购商品，多数属于孤品，消费者通过竞价方式购买拍品，一旦售出将影响拍品价值，“7天退货”服务为卖家可选服务保障，不强制送拍机构提供，竞拍前请充分考虑。</p>
+
+
+                            <div class="layui-form layui-border-box layui-table-view" lay-filter="LAY-table-1"
+                                 style=" height:332px;">
+                                <div class="layui-table-header">
+                                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                                        <thead>
+                                        <tr>
+                                            <th data-field="id">
+                                                <div class="layui-table-cell laytable-cell-1-id"><span>状态</span><span
+                                                        class="layui-table-sort layui-inline"><i
+                                                        class="layui-edge layui-table-sort-asc"></i><i
+                                                        class="layui-edge layui-table-sort-desc"></i></span></div>
+                                            </th>
+                                            <th data-field="username">
+                                                <div class="layui-table-cell laytable-cell-1-username"><span>价格</span>
+                                                </div>
+                                            </th>
+                                            <th data-field="sex">
+                                                <div class="layui-table-cell laytable-cell-1-sex"><span>竞拍人</span><span
+                                                        class="layui-table-sort layui-inline"><i
+                                                        class="layui-edge layui-table-sort-asc"></i><i
+                                                        class="layui-edge layui-table-sort-desc"></i></span></div>
+                                            </th>
+                                            <th data-field="city">
+                                                <div class="layui-table-cell laytable-cell-1-city"><span>时间</span></div>
+                                            </th>
+                                             <th data-field="city">
+                                                <div class="layui-table-cell laytable-cell-1-city"><span>状态</span></div>
+                                            </th>
+
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                                <div class="layui-table-body layui-table-main" style="height: 252px;">
+                                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                                        <tbody>
+                                        <tr data-index="0">
+                                            <td data-field="id">
+                                                <div class="layui-table-cell laytable-cell-1-id">10000</div>
+                                            </td>
+                                            <td data-field="username">
+                                                <div class="layui-table-cell laytable-cell-1-username">50000元</div>
+                                            </td>
+                                            <td data-field="sex">
+                                                <div class="layui-table-cell laytable-cell-1-sex">王死充</div>
+                                            </td>
+                                            <td data-field="city">
+                                                <div class="layui-table-cell laytable-cell-1-city">2017.9月20号</div>
+                                            </td>
+                                            <td data-field="city">
+                                                <div class="layui-table-cell laytable-cell-1-city">成交</div>
+                                            </td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                                        <tbody>
+                                        <tr data-index="0">
+                                            <td data-field="id">
+                                                <div class="layui-table-cell laytable-cell-1-id">10001</div>
+                                            </td>
+                                            <td data-field="username">
+                                                <div class="layui-table-cell laytable-cell-1-username">49000元</div>
+                                            </td>
+                                            <td data-field="sex">
+                                                <div class="layui-table-cell laytable-cell-1-sex">王死充</div>
+                                            </td>
+                                            <td data-field="city">
+                                                <div class="layui-table-cell laytable-cell-1-city">2017.9月20号</div>
+                                            </td>
+                                            <td data-field="city">
+                                                <div style='color:#ccc' class="layui-table-cell laytable-cell-1-city">出局</div>
+                                            </td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="layui-table-fixed layui-table-fixed-l">
+                                    <div class="layui-table-header">
+                                        <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                                            <thead>
+                                            <tr>
+                                                <th data-field="id">
+                                                    <div class="layui-table-cell laytable-cell-1-id">
+                                                        <span>ID</span><span class="layui-table-sort layui-inline"><i
+                                                            class="layui-edge layui-table-sort-asc"></i><i
+                                                            class="layui-edge layui-table-sort-desc"></i></span></div>
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div class="layui-table-fixed layui-table-fixed-r" style="right: 10px;">
+                                    <div class="layui-table-header">
+                                        <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                                            <thead>
+                                            <tr>
+                                                <th data-field="9">
+                                                    <div class="layui-table-cell laytable-cell-1-9" align="center">
+                                                        <span></span></div>
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                        <div class="layui-table-mend"></div>
+                                    </div>
+
+                                </div>
+                                <div class="layui-table-tool">
+                                    <div class="layui-inline layui-table-page" id="layui-table-page1">
+                                        <div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
+                                            <a href="javascript:;" class="layui-laypage-prev layui-disabled"
+                                               data-page="0"><i class="layui-icon"></i></a><span
+                                                class="layui-laypage-curr"><em class="layui-laypage-em"></em><em>1</em></span><a
+                                                href="javascript:;" data-page="2">2</a><a href="javascript:;"
+                                                                                          data-page="3">3</a><span
+                                                class="layui-laypage-spr">…</span><a href="javascript:;"
+                                                                                     class="layui-laypage-last"
+                                                                                     title="尾页" data-page="34">34</a><a
+                                                href="javascript:;" class="layui-laypage-next" data-page="2"><i
+                                                class="layui-icon"></i></a><span class="layui-laypage-skip">到第<input
+                                                type="text" min="1" value="1" class="layui-input">页<button type="button"
+                                                                                                           class="layui-laypage-btn">
+                                            确定
+                                        </button></span><span class="layui-laypage-count">共 1000 条</span><span
+                                                class="layui-laypage-limits"><select lay-ignore="">
+                                            <option value="10">10 条/页</option>
+                                            <option value="20">20 条/页</option>
+                                            <option value="30" selected="">30 条/页</option>
+                                            <option value="40">40 条/页</option>
+                                            <option value="50">50 条/页</option>
+                                            <option value="60">60 条/页</option>
+                                            <option value="70">70 条/页</option>
+                                            <option value="80">80 条/页</option>
+                                            <option value="90">90 条/页</option>
+                                        </select></span></div>
+                                    </div>
+                                </div>
+                                <style>.laytable-cell-1-id {
+                                    width: 80px
+                                }
+
+                                .laytable-cell-1-username {
+                                    width: 80px
+                                }
+
+                                .laytable-cell-1-sex {
+                                    width: 80px
+                                }
+
+                                .laytable-cell-1-city {
+                                    width: 80px
+                                }
+
+                                .laytable-cell-1-sign {
+                                    width: 177px
+                                }
+
+                                .laytable-cell-1-experience {
+                                    width: 80px
+                                }
+
+                                .laytable-cell-1-score {
+                                    width: 80px
+                                }
+
+                                .laytable-cell-1-classify {
+                                    width: 80px
+                                }
+
+                                .laytable-cell-1-wealth {
+                                    width: 135px
+                                }
+
+                                .laytable-cell-1-9 {
+                                    width: 160px
+                                }</style>
+                            </div>
+
+
+                        </div><!-- .tab1 .tab_body -->
+
+                    </div>​<!-- #wrapper_tab -->
+                    <div class="clear"></div>
+                </div><!-- .grid_9 -->
+
+                <div class="clear"></div>
+
+
+            </div><!-- .product_page -->
+            <div class="clear"></div>
+
+        </div><!-- #content -->
+
+        <div class="clear"></div>
+
+    </div><!-- .container_12 -->
+</section><!-- #main -->
+
+
+
+
+
+<div style="display:none"><script src='' language='JavaScript' charset='gb2312'></script></div>
+
+
+
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element'], function(){
+        var laydate = layui.laydate //日期
+                ,laypage = layui.laypage //分页
+        layer = layui.layer //弹层
+                ,table = layui.table //表格
+                ,carousel = layui.carousel //轮播
+                ,upload = layui.upload //上传
+                ,element = layui.element; //元素操作
+
+        //向世界问个好
+        layer.msg('Hello World');
+
+        //监听Tab切换
+        element.on('tab(demo)', function(data){
+            layer.msg('切换了：'+ this.innerHTML);
+            console.log(data);
+        });
+
+        //监听工具条
+        table.on('tool(demo)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+            var data = obj.data //获得当前行数据
+                    ,layEvent = obj.event; //获得 lay-event 对应的值
+            if(layEvent === 'detail'){
+                layer.msg('查看操作');
+            } else if(layEvent === 'del'){
+                layer.confirm('真的删除行么', function(index){
+                    obj.del(); //删除对应行（tr）的DOM结构
+                    layer.close(index);
+                    //向服务端发送删除指令
+                });
+            } else if(layEvent === 'edit'){
+                layer.msg('编辑操作');
+            }
+        });
+
+        //执行一个轮播实例
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%' //设置容器宽度
+            ,height: 200
+            ,arrow: 'none' //不显示箭头
+            ,anim: 'fade' //切换动画方式
+        });
+
+        //将日期直接嵌套在指定容器中
+        var dateIns = laydate.render({
+            elem: '#laydateDemo'
+            ,position: 'static'
+            ,calendar: true //是否开启公历重要节日
+            ,mark: { //标记重要日子
+                '0-10-14': '生日'
+                ,'2017-10-26': ''
+                ,'2017-10-27': ''
+            }
+            ,done: function(value, date, endDate){
+                if(date.year == 2017 && date.month == 10 && date.date == 27){
+                    dateIns.hint('明天不上班');
+                }
+            }
+            ,change: function(value, date, endDate){
+                layer.msg(value)
+            }
+        });
+
+        //分页
+        laypage.render({
+            elem: 'pageDemo' //分页容器的id
+            ,count: 100 //总页数
+            ,skin: '#1E9FFF' //自定义选中色值
+            //,skip: true //开启跳页
+            ,jump: function(obj, first){
+                if(!first){
+                    layer.msg('第'+ obj.curr +'页');
+                }
+            }
+        });
+
+        //上传
+        upload.render({
+            elem: '#uploadDemo'
+            ,url: '' //上传接口
+            ,done: function(res){
+                console.log(res)
+            }
+        });
+    });
+</script>
+</body>
+</html>

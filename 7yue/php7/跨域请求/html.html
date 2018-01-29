@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <input type="" id="shen">
+    <input type="button" name="" value="时间">
+    <span></span>
+</body>
+</html>
+<script src="./jq.js"></script>
+<script src="./jquery.md5.js"></script>
+<script >
+$('input[type=button]').click(function() {
+    var shen = $('#shen').val();
+    // alert(shen);
+    var an = 'xxoo';
+    var timestamp = parseInt(Date.parse(new Date()))/1000;
+    var mimi = $.md5(an+timestamp);
+    // alert(mimi);
+    $.ajax({
+       type: "GET",
+       url: "http://www.xml.com/aa.php",
+       data:{shen:shen,mimi:mimi,time:timestamp},
+       dataType:"jsonp",
+       jsonp:'jsoncallback',
+       success: function(msg){
+
+         alert( msg );
+    }
+})
+})
+
+</script>

@@ -1,0 +1,42 @@
+<form action="<?=URL?>/Welcome/get_back" method="post" name="frmlogin">
+ <table width="250" align="center" class="grid">
+   <caption>找回密码</caption>
+    <tbody><tr align="center">
+      <td class="odd"><table width="100%" cellspacing="0" cellpadding="5" border="0" class="hide">
+        <tbody><tr>
+          <td width="37%" valign="middle" align="right">用户名：</td>
+          <td width="63%"><input id="name" type="text" name="username" style="width:120px" maxlength="30" size="20" class="text"></td>
+        </tr>
+        <tr>
+          <td valign="middle" align="right">新密&#12288;码：</td>
+          <td><input type="password" name="password1" style="width:120px" maxlength="30" size="20" class="text"></td>
+        </tr>
+        <tr>
+          <td valign="middle" align="right">重复&#12288;密码：</td>
+          <td><input type="password" name="password2" style="width:120px" maxlength="30" size="20" class="text"></td>
+        </tr>
+		    <tr>
+          <td valign="text" align="right">邮箱验证码：</td>
+          <td><input type="text" name="you" style="width:120px" maxlength="30" size="20" class="text"></td>
+        </tr>
+        <tr>
+		  <td><!-- <input type="hidden" value="login" name="action"> --></td>
+          <td><input type="button" value="发送验证码">&nbsp;&nbsp;<input type="submit"  value="&nbsp;提&nbsp;&nbsp;交&nbsp;" class="button"></td>
+          </tr>
+      </tbody></table></td>
+    </tr>
+	<tr align="center"> 
+      <td class="foo"> <a href="http://www.sangwu.org/register.php">新用户注册</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sangwu.org/getpass.php">取回密码</a> 
+      </td>
+    </tr>
+  </tbody></table>
+</form><br><br> 
+<script src="../../public/jq.js"></script>
+<script >
+  $(document).on('click', 'input[value=发送验证码]', function(event) {
+    var name = $('#name').val();
+    $.get('<?=URL?>/Welcome/get_back' ,{name:name}, function(data) {
+        console.log(data);
+    });
+  });
+</script>

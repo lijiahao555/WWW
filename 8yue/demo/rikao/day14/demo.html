@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>发表评论：</td>
+			<td><textarea id="lun" cols="30" rows="10" style="height: 50px;"></textarea></td>
+			<td><input type="button" id="bnt" value="发表"></td>
+		</tr>
+	</table>
+	<div id="div">
+
+	</div>
+</body>
+</html>
+<script src="../public/jquery.js"></script>
+<script>
+	$(document).on('click', '#bnt', function() {
+		var lun = $('#lun').val();
+		var _div = '';
+		$.ajax({
+			url: 'demo.php',
+			type: 'get',
+			dataType: 'json',
+			data: {lun:lun},
+			success:function(msg){
+				for(k in msg){
+					_div += '<hr>'+
+							'<tr>'+
+								'<td>匿名用户:</td>'+
+								'<td>'+msg[k]+'</td>'+
+							'</tr>';
+				}
+				$('div').append(_div);
+			}
+		})
+	});
+</script>

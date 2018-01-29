@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	tr{height: 30px;}
+	td{width: 30px;}
+</style>
+<body>
+	<table border="1">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
+<script src="../public/jquery.js"></script>
+<script>
+	$(document).on('click', 'tr td', function() {
+		if($(this).index()==9||$(this).parent().index()==9)
+	    {
+	        alert('此处不能点击');
+	        return;
+	    }
+
+		var obj = $(this).children();
+
+		if (obj[0]) return
+
+    	var qian = $(this).text();
+
+    	$(this).html("<input type=\"text\" id='li' size='5' value= '"+qian+"' />");
+    	$('input').focus();
+	});
+
+	$(document).on('blur', 'tr td', function() {
+		var val =$(this).find('input').val();
+        $(this).find('input').remove();
+        $(this).text(val);
+        var ou = 0;
+        var ji = 0;
+		for (var i = 0; i < 9; i++) {
+			if (!isNaN(parseInt($(this).parent().children().eq(i).text()))) {
+				if (parseInt($(this).parent().children().eq(i).text())%2==0) {
+					ou = ou+parseInt($(this).parent().children().eq(i).text());
+				}else{
+					ji = ji+parseInt($(this).parent().children().eq(i).text());
+				}
+				s = ou-ji
+			}
+		}
+
+
+		ou2 = 0;
+		ji2 = 0;
+		var   wei=$(this).index();
+		for (var i = 0; i < 9; i++) {
+			if(!isNaN( parseInt($('tr').eq(i).children().eq(wei).text()))){
+              if( parseInt($('tr').eq(i).children().eq(wei).text())%2==0){
+                   ou2=ou2+parseInt($('tr').eq(i).children().eq(wei).text());
+              }
+              else{
+                  ji2=ji2+parseInt($('tr').eq(i).children().eq(wei).text());
+
+              }
+              var s2=ou2-ji2;
+           }
+		}
+
+		$(this).parent().children().eq(9).text(s);
+		$('tr').eq(9).children().eq(wei).text(s2);
+	});
+</script>

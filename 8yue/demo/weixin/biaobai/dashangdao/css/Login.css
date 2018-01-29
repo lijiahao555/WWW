@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+
+   @media only screen and (max-width: 1080px), only screen and (max-device-width:1080px) {
+     html,body {
+         font-size:108px;
+     }
+   }
+     @media only screen and (max-width: 960px), only screen and (max-device-width:960px) {
+     html,body {
+         font-size:96px;
+     }
+   }
+     @media only screen and (max-width: 800px), only screen and (max-device-width:800px) {
+     html,body {
+         font-size:80px;
+     }
+   }
+     @media only screen and (max-width: 720px), only screen and (max-device-width:720px) {
+     html,body {
+         font-size:72px;
+     }
+   }
+     @media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+     html,body {
+         font-size:64px;
+     }
+   }
+     @media only screen and (max-width: 600px), only screen and (max-device-width:600px) {
+     html,body {
+         font-size:60px;
+     }
+   }
+     @media only screen and (max-width: 540px), only screen and (max-device-width:540px) {
+     html,body {
+         font-size:54px;
+     }
+   }
+     @media only screen and (max-width: 480px), only screen and (max-device-width:480px) {
+     html,body {
+         font-size:48px;
+     }
+   }
+     @media only screen and (max-width: 414px), only screen and (max-device-width:414px) {
+     html,body {
+         font-size:41.4px;
+     }
+   }
+     @media only screen and (max-width: 400px), only screen and (max-device-width:400px) {
+     html,body {
+         font-size:40px;
+     }
+   }
+     @media only screen and (max-width: 375px), only screen and (max-device-width:375px) {
+     html,body {
+         font-size:37.5px;
+     }
+   }
+     @media only screen and (max-width: 360px), only screen and (max-device-width:360px) {
+     html,body {
+         font-size:36px;
+     }
+   }
+     @media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+     html,body {
+         font-size:32px;
+     }
+   }
+     @media only screen and (max-width: 240px), only screen and (max-device-width:240px) {
+     html,body {
+         font-size:24px;
+     }
+   }
+
+
+ html,body{ margin: 0 auto;
+            height: 100vh;
+            background-color: #f5f5f9;
+         }
+		ul,li{ margin:0; padding:0; list-style:none;}
+input{ border:none; list-style:none;}	
+ 
+   .item-section_header{width:100%;;text-align:center;}
+   .item-section_header img{width:100%;;}
+   
+ul{ width: 100%;}
+li{width:100%;}
+a{ outline:none;color: black; text-decoration: none;}
+a:link {
+text-decoration: none;
+color: #F60;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+a:active {
+text-decoration: none;
+font-size: 14px;
+font-weight: bold;
+}
+.bb{ margin-top:0.4rem; margin-bottom:1rem; position: relative;}
+.bbimg{ position: absolute;top:0.64rem; right:4.6875%; width: 0.25rem; height: 0.46875rem; }
+ 
+.nav{ width:100%;text-align: center; border-bottom:  solid 1px #e1e1e1; }
+.nav_h1{  text-align: center !important; line-height:1.066667rem; font-size: 0.48rem}
+.flag{ width: 100%;   }
+.logoform{ margin:  0 auto;width:7.6rem;  height: 2.666667rem;}
+.inputbox{ width: 100%; height: 1.0rem;  font-size: 0.4rem; background-color:#f5f5f5;  display: block; border-radius: 0.173333rem;padding-left:0.333333rem; line-height: 1rem;}
+.inputbox_input{ background-color:#f5f5f5 !important;  }
+.logobox{ width:7.6rem ; height:1.066667rem ; background-color:#f42424 ;margin-top: 1.066667rem; border-radius: 0.173333rem;text-align: center; line-height: 100%; 
+  color: #fff; font-size: 0.453333rem}
+  .img_pay{ margin-top: 1.8rem; margin-bottom:1.013333rem;   }
+.back_pbox{ width: 100%; }
+.back_pbox p{  margin: 0 auto;  width: 6.853333rem; font-size:0.346667rem; text-align: center; line-height: 0.7rem; }
+.back_pbox p span{ color:#f42424;  }
+
+.back_home {border-radius:10px;  margin: 0 auto; width: 2.773333rem; height: 1.066667rem;  background-color:#f42424;color: #fff; font-size: 0.4rem; text-align: center; line-height: 1.066667rem; margin-top: 1.56rem;}
+.detilbox{  width: 100%; border-bottom:  solid 1px #e1e1e1; font-size: 0.4rem; margin-top: 0.186667rem;}
+.li_color{  color: #f42424; }
+.detilbox li{ width:92%;  overflow: hidden; margin-left:4%; padding-right: 4%; line-height: 0.986667rem; border-bottom:  solid 1px #e1e1e1; }
+.detilbox li p1{ text-align: left;  float: left;}
+.detilbox li p2{ text-align: left; float: left;}
+.detilbox li p3{ text-align: right; float: right;}
+
+
+
+.bg_one{ background-color: #fff; }
+.foot_b{ width:92%; padding-left:4%;  padding-right:4%;  overflow: hidden; position: fixed; bottom: 0; height: 1.573333rem; font-size: 0.453333rem; }
+.foot_b p1{ float: left;line-height:1.573333rem;   text-align: center; }
+.foot_b p2{ float: right;color: #fff; text-align: center;border-radius:10px;background-color: #f42424;line-height:1.573333rem; line-height:1.066667rem; margin-top: 0.266667rem;   width: 2.773333rem;} 
+.bg_two{ background-color: #f44d4d; }
+.nav_home_top{line-height: 1.2rem; color: #fff; font-size: 0.48rem}
+.nav_home_detil{ width: 100%; height:3.226667rem; border-top: solid 1px #fff; }
+.nav_home_detil h1{ position: relative;  color: #fff; text-align: center; width: 50% ; float: left; margin-top: 1rem; font-size: 0.533333rem; }
+.nav_home_detil h1 span{font-size:0.32rem;}
+.nav_home_detil_box{ width:92%;overflow: hidden;  margin: 0 auto; }
+
+.nav_home_sty{  width:1px; height: 3.226667rem; position: absolute; top: 0; right: 0; background-color: #fff;  }
+.detilbox_home{ width: 100% ;margin: 0.24rem 0;}
+
+.detilbox_home li{width:92% ;  font-size: 0.4rem;  overflow: hidden; padding-left:4%; padding-right: 4%; line-height: 0.986667rem; }
+.detil_one li:first-child{ border-bottom:  solid 1px #e1e1e1;}
+.detilbox_b{ width:96%; border-bottom:  solid 1px #e1e1e1; margin-left:4%; }
+
+.home_p1{ line-height: 1.253333rem; margin-left:0.373333rem; float: left; }
+.home_p2{ line-height: 1.253333rem; margin-left:0.373333rem; float: right; color: #f42424}
+.span_icon_l{ float: left; margin-top:0.346667rem; margin-left: 5px; width: 0.48rem;}
+.span_icon_r{ width: 0.24rem;float:right; margin-top:0.346667rem;margin-right: 0px;  }
+
+.checkbox_nu{ width: 92%; margin-left: 4%; padding-right: 4%;  }
+.checkbox_nu label,.label_box{ width: 100%; height: 1.2rem; line-height:  1.2rem;  }
+.checkbox_nu_l{ float: left; font-size: 0.4rem; }
+.checkbox_nu_r{ float: right; font-size: 0.4rem;  }
+.check_box{width:0.293333rem;height: 0.293333rem;}
+.sendbox{ margin-top:0.4rem;background-color:  #f44d4d;color: #fff; width: 2.773333rem;height:0.853333rem;
+  text-align: center;line-height:0.853333rem ; border-radius: 3px;}
+.label_box label{border: none;}
+.allcheck_box{font-weight: bold; font-size: 0.4rem}
+checkbox-wrap{
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    top: 0%;
+    height: 40%;
+    background-color: white;
+}
+input[type="checkbox"]{
+    /* width: 40px; */
+    /* height: 40px; */
+    /* -webkit-border-radius: 50%; */
+    display: none;
+}
+input[type="checkbox"]+label {
+    display: inline-block;
+
+    margin-left: 5px;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+}
+
+label::before {
+    content: "";
+    margin-top: -10px;
+    display: inline-block;
+    width: 0.293333rem;
+    height: 0.293333rem;
+    background: #fff;
+    border: 2px #666 solid;
+    vertical-align: middle;
+    
+    margin-right: 5px;
+    -webkit-box-sizing:border-box;
+  -webkit-transition:background ease-in .1s
+}
+
+input[type="checkbox"]:checked+label::before{
+      background-color:#f42424;
+    border: 2px #666 solid;
+}
+.serchbox{ position: absolute;right: 20px; top: 0;  font-size: 0.4rem; line-height: 1rem;}
+.posi{ position: relative; }
+.datebox{ width: 100%;overflow: hidden; background-color:#fff; }
+.datebox li{ float: left;width: 33.3%; }
+.shubox{position: absolute;top:25%; right: 0; width: 1px; height:60%; background-color: #b5b5b5; }
+
+.nav_h2{width: 100%; line-height:0.666667rem;text-align: center; color: #b5b5b5}
+.h1_date{width: 100%;line-height:0.8rem;margin-top:0.133333rem; font-size: 0.4rem}
+
+.tablebox{ width: 100%; background-color: #fff; }
+.tablebox_one,.tablebox_two{width: 92%;margin:0 auto; overflow: hidden;}
+.tablebox_one h1{width:25%;float: left;text-align: center;line-height: 1.093333rem; color: #f42424; font-size: 0.4rem}
+
+.backbutt{position: absolute;left: 0.4rem;top: 0.277rem;}
+.tablebox_two p{  width:25%;float: left;text-align: center;line-height: 1.093333rem; font-size:0.32rem;}
+.tablebox_div{  width:100%; height: 1px; background-color: #c1c1c1; }
+.detilbox_home_one_box_box{ position: relative; }
+.detilbox_home_slid{   position: absolute;top:1.253333rem; left: 0; width: 100%;display:none; background-color: #fff; }
+.detilbox_home_slid_box{ position: relative; }
+#span_icon_rid_n{ display:block; position: absolute; top: 0;right:4%;}
+#span_icon_rid_h{ display:none; z-index: 999; position: absolute; top: 0;right:4%; }
+
+.nav_serch{ position: relative; margin:24px 10px;;height:0.8rem; line-height: 0.8rem;  border-bottom: none;}
+.nav_serch p1,.nav_serch p2{ float: left;height: 0.84rem; line-height:  0.84rem; background-color: #eeeeee; margin: 0 10px;text-align: left; padding-left: 10px; }
+.nav_serch p2{float:left; background-color: #fff; margin:0 ; height: 0.802rem}
+.nav_serch input{color: #f42424;background-color: #eeeeee;height:0.8rem; line-height: 0.8rem; background-color: #eeeeee;text-align: left;}
+
+.nav_serch p1{background-color: #eeeeee;border-radius: 6px; width:8.2rem;}
+

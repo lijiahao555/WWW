@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		tr{width: 300px;}
+
+	</style>
+</head>
+<body>
+	新增一级菜单：<input type="text" id="bnt"><button id="add">新增</button>
+	<br>
+	<br>
+	<font color="red"><span>一级地区</span></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="back">返回上一级</button>
+	<br>
+	<br>
+	<table border="1" width="500">
+
+	</table>
+	<input type="hidden" id="jibie" value="1">
+	<input type="hidden" id="parent_id" value="">
+</body>
+</html>
+<script src="jquery.js"></script>
+<script>
+	//自动加载 一级地区
+	jQuery(document).ready(function() {
+		var _tr = '<tr>';
+		$.ajax({
+			url: 'show.php',
+			dataType: 'json',
+			success:function(msg){
+				$.each(msg, function(k, v) {
+					if (k%3 == 0) {
+						_tr += '</tr><tr><td>'+v['region_name']+'&nbsp;<a href="#" id="sel" name="'+v['region_id']+'">编辑</a>&nbsp;&nbsp;<a href="#"  id="del" name="'+v['region_id']+'">删除</a></td>'
+					}else{
+						_tr += '<td>'+v['region_name']+'&nbsp;<a href="#" id="sel" name="'+v['region_id']+'">编辑</a>&nbsp;&nbsp;<a href="#" id="del" name="'+v['region_id']+'">删除</a></td>'
+					}
+				});
+				_tr += '</tr>';
+				$('table').append(_tr);
+			}
+		})
+	});
+
+	//添加
+	$(document).on('click', '#add', function() {
+		//当前要增加的地区名
+		var name = $('#bnt').val();
+
+		var jibie = $('#jibie').val();
+
+		//当前 准备添加 地区的 父级id
+		var parent_id = $('#parent_id').val();
+
+		var tr = $('tr').last().index();
+
+		var td = $('tr').eq(parseInt(tr)).children('td').last().index();
+
+		$.ajax({
+			url: 'add.php',
+			type: 'get',
+			dataType: 'json',
+			data: {name:name,parent_id:parent_id},
+			success:function(msg){
+				if (jibie == 4) {
+					if (td == 2) {
+						__tr = '<tr><td>'+msg['region_name']+'&nbsp;&nbsp;&nbsp;<a href="#" id="del" name="'+msg['region_id']+'">删除</a></td></tr>';
+						$('tr').eq(parseInt(tr)).after(__tr);
+					}else if(td == '-1'){
+						__tr = '<tr><td>'+msg['region_name']+'&nbsp;&nbsp;&nbsp;<a href="#" id="del" name="'+msg['region_id']+'">删除</a></td></tr>';
+						$('tr').eq(parseInt(tr)).after(__tr);
+					}else{
+						_tr = '<td>'+msg['region_name']+'&nbsp;&nbsp;&nbsp;<a href="#" id="del" name="'+msg['region_id']+'">删除</a></td>';
+						$('tr').eq(parseInt(tr)).children('td').eq(parseInt(td)).after(_tr);
+					}
+				}else{
+					if (td == 2) {
+						__tr = '<tr><td>'+msg['region_name']+'&nbsp;<a href="#" id="sel" name="'+msg['region_id']+'">编辑</a>&nbsp;&nbsp;<a href="#" id="del" name="'+msg['region_id']+'">删除</a></td></tr>';
+						$('tr').eq(parseInt(tr)).after(__tr);
+					}else if(td == '-1'){
+						__tr = '<tr><td>'+msg['region_name']+'&nbsp;<a href="#" id="sel" name="'+msg['region_id']+'">编辑</a>&nbsp;&nbsp;<a href="#" id="del" name="'+msg['region_id']+'">删除</a></td></tr>';
+						$('tr').eq(parseInt(tr)).after(__tr);
+					}else{
+						_tr = '<td>'+msg['region_name']+'&nbsp;<a href="#" id="sel" name="'+msg['region_id']+'">编辑</a>&nbsp;&nbsp;<a href="#" id="del" name="'+msg['region_id']+'">删除</a></td>';
+						$('tr').eq(parseInt(tr)).children('td').eq(parseInt(td)).after(_tr);
+					}
+				}
+			}
+		})
+	});
+
+	//删除
+	$(document).on('click', '#del', function() {
+		var id = $(this).attr('name');
+		var _this = $(this);
+		$.ajax({
+			url: 'del.php',
+			type: 'get',
+			dataType: 'json',
+			data: {parent_id:id},
+			success:function(msg){
+				if(msg ==1){
+					_this.parent('td').remove();
+				}
+			}
+		})
+	});
+
+
+	//编辑
+	$(document).on('click', '#sel', function() {
+		var parent_id = $(this).attr('name');
+		var jibie = parseInt($('#jibie').val());
+
+		jibie++
+		if (jibie > 5) {
+			alert('已经最低级了')
+		}
+		var _tr = '<tr>';
+		$.ajax({
+			url: 'show.php',
+			type: 'get',
+			dataType: 'json',
+			data: {parent_id:parent_id},
+			success:function(msg){
+				$.each(msg, function(k, v) {
+					if (jibie != 4) {
+						if (k%3 == 0) {
+							_tr += '</tr><tr><td>'+v['region_name']+'&nbsp;<a href="#" id="sel" name="'+v['region_id']+'">编辑</a>&nbsp;&nbsp;<a href="#" id="del" name="'+v['region_id']+'">删除</a></td>'
+						}else{
+							_tr += '<td>'+v['region_name']+'&nbsp;<a href="#" id="sel" name="'+v['region_id']+'">编辑</a>&nbsp;&nbsp;<a href="#" id="del" name="'+v['region_id']+'">删除</a></td>'
+						}
+					}else{
+						if (k%3 == 0) {
+							_tr += '</tr><tr><td>'+v['region_name']+'&nbsp;&nbsp;&nbsp;<a href="#" id="del" name="'+v['region_id']+'">删除</a></td>'
+						}else{
+							_tr += '<td>'+v['region_name']+'&nbsp;&nbsp;&nbsp;<a href="#" id="del" name="'+v['region_id']+'">删除</a></td>'
+						}
+					}
+				});
+
+				_tr += '</tr>';
+				$('table').html(_tr);
+				if (jibie == 2) {
+					$('span').text('二级地区');
+					$('#jibie').val(jibie)
+					$('#parent_id').val(parent_id)
+				}
+				if (jibie == 3) {
+					$('span').text('三级地区');
+					$('#jibie').val(jibie)
+					$('#parent_id').val(parent_id)
+				}
+				if (jibie == 4) {
+					$('span').text('四级地区');
+					$('#jibie').val(jibie)
+					$('#parent_id').val(parent_id)
+				}
+			}
+		})
+	});
+
+	//返回
+	$(document).on('click', '#back', function() {
+		var jibie = parseInt($('#jibie').val());
+		var parent_id = $('#parent_id').val();
+
+		jibie--
+		if (jibie < 1 ) {
+			alert('已经最高级了')
+		}
+		var _tr = '<tr>';
+		$.ajax({
+			url: 'back.php',
+			type: 'get',
+			dataType: 'json',
+			data: {parent_id:parent_id},
+			success:function(msg){
+				$.each(msg, function(k, v) {
+					if (jibie != 4) {
+						if (k%3 == 0) {
+							_tr += '</tr><tr><td>'+v['region_name']+'&nbsp;<a href="#" id="sel" name="'+v['region_id']+'">编辑</a>&nbsp;&nbsp;<a href="#" id="del" name="'+v['region_id']+'">删除</a></td>'
+						}else{
+							_tr += '<td>'+v['region_name']+'&nbsp;<a href="#" id="sel" name="'+v['region_id']+'">编辑</a>&nbsp;&nbsp;<a href="#" id="del" name="'+v['region_id']+'">删除</a></td>'
+						}
+					}else{
+						if (k%3 == 0) {
+							_tr += '</tr><tr><td>'+v['region_name']+'&nbsp;&nbsp;&nbsp;<a href="#" id="del" name="'+v['region_id']+'">删除</a></td>'
+						}else{
+							_tr += '<td>'+v['region_name']+'&nbsp;&nbsp;&nbsp;<a href="#" id="del" name="'+v['region_id']+'">删除</a></td>'
+						}
+					}
+				});
+
+				_tr += '</tr>';
+				$('table').html(_tr);
+				if (jibie == 1) {
+					$('span').text('一级地区');
+					$('#jibie').val(jibie)
+					$('#parent_id').val(msg[0]['parent_id'])
+				}
+				if (jibie == 2) {
+					$('span').text('二级地区');
+					$('#jibie').val(jibie)
+					$('#parent_id').val(msg[0]['parent_id'])
+				}
+				if (jibie == 3) {
+					$('span').text('三级地区');
+					$('#jibie').val(jibie)
+					$('#parent_id').val(msg[0]['parent_id'])
+				}
+			}
+		})
+	})
+</script>

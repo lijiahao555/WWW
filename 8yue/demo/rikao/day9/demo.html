@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.active {
+    background:goldenrod;
+    color:white;
+}
+</style>
+<body>
+	<table border="1" width="300px" height="300px"> 
+		<tr>
+			<td class="dianji" align="center">一等奖</td>
+			<td class="dianji" align="center">谢谢惠顾</td>
+			<td class="dianji" align="center">四等奖</td>
+		</tr>
+		<tr>
+			<td class="dianji" align="center">头等奖</td>
+			<td align="center"><input type="button" id="bnt" value="开始抽奖"></td>
+			<td class="dianji" align="center">二等奖</td>
+		</tr>
+		<tr>
+			<td class="dianji" align="center">五等奖</td>
+			<td class="dianji" align="center">谢谢惠顾</td>
+			<td class="dianji" align="center">三等奖</td>
+		</tr>
+	</table>
+</body>
+</html>
+<script src="../public/jquery.js"></script>
+<script>
+	$('dianji').on('click', '#bnt', function() {
+		a = $('td').val();
+        if(a>8){
+            a=parseInt(a%8)
+            if(a==0){
+                a=8
+            }
+        }
+        $('.dianji').removeClass('active');
+        $('.dianji-'+a).addClass('active');
+	});
+
+
+   
+</script>

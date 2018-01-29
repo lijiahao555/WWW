@@ -1,0 +1,42 @@
+<form method="post" action="http://www.sangwu.org/register.php?do=submit" id="frmregister" name="frmregister">
+<table width="580" align="center" class="grid">
+<caption>新用户注册</caption>
+<tbody><tr>
+  <td width="25%" class="odd">用户名<span class="hottext">(必填)</span></td>
+  <td class="even"><input type="text" onblur="Ajax.Update('http://www.sangwu.org/regcheck.php?item=u&amp;username='+this.value, {outid:'usermsg', tipid:'usermsg', onLoading:'&lt;img border=\'0\' height=\'16\' width=\'16\' src=\'http://www.sangwu.org/images/loading.gif\' /&gt; Loading...'});" value="" style="width:160px" maxlength="30" size="25" id="username" name="username" class="text"> <span id="usermsg"></span></td>
+</tr>
+<tr>
+  <td width="25%" class="odd">密码<span class="hottext">(必填)</span></td>
+  <td class="even"><input type="password" onblur="Ajax.Update('http://www.sangwu.org/regcheck.php?item=p&amp;password='+this.value, {outid:'passmsg', tipid:'passmsg', onLoading:'&lt;img border=\'0\' height=\'16\' width=\'16\' src=\'http://www.sangwu.org/images/loading.gif\' /&gt; Loading...'});" value="" style="width:160px" maxlength="20" size="25" id="password" name="password" class="text"> <span id="passmsg"></span></td>
+</tr>
+<tr>
+  <td width="25%" class="odd">重复密码<span class="hottext">(必填)</span></td>
+  <td class="even"><input type="password" onblur="Ajax.Update('http://www.sangwu.org/regcheck.php?item=r&amp;password='+password.value+'&amp;repassword='+this.value, {outid:'repassmsg', tipid:'repassmsg', onLoading:'&lt;img border=\'0\' height=\'16\' width=\'16\' src=\'http://www.sangwu.org/images/loading.gif\' /&gt; Loading...'});" value="" style="width:160px" maxlength="20" size="25" id="repassword" name="repassword" class="text"> <span id="repassmsg"></span></td>
+</tr>
+<tr>
+  <td width="25%" class="odd">Email<span class="hottext">(必填)</span></td>
+  <td class="even"><input type="text" onblur="Ajax.Update('http://www.sangwu.org/regcheck.php?item=m&amp;email='+this.value, {outid:'mailmsg', tipid:'mailmsg', onLoading:'&lt;img border=\'0\' height=\'16\' width=\'16\' src=\'http://www.sangwu.org/images/loading.gif\' /&gt; Loading...'});" value="" style="width:160px" maxlength="60" size="25" id="email" name="email" class="text"> <span id="mailmsg"></span><input type="checkbox" value="1" name="viewemail" class="checkbox">公开邮箱</td>
+</tr>
+<tr>
+  <td width="25%" class="odd">性别</td>
+  <td class="even"><input type="radio" value="1" name="sex" class="radio">男
+<input type="radio" value="2" name="sex" class="radio">女
+<input type="radio" checked="checked" value="0" name="sex" class="radio">保密</td>
+</tr>
+<tr>
+  <td width="25%" class="odd">QQ</td>
+  <td class="even"><input type="text" value="" style="width:160px" maxlength="15" size="25" id="qq" name="qq" class="text"></td>
+</tr>
+<tr>
+  <td width="25%" class="odd">个人网站</td>
+  <td class="even"><input type="text" value="" style="width:160px" maxlength="100" size="25" id="url" name="url" class="text"></td>
+</tr>
+
+
+<tr>
+  <td width="25%" class="odd">&nbsp;<input type="hidden" value="newuser" id="action" name="action"></td>
+  <td class="even"><input type="submit" value="提 交" id="submit" name="submit" class="button"></td>
+</tr>
+</tbody></table>
+</form>
+<br>  

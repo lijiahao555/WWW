@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>商品前台展示</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="./css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./css/grid.css" media="screen" rel="stylesheet" type="text/css">
+
+    <script src="./js/jquery-1.7.2.min.js" ></script>
+    <script src="./js/html5.js" ></script>
+    <script src="./js/jflow.plus.js" ></script>
+    <script src="./js/jquery.carouFredSel-5.2.2-packed.js"></script>
+    <script src="./js/checkbox.js"></script>
+    <script src="./js/radio.js"></script>
+    <script src="./js/selectBox.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var str = '';
+            $.ajax({
+                url: './show.php',
+                dataType: 'json',
+                success:function(msg){
+                    for(k in msg){
+                        str += '<div class="grid_3 product">'+
+                                '<img class="sale" src="images/new.png" alt="New">'+
+                                '<div class="prev">'+
+                                    '<a href="product_page.html?id='+msg[k]['id']+'"><img src="images/59d88d2cN1ff987a0.jpg" alt="" title=""></a>'+
+                                '</div>'+
+                                '<h3 class="title">'+msg[k]['name']+'</h3>'+
+                                '<div class="cart">'+
+                                    '<div class="price">'+
+                                        '<div class="vert">'+
+                                            '<div class="price_new">$'+msg[k]['price']+'</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<a href="#" class="obn"></a>'+
+                                    '<a href="#" class="like"></a>'+
+                                    '<a href="#" class="bay"></a>'+
+                                '</div>'+
+                            '</div>'
+                    }
+                    $('#huan').html(str);
+                }
+            })
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#myController").jFlow({
+                controller: ".control", // must be class, use . sign
+                slideWrapper : "#jFlowSlider", // must be id, use # sign
+                slides: "#slider",  // the div where all your sliding divs are nested in
+                selectedWrapper: "jFlowSelected",  // just pure text, no sign
+                width: "984px",  // this is the width for the content-slider
+                height: "480px",  // this is the height for the content-slider
+                duration: 400,  // time in miliseconds to transition one slide
+                prev: ".slidprev", // must be class, use . sign
+                next: ".slidnext", // must be class, use . sign
+                auto: true
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('#list_product').carouFredSel({
+                prev: '#prev_c1',
+                next: '#next_c1',
+                auto: false
+            });
+            $('#list_product2').carouFredSel({
+                prev: '#prev_c2',
+                next: '#next_c2',
+                auto: false
+            });
+            $(window).resize();
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(this).addClass('click')
+            });
+        })
+    </script>
+
+</head>
+<body>
+<center>
+<div class="clear"></div>
+
+<div id="content" class="grid_9">
+    <h1 class="page_title">八月月考前台展示页面</h1>
+
+
+<!-- .show -->
+
+
+    </div><!-- .options -->
+
+    <div class="grid_product" id="huan">
+        
+    </div><!-- .grid_product -->
+
+    <div class="clear"></div>
+
+    <div class="pagination">
+        <ul>
+            <li class="prev"><span>←</span></li>
+            <li class="curent"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><span>...</span></li>
+            <li><a href="#">100</a></li>
+            <li class="next"><a href="#">→</a></li>
+        </ul>
+    </div><!-- .pagination -->
+    <p class="pagination_info">Displaying 1 to 12 (of 100 products)</p>
+</div>
+
+<div class="clear"></div>
+
+
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</center>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td{ width: 30px;}
+
+        tr{
+            line-height:30px;
+            height: 30px;
+        }
+        input{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <table border="1">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</center>
+
+</body>
+</html>
+<script type="text/javascript" src="../public/jquery.js"></script>
+<script  type="text/javascript">
+
+    $(document).on('click','tr td',function () {
+
+
+    if($(this).index()==9||$(this).parent().index()==9)
+    {
+        alert('此处不能点击');
+        return;
+    }
+
+        var z=$(this).text();
+        $(this).text('');
+        $(this).append("<input type='text' value=''/>");
+        $(this).find('input').val(z);
+        //获取文本框的光标
+        $(this).find('input').focus();
+        $(this).find('input').next().remove();
+    })
+    $(document).on('blur','tr td',function () {
+
+        var zhi =$(this).find('input').val();
+        $(this).find('input').remove();
+        $(this).text(zhi);
+        var sum=0;
+        var ji=0;
+        for(var i=0;i<9;i++)
+        {
+            if(   !isNaN(parseInt($(this).parent().children().eq(i).text()))){
+
+                if(parseInt($(this).parent().children().eq(i).text())%2==0)
+                {
+                      sum=sum+parseInt($(this).parent().children().eq(i).text());
+
+                }
+                else
+                {
+                    ji=ji+parseInt($(this).parent().children().eq(i).text());
+                    //alert(ji);
+
+                }
+             var   s=sum-ji;
+
+            }
+        }
+       var   wei=$(this).index();
+        var hsum=0;
+        var hji=0;
+        for(var i=0;i<9;i++) {
+
+
+           if(!isNaN( parseInt($('tr').eq(i).children().eq(wei).text()))){
+              if( parseInt($('tr').eq(i).children().eq(wei).text())%2==0){
+                   hsum=hsum+parseInt($('tr').eq(i).children().eq(wei).text());
+              }
+              else{
+                  hji=hji+parseInt($('tr').eq(i).children().eq(wei).text());
+
+              }
+              var hs=hsum-hji;
+           }
+        }
+
+
+       $('tr').eq(9).children().eq(wei).text(hs);
+
+
+        $(this).parent().children().eq(9).text(s);
+
+
+    })
+</script>

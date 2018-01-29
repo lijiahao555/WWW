@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    	<center>
+    		<table>
+    			<tr>
+    				<td>用户id</td>
+    				<td>用户名</td>
+    				<td>邮箱</td>
+    				<td>注册时间</td>
+    			</tr>
+    			<?php foreach ($data as $k => $v): ?>
+    			<tr>
+    				<td><?=$v['l_id']?></td>
+    				<td><?=$v['l_name']?></td>
+    				<td><?=$v['l_email']?></td>
+    				<td><?=date('Y-m-d H:i:s',$v['l_time'])?></td>
+    			</tr>
+    			<?php endforeach ?>
+    			<?php for($i=1; $i <= $zong; $i++){?>
+    			<a href='<?=URL."/Welcome/index?p=$i"?>'> <?=$i?> </a>
+    			<?php }?>
+
+    		</table>
+    	</center>
+    </form>
+</body>
+</html>
