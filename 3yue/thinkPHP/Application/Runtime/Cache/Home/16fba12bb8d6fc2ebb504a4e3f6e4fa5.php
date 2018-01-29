@@ -1,0 +1,33 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>day15日考技能</title>
+</head>
+<body>
+<center>
+	<form action="/3yue/thinkPHP/index.php/Home/Exam/addDo" method="post">
+		<table border="8">
+			<tr>
+				<td>分类</td>
+				<td>
+					<select name="type">
+						<option value="软工">软工</option>
+						<option value="云计算">云计算</option>
+						<option value="游戏">游戏</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>添加时间</td>
+				<td><input type="text" name="time"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="提交"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>

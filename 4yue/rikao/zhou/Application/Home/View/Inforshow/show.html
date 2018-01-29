@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<thead>
+	
+		<b>说说网</b> <span>&nbsp;&nbsp;&nbsp;关键字<input type="text" id="sousuo">&nbsp;<input type="button" onclick="sousuo()" value="搜索">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{:U('Home/Infor/show')}">首页</a>&nbsp;<a href="{:U('Home/Inforshow/add')}">发表说说</a>&nbsp;{:$_SESSION['name']}<a href="{:U('Home/Infor/show')}">(退出)</a></span>
+		<hr width="500">
+	</thead>
+		<button onclick="ajax(1,5)">最新</button>&nbsp;&nbsp;<button onclick="ajax(1,6)">点赞数</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<volist name="data" id="v"><a href='javascript:;' onclick='seek({$v.type_id})'>{$v.type_name}</a>&nbsp;&nbsp;</volist>
+	<tbody> 
+		<table id="tbody" width="500" border="1">
+				<volist name="list['list']" id="v" mod="1" empty="没有数据">
+					<tr>
+						<td><b>{$v.name}</b>&nbsp;&nbsp;&nbsp;{$v.time}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br><hr width="485">{$v.content}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick='zan({$v.id},this)'>赞</button><span>{$v.zan}</span></td>
+						<eq name='mod' value='0'></tr><tr></eq>
+					</tr>
+				</volist>
+				<tr>
+					<td align='center' colspan='6'>
+					共{$list['page']}条说说
+						<input type='button'  onclick='ajax(1)' value='首页'>
+						<input type='button'  onclick='ajax(1)' value='上一页'>
+						<input type='button'  onclick='ajax(2)' value='下一页'>
+						<input type='button'  onclick="ajax({$list['page']})"  value="尾页">
+					</td>
+				</tr>
+		</table>
+	</tbody>
+</center>
+</body>
+</html>
+<script>
+	function ajax(p,h){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', "{:U('Home/Infor/ajax')}?p="+p+"&h="+h)
+		xhr.send()
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				document.getElementById('tbody').innerHTML=xhr.responseText
+			};
+		}
+	}
+	function zan(zan,obj){
+		var span_num=obj.nextElementSibling.innerHTML;
+		var num=parseInt(span_num)+1;
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', "{:U('Home/Inforshow/zan')}?zan="+zan)
+		xhr.send()
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if(xhr.responseText=='no'){
+					alert("已经点过赞");
+				}else if(xhr.responseText==0){
+					alert('不能给自己点赞')
+				}else{
+					obj.nextElementSibling.innerHTML=num
+				}
+				// xhr.responseText
+			};
+		}
+	}
+	function seek(id){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', "{:U('Home/Inforshow/seek')}?id="+id)
+		xhr.send()
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				console.log(xhr.responseText)
+			};
+		}
+
+	}
+	function sousuo(){
+		var sousuo=document.getElementById('sousuo').value
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', "{:U('Home/Inforshow/ajax')}?sousuo="+sousuo)
+		xhr.send()
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				console.log(xhr.responseText)
+
+			}
+		}
+	}
+</script>

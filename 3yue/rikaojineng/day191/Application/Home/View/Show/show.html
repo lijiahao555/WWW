@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<div><h2>欢迎<font color="red">{$_COOKIE.name}</font>登录</h2></div>
+		<div><button onclick="location.href='__URL__/add'">添加相册</button><button>上传图片</button></div>
+	<div id="box">
+		
+	</div>
+</center>
+</body>
+<script>
+	function ajax(p){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','__URL__/ajax/p/'+p);
+		xhr.send();
+		xhr.onreadystatechange = function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				document.getElementById('box').innerHTML=xhr.responseText;
+				// alert();
+			};
+		}
+	}
+	ajax(1)
+</script>
+</html>

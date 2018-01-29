@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模拟</title>
+</head>
+<body>
+<center>
+	<form action="date.php" enctype="multipart/form-data" method="post">
+		<table border="1">
+			<tr>
+				<td>网名</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>头像上传</td>
+				<td><input type="file" name="file"></td>
+			</tr>
+			<tr>
+				<td>性别</td>
+				<td>
+					<input type="radio" name="sex" value="男">男
+					<input type="radio" name="sex" value="女">女
+				</td>
+			</tr>
+			<tr>
+				<td>爱好</td>
+				<td>
+					<input type="checkbox" name="box[]" value="吃饭">吃饭
+					<input type="checkbox" name="box[]" value="睡觉">睡觉
+					<input type="checkbox" name="box[]" value="打代码">打代码
+					<input type="checkbox" name="box[]" value="踢球">踢球
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="注册"></td>
+				<td><input type="reset" value="重置"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+		<form action="{:U('Class/upOne')}" method="post">
+			<table border="1">
+				<tr>
+					<td><b>课程</b></td>
+					<td>
+						<volist name="list" id="v">
+							<if condition=" $v.flag eq 1 ">
+								<input type="checkbox" name="admin_id[]" value="{$v.class_id}" checked>{$v.class_name}
+							<else/>
+								<input type="checkbox" name="admin_id[]" value="{$v.class_id}">{$v.class_name}
+							</if>
+						</volist>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="修改"></td>
+				</tr>
+			</table>
+			<input type="hidden" name="id" value="{$id}">
+		</form>
+	</center>
+</body>
+</html>

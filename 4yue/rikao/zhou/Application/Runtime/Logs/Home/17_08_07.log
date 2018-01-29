@@ -1,0 +1,11 @@
+[ 2017-08-07T14:05:24+08:00 ] ::1 /4yue/rikao/zhou/index.php/Home/Infor/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003148s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\phpStudy\WWW\4yue\rikao\zhou\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\InforController::show() should be compatible with that of Think\Controller::show() E:\phpStudy\WWW\4yue\rikao\zhou\Application\Home\Controller\InforController.class.php 第 19 行.
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+

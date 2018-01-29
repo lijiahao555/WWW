@@ -1,0 +1,45 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+<h3>列表展示</h3>
+	<table border="1">
+		<tbody id="box">
+			
+		</tbody>
+	</table>
+</center>
+<script>
+	function ajax(p){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','/3yue/rikaojineng/day20/index.php/Home/Index/ajax/p/'+p);
+		xhr.send();
+		xhr.onreadystatechange = function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				document.getElementById('box').innerHTML=xhr.responseText;
+				
+			};
+		}
+	}
+	ajax(1)
+	function del(id,p){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', '/3yue/rikaojineng/day20/index.php/Home/Index/del/id/'+id);
+		xhr.send();
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if (xhr.responseText==0) {
+					alert('删除失败');
+				}else{
+					ajax(p)
+				}
+		}
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+[ 2017-07-16T22:22:02+08:00 ] 127.0.0.1 /3yue/thinkPHP/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\thinkPHP\Application\Home\Controller\IndexController.class.php 第 146 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2017-07-16T22:22:12+08:00 ] 127.0.0.1 /3yue/thinkPHP/index.php/Home/lianxi/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+NOTIC: [2048] Declaration of Home\Controller\LianxiController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\thinkPHP\Application\Home\Controller\LianxiController.class.php 第 95 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002484s ]
+
+[ 2017-07-16T22:22:13+08:00 ] 127.0.0.1 /3yue/thinkPHP/index.php/Home/Lianxi/ajax/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003275s ]
+NOTIC: [2048] Declaration of Home\Controller\LianxiController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\thinkPHP\Application\Home\Controller\LianxiController.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0815s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\3yue\thinkPHP\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lianxi` LIMIT 1   [ RunTime:0.0080s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\3yue\thinkPHP\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `lianxi` ORDER BY 'price' asc LIMIT 0,2   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002309s ]
+
+[ 2017-07-16T22:22:17+08:00 ] 127.0.0.1 /3yue/thinkPHP/index.php/Home/Lianxi/ajax/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001916s ]
+NOTIC: [2048] Declaration of Home\Controller\LianxiController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\thinkPHP\Application\Home\Controller\LianxiController.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0505s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\3yue\thinkPHP\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lianxi` LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\3yue\thinkPHP\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `lianxi` ORDER BY 'price' asc LIMIT 2,2   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001378s ]
+
+[ 2017-07-16T22:22:18+08:00 ] 127.0.0.1 /3yue/thinkPHP/index.php/Home/Lianxi/ajax/p/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003173s ]
+NOTIC: [2048] Declaration of Home\Controller\LianxiController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\thinkPHP\Application\Home\Controller\LianxiController.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0562s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\3yue\thinkPHP\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lianxi` LIMIT 1   [ RunTime:0.0069s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\3yue\thinkPHP\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `lianxi` ORDER BY 'price' asc LIMIT 4,2   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002347s ]
+
+[ 2017-07-16T22:24:18+08:00 ] 127.0.0.1 /3yue/thinkPHP/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\thinkPHP\Application\Home\Controller\IndexController.class.php 第 146 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+

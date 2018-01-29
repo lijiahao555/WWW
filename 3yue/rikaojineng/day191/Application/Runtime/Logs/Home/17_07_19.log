@@ -1,0 +1,79 @@
+[ 2017-07-19T09:26:17+08:00 ] 127.0.0.1 /3yue/rikaojineng/day191/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001760s ]
+ERR: 非法操作:index
+
+[ 2017-07-19T09:26:21+08:00 ] 127.0.0.1 /3yue/rikaojineng/day191/index.php/Home/Show/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+NOTIC: [2048] Declaration of Home\Controller\ShowController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\rikaojineng\day191\Application\Home\Controller\ShowController.class.php 第 66 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: name E:\web\Apache\htdocs\3yue\rikaojineng\day191\Application\Runtime\Cache\Home\94f447d451afde4f14922476192f07f0.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2017-07-19T09:26:21+08:00 ] 127.0.0.1 /3yue/rikaojineng/day191/index.php/Home/Show/ajax/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+NOTIC: [2048] Declaration of Home\Controller\ShowController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\rikaojineng\day191\Application\Home\Controller\ShowController.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0294s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `type` LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `type` ORDER BY 'date' desc LIMIT 0,6   [ RunTime:0.0238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2017-07-19T09:26:23+08:00 ] 127.0.0.1 /3yue/rikaojineng/day191/index.php/Home/Show/ajax/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+NOTIC: [2048] Declaration of Home\Controller\ShowController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\rikaojineng\day191\Application\Home\Controller\ShowController.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0510s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `type` LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `type` ORDER BY 'date' desc LIMIT 6,6   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+

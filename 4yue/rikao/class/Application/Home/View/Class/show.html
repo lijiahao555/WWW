@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<table border="1">
+		<thead>
+			<th>学生ID</th>
+			<th>学生姓名</th>
+			<th>学生年龄</th>
+			<th>学生性别</th>
+			<th>学生电话</th>
+			<th>学生邮箱</th>
+			<th>学生爱好</th>
+			<th>学生简介</th>
+			<th>学生课程</th>
+			<th>个人信息操作</th>
+			<th>课程操作</th>
+		</thead>
+		<tbody id="body">
+			<volist name="list" id="v">
+				<tr>
+					<td>{$v.admin_id}</td>
+					<td>{$v.admin_name}</td>
+					<td>{$v.infor_age}</td>
+					<td>{$v.infor_sex}</td>
+					<td>{$v.infor_tel}</td>
+					<td>{$v.infor_email}</td>
+					<td>{$v.infor_hobby}</td>
+					<td>{$v.infor_content}</td>
+					<td>{$v.class_name}</td>
+					<td><a href="{:U('Infor/up')}?id={$v.infor_id}">修改</a></td>
+					<td><a href="{:U('Class/up')}?id={$v.admin_id}">修改</a></td>
+				</tr>
+			</volist>
+		</tbody>
+	</table>
+	<a href="{:U('Class/choice')}">返回选择查看页面</a>&nbsp;&nbsp;<a href="{:U('Admin/admin')}">返回登录页面</a>
+</center>
+</body>
+</html>

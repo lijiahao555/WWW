@@ -1,0 +1,147 @@
+[ 2017-07-21T16:30:24+08:00 ] 127.0.0.1 /4yue/rikao/blog/index.php/Home/Blog/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+NOTIC: [2048] Declaration of Home\Controller\BlogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\blog\Application\Home\Controller\BlogController.class.php 第 73 行.
+NOTIC: [2048] Declaration of Home\Model\BlogModel::select() should be compatible with that of Think\Model::select() E:\web\Apache\htdocs\4yue\rikao\blog\Application\Home\Model\BlogModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0265s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0303s ]
+SQL: SELECT * FROM `blog`  [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `blog_label` [ RunTime:0.0665s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=66 )  [ RunTime:0.0099s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=67 )  [ RunTime:0.0019s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=69 )  [ RunTime:0.0019s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=70 )  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002913s ]
+
+[ 2017-07-21T16:30:26+08:00 ] 127.0.0.1 /4yue/rikao/blog/index.php/Home/Blog/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+NOTIC: [2048] Declaration of Home\Controller\BlogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\blog\Application\Home\Controller\BlogController.class.php 第 73 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `label`  [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-07-21T19:37:28+08:00 ] 127.0.0.1 /4yue/rikao/blog/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2017-07-21T19:37:32+08:00 ] 127.0.0.1 /4yue/rikao/blog/index.php/Home/Blog/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [2048] Declaration of Home\Controller\BlogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\blog\Application\Home\Controller\BlogController.class.php 第 75 行.
+NOTIC: [2048] Declaration of Home\Model\BlogModel::select() should be compatible with that of Think\Model::select() E:\web\Apache\htdocs\4yue\rikao\blog\Application\Home\Model\BlogModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0264s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `blog`  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `blog_label` [ RunTime:0.0408s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=66 )  [ RunTime:0.0095s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=67 )  [ RunTime:0.0020s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=69 )  [ RunTime:0.0020s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=70 )  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001904s ]
+
+[ 2017-07-21T19:37:38+08:00 ] 127.0.0.1 /4yue/rikao/blog/index.php/Home/Blog/up.html?id=70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+NOTIC: [2048] Declaration of Home\Controller\BlogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\blog\Application\Home\Controller\BlogController.class.php 第 75 行.
+NOTIC: [2048] Declaration of Home\Model\BlogModel::select() should be compatible with that of Think\Model::select() E:\web\Apache\htdocs\4yue\rikao\blog\Application\Home\Model\BlogModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0265s ]
+SQL: SELECT * FROM `blog` WHERE ( id=70 ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `label`  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_label` [ RunTime:0.0246s ]
+SQL: SELECT `label_id` FROM `blog_label` WHERE ( blog_id=70 )  [ RunTime:0.0041s ]
+
+[ 2017-07-21T20:45:47+08:00 ] 127.0.0.1 /4yue/rikao/blog/index.php/Home/Blog/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [2048] Declaration of Home\Controller\BlogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\blog\Application\Home\Controller\BlogController.class.php 第 75 行.
+NOTIC: [2048] Declaration of Home\Model\BlogModel::select() should be compatible with that of Think\Model::select() E:\web\Apache\htdocs\4yue\rikao\blog\Application\Home\Model\BlogModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `blog`  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `blog_label` [ RunTime:0.0279s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=66 )  [ RunTime:0.0035s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=67 )  [ RunTime:0.0006s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=69 )  [ RunTime:0.0007s ]
+SQL: SELECT `label_name` FROM `blog_label` INNER JOIN label on blog_label.label_id=label.label_id  WHERE ( blog_id=70 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+

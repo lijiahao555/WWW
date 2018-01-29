@@ -1,0 +1,9 @@
+[ 2017-08-31T16:53:12+08:00 ] ::1 /4yue/rikao/7.14/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+ERR: 非法操作:index
+

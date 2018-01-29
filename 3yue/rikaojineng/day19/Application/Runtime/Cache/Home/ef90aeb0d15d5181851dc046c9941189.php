@@ -1,0 +1,52 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+		<table border="1">
+			<tr>
+				<td>ID</td>
+				<td>姓名</td>
+				<td>密码</td>
+				<td>操作</td>
+			</tr>
+			<tbody id="body">
+				
+			</tbody>
+		</table>
+	</center>
+</body>
+<script>
+	function ajax(){
+		var xhr=new XMLHttpRequest();
+			xhr.open('get','/3yue/rikaojineng/day19/index.php/Home/Index/ajax');
+			xhr.send();
+			xhr.onreadystatechange=function (){
+				if (xhr.readyState==4&&xhr.status==200) {
+					document.getElementById('body').innerHTML=xhr.responseText
+					
+				};
+			}
+	}
+	ajax()
+
+	function del(id){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','/3yue/rikaojineng/day19/index.php/Home/Index/del/id/'+id);
+		xhr.send();
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if (xhr.responseText==0) {
+					alert('删除失败');
+				}else{
+				document.getElementById('body').innerHTML=xhr.responseText
+				
+				}
+			};
+		}
+	}
+</script>
+</html>

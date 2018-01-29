@@ -1,0 +1,21 @@
+<foreach name="list['list']" item="v">
+	<tr>
+		<td><input type="checkbox" name="box" value="{$v.id}"></td>
+		<td>{$v.id}</td>
+		<td>{$v.name}</td>
+		<td>{$v.price}</td>
+		<td>{$v['start'] ? '在售':'停售'}</td>
+	</tr>
+</foreach>
+<tr>
+	<td colspan="5" align="center">{$list['show']}</td>
+</tr>
+<tr>
+	<td colspan="5">
+		<select onchange="chang(this,{$page})" >
+			<option value="0">请选择</option>
+			<option value="删除">删除</option>
+			<option value="停售">停售</option>
+		</select>
+	</td>
+</tr>

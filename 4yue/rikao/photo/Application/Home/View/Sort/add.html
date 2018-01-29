@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="{:U('/Home/Photo/addOne')}" method="post" enctype="multipart/form-data">
+		<table border="5">
+			<tr>
+				<td>相册名称</td>
+				<td><input type="text" name="photo_name"></td>
+			</tr>
+			<tr>
+				<td>分类</td>
+				<td>
+					<volist name="list" id="v">
+						<input type="checkbox" name="sort[]" value="{$v.sort_id}">{$v.sort_name}
+					</volist>
+				</td>
+			</tr>
+			<tr>
+				<td>描述</td>
+				<td><input type="text" name="photo_content"></td>
+			</tr>
+			<tr>
+				<td>封面</td>
+				<td><input type="file" name="photo_file"></td>
+			</tr>
+			<tr>
+				<td>添加时间</td>
+				<td><input type="text" name="photo_time"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="添加"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>展示</title>
+</head>
+<body>
+<center>
+	<table border="1">
+
+		<thead>
+			<th>ID</th>
+			<th>账号</th>
+			<th>操作</th>
+		</thead>
+		<tbody>
+			<volist name="list" id="v">
+				<tr>
+					<td>{$v.id}</td>
+					<td>{$v.name}</td>
+					<td><a href="#">删除</a></td>
+				</tr>
+			</volist>
+		</tbody>
+	</table>
+</center>
+</body>
+</html>

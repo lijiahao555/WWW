@@ -1,0 +1,214 @@
+[ 2017-07-18T19:59:44+08:00 ] 127.0.0.1 /4yue/rikao/7.15/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003262s ]
+ERR: 非法操作:index
+
+[ 2017-07-18T19:59:51+08:00 ] 127.0.0.1 /4yue/rikao/7.15/index.php/Home/Wen/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+NOTIC: [2048] Declaration of Home\Controller\WenController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Controller\WenController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0761s ]
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0782s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\4yue\rikao\7.15\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wen` INNER JOIN wentype on wen.t_id=wentype.type_id   [ RunTime:0.0114s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004534s ]
+
+[ 2017-07-18T19:59:53+08:00 ] 127.0.0.1 /4yue/rikao/7.15/index.php/Home/Wen/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: [2048] Declaration of Home\Controller\WenController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Controller\WenController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0608s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\4yue\rikao\7.15\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wen` INNER JOIN wentype on wen.t_id=wentype.type_id   [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002201s ]
+
+[ 2017-07-18T19:59:57+08:00 ] 127.0.0.1 /4yue/rikao/7.15/index.php/Home/Wen/up.html?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+NOTIC: [2048] Declaration of Home\Controller\WenController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Controller\WenController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0442s ]
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0591s ]
+SQL: SELECT * FROM `wen` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0056s ]
+NOTIC: [2048] Declaration of Home\Model\WentypeModel::select() should be compatible with that of Think\Model::select() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Model\WentypeModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `wentype` [ RunTime:0.0569s ]
+SQL: SHOW COLUMNS FROM `wentype` [ RunTime:0.0628s ]
+SQL: SELECT * FROM `wentype`  [ RunTime:0.0066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002795s ]
+
+[ 2017-07-18T20:00:48+08:00 ] 127.0.0.1 /4yue/rikao/7.15/index.php/Home/Wen/up.html?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [2048] Declaration of Home\Controller\WenController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Controller\WenController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0294s ]
+SQL: SELECT * FROM `wen` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0026s ]
+NOTIC: [2048] Declaration of Home\Model\WentypeModel::select() should be compatible with that of Think\Model::select() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Model\WentypeModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `wentype` [ RunTime:0.0484s ]
+SQL: SHOW COLUMNS FROM `wentype` [ RunTime:0.0575s ]
+SQL: SELECT * FROM `wentype`  [ RunTime:0.0061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002273s ]
+
+[ 2017-07-18T20:00:58+08:00 ] 127.0.0.1 /4yue/rikao/7.15/index.php/Home/Wen/upOne.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+NOTIC: [2048] Declaration of Home\Controller\WenController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Controller\WenController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0448s ]
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0794s ]
+SQL: UPDATE `wen` SET `name`='呵',`content`='呵哒',`auther`='你猜',`t_id`='1',`time`='2017-07-18 20:00:58' WHERE ( id=13 ) [ RunTime:0.0733s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002717s ]
+
+[ 2017-07-18T20:01:01+08:00 ] 127.0.0.1 /4yue/rikao/7.15/index.php/Home/Wen/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+NOTIC: [2048] Declaration of Home\Controller\WenController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Controller\WenController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0755s ]
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0767s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\4yue\rikao\7.15\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wen` INNER JOIN wentype on wen.t_id=wentype.type_id   [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003350s ]
+
+[ 2017-07-18T20:01:39+08:00 ] 127.0.0.1 /4yue/rikao/7.15/index.php/Home/Wen/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+NOTIC: [2048] Declaration of Home\Controller\WenController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Controller\WenController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0701s ]
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0821s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\4yue\rikao\7.15\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wen` INNER JOIN wentype on wen.t_id=wentype.type_id   [ RunTime:0.0087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002936s ]
+
+[ 2017-07-18T20:01:50+08:00 ] 127.0.0.1 /4yue/rikao/7.15/index.php/Home/Wen/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+NOTIC: [2048] Declaration of Home\Controller\WenController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\4yue\rikao\7.15\Application\Home\Controller\WenController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0296s ]
+SQL: SHOW COLUMNS FROM `wen` [ RunTime:0.0297s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\4yue\rikao\7.15\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wen` INNER JOIN wentype on wen.t_id=wentype.type_id   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+

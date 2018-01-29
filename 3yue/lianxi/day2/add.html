@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="add_date.php" method="post">
+		<table>
+			<tr>
+				<td>学生姓名</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>学生学号</td>
+				<td><input type="text" name="number"></td>
+			</tr>
+			<tr>
+				<td>学生所属班级</td>
+				<td>
+					<select name="class">
+						<option value="0">请选择</option>
+						<option value="1511phpC">1511phpC</option>
+						<option value="1511phpB">1511phpB</option>
+						<option value="1511phpA">1511phpA</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>学生性别</td>
+				<td>
+					<input type="radio" name="sex" value="男">男
+					<input type="radio" name="sex" value="女">女
+				</td>
+			</tr>
+			<tr>
+				<td>爱好</td>
+				<td>
+					<input type="checkbox" name="box[]" value="LOL">LOL
+					<input type="checkbox" name="box[]" value="DNF">DNF
+					<input type="checkbox" name="box[]" value="CF">CF
+					<input type="checkbox" name="box[]" value="CS">CS
+				</td>
+			</tr>
+			<tr>
+				<td>学生自我介绍</td>
+				<td>
+					<textarea name="count" cols="25" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="注册"></td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<foreach name="list" item="v">
+	<tr>
+		
+		<td><a href="__URL__/name?id={$v['id']}">{$v['name']}</a></td>
+		
+		<td>{$v['addtime']}</td>
+		<td>{$v['type_name']}</td>
+		
+	</tr>
+</foreach>
+<td><button onclick="javascript:a({$n})">赞</button></td>{$n}

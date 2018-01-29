@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="{:U('/Home/Wen/sou')}" method="post">
+	<input type="text" name="sou"><input type="submit" value="搜索">
+		<table border="1">
+		<th>ID</th>
+			<th>标题</th>
+			<th>内容</th>
+			<th>作者</th>
+			<th>分类</th>
+			<th>时间</th>
+			<th>操作</th>
+			<volist name="data" id="v">
+				<tr>
+					<td>{$v.id}</td>
+					<td>{$v.name}</td>
+					<td>{$v.content}</td>
+					<td>{$v.auther}</td>
+					<td>{$v.type_name}</td>
+					<td>{$v.time}</td>
+					<td><a href="{:U('/Home/Wen/del')}?id={$v.id}">删除</a>|<a href="{:U('/Home/Wen/up')}?id={$v.id}">修改</a></td>
+				</tr>
+			</volist>
+		</table>
+		<a href="{:U('/Home/Wen/show')}">返回展示列表</a>
+	</form>
+</center>
+</body>
+</html>

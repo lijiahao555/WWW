@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+		<form action="day8_date.php" method="post" onsubmit="return sub()" enctype="multipart/form-data">
+			<table border="1">
+			<h2>商品添加页面</h2>
+			<tr>
+				<td>商品名称</td>
+				<td><input type="text" name="name" id="c_name" onblur="ck_name()"><span id="ckr_name"></span></td>
+			</tr>
+			<tr>
+				<td>商品价格</td>
+				<td><input type="text" name="price" id="c_price" onblur="ck_price()"><span id="ckr_price"></span></td>
+			</tr>
+			<tr>
+				<td>商品图片</td>
+				<td><input type="file" name="file"></td>
+			</tr>
+			<tr>
+				<td>商品分类</td>
+				<td>
+					<select name="type" id="">
+						<option value="0">请选择</option>
+						<option value="苹果">苹果</option>
+						<option value="三星">三星</option>
+						<option value="小米">小米</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>商品库存量</td>
+				<td><input type="text" name="number" id="c_number" onblur="ck_number()"><span id="ckr_number"></span></td>
+			</tr>
+			<tr>
+				<td>商品描述</td>
+				<td><textarea name="count" id="" cols="30" rows="10"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="提交"><input type="reset" value="重置"></td>
+			</tr>
+		</table>
+		</form>
+	</center>
+</body>
+<script>
+	function ck_name(){
+		name=document.getElementById('c_name').value;
+		if (name=='') {
+			document.getElementById('ckr_name').innerHTML="不能为空";
+			return false;
+		}else{
+			document.getElementById('ckr_name').innerHTML="√";
+			return true;
+		}
+	}
+
+	function ck_price(){
+		price=document.getElementById('c_price').value;
+		if (price=='') {
+			document.getElementById('ckr_price').innerHTML="不能为空";
+			return false;
+		}else{
+			document.getElementById('ckr_price').innerHTML="√";
+			return true;
+		}
+	}
+
+	function ck_number(){
+		number=document.getElementById('c_number').value;
+		if (number=='') {
+			document.getElementById('ckr_number').innerHTML="不能为空";
+			return false;
+		}else{
+			document.getElementById('ckr_number').innerHTML="√";
+			return true;
+		}
+	}	
+
+	function sub(){
+		if (ck_name()&ck_price()&ck_number()) {
+			return true;
+		}else{
+			return false;
+		}
+	}	
+</script>
+</html>

@@ -1,0 +1,13 @@
+<foreach name="list['list']" item="v">
+	<tr>
+		<td>{$v.name}</td>
+		<td>{$v.email}</td>
+		<td>{$v.content}</td>
+		<td>{$v.on}</td>
+		<td>{$v.hh}</td>
+		<td><a href="#">删除</a></td>
+	</tr>
+</foreach>
+<tr>
+	<td colspan="6">{$list['show']}</td>
+</tr>

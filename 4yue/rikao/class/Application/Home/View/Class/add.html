@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="{:U('Class/addOne')}" method="post">
+		<table border="5">
+			<th>学生编号</th>
+			<th>学生姓名</th>
+			<th>选择课程</th>
+			<tr>
+				<td><input type="hidden" name="admin_id" value="{$data.admin_id}">{$data.admin_id}</td>
+				<td>{$data.admin_name}</td>
+				<td>
+					<volist name="list" id="v">
+						<input type="checkbox" name="class_id[]" value="{$v.class_id}">{$v.class_name}
+					</volist>
+				</td>
+			</tr>
+				
+				<td colspan="3"><input type="submit" value="提交"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+	<input type="text" id="sou"><button onclick="ajax(1)">搜索</button>
+		<table border="2">
+		<th>ID</th>
+		<th>姓名</th>
+		<th>内容</th>
+		<th>升高</th>
+		<th>部门</th>
+		<th>时间</th>
+		<th>操作</th>
+			<tbody id="body">
+				
+			</tbody>
+			<tr>
+			<td>
+				<select name="" id="">
+					<for start="1" end="6">
+						<option onclick="ajax({$i})">{$i}</option>
+					</for>
+				</select>
+			</td>
+		</tr>
+		</table>
+		
+	</center>
+</body>
+<script>
+	function ajax(p){
+		sou=document.getElementById('sou').value;
+
+		var xhr=new XMLHttpRequest();
+		xhr.open('get',"{:U('/Home/Index/ajax/')}?p="+p+"&sou="+sou);
+		xhr.send();
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				document.getElementById('body').innerHTML=xhr.responseText;
+			};
+		}
+	}
+	ajax(1);
+</script>
+</html>

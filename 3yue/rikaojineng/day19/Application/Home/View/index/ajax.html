@@ -1,0 +1,8 @@
+<foreach name="data" item="v">
+<tr>
+	<td>{$v.id}</td>
+	<td>{$v.name}</td>
+	<td>{$v.pwd}</td>
+	<td><a href="javascript:del({$v.id})">删除</td>
+</tr>
+</foreach>

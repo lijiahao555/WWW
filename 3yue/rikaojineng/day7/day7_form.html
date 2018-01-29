@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<table border="1">
+		<th>ID</th>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>班级</th>
+		<th>删除</th>
+		<tbody id="t_body">
+			
+		</tbody>
+	</table>
+</center>
+</body>
+<script>
+	function t_body(page){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','day7_show.php?page='+page);
+		xhr.send(null);
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				document.getElementById('t_body').innerHTML=xhr.responseText;
+
+			};
+		}
+	}
+	t_body(1);
+
+	function del(id,page){
+		
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','day7_show1.php?id='+id);
+		xhr.send(null);
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if (confirm('您确认删除么')) {
+					if (xhr.responseText==1) {
+						t_body(page);
+					}else{
+						alert('删除失败');
+					}
+				};
+			};
+		}
+	}
+
+</script>
+</html>

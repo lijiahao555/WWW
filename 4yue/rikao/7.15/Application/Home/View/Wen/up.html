@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="{:U('/Home/Wen/upOne')}" method="post">
+		<table border="5">
+			<tr>
+				<td>标题</td>
+				<td><input type="text" name="name" value="{$wen.name}"></td>
+			</tr>
+			<tr>
+				<td>内容</td>
+				<td>
+					<textarea name="content" id="" cols="20" rows="5">{$wen.content}</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>作者</td>
+				<td><input type="text" name="auther" value="{$wen.auther}"></td>
+			</tr>
+			<tr>
+				<td>分类</td>
+				<td>
+					<select name="t_id" >
+						<volist name="wentype" id="v">
+							<if condition=" $wen.t_id eq $v.type_id ">
+								<option value="{$v.type_id}" selected>{$v.type_name}</option>
+							<else />
+								<option value="{$v.type_id}">{$v.type_name}</option>
+							</if>
+							
+						</volist>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="修改"></td>
+			</tr>
+			<input type="hidden" name="id" value="{$wen.id}">
+		</table>
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<tr>
+	<volist name="data['list']" id="v" mod="2" empty="没有数据">
+	<td><img src="__ROOT__/{$v['book_photo']}" width="50"><br/>{$v.book_name}<br/>{$v['book_price']}<br/><a href="javascript:del({$v.book_id},{$page})">删除</a></td>
+	<eq name="mod" value="1"></tr><tr></eq>
+	</volist>
+</tr>
+<tr>
+	<td>{$data['show']}</td>
+</tr>

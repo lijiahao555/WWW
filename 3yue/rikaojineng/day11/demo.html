@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<table>
+		<thead>
+		昵称<input type="text" id="name">请输入愿望<input type="text" id="info"><button onclick="sub()">提交</button>
+		<hr>
+		</thead>
+		<tbody id="t_body">
+			
+		</tbody>
+	</table>
+
+</body>
+<script>
+	function sub(){
+		var name=document.getElementById('name').value;
+		var info=document.getElementById('info').value;
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','demo.php?name='+name+'&info='+info);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+				name=document.getElementById('name').value='';
+				info=document.getElementById('info').value='';
+				if (xhr.responseText==1) {
+					alert('123');
+				}else{
+					document.getElementById('t_body').innerHTML=xhr.responseText
+				}
+			};
+		}
+	}
+</script>
+</html>

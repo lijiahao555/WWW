@@ -1,0 +1,825 @@
+[ 2017-07-27T08:34:49+08:00 ] 127.0.0.1 /3yue/6.28/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001526s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+ERR: 非法操作:index
+
+[ 2017-07-27T08:35:01+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Login/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-07-27T08:35:05+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0595s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003978s ]
+
+[ 2017-07-27T08:35:18+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/addDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.1049s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: id E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 7 行.
+SQL: INSERT INTO `rizhi` (`id`,`name`,`content`,`addtime`,`t_id`) VALUES (NULL,'dwq','dwqdwqd','2017-07-27 08:35:18','2') [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0836s ]
+SQL: INSERT INTO `img` (`img_path`,`login_id`) VALUES ('./Public/Uploads/2017-07-27/5979354689df5.png','14') [ RunTime:0.0137s ]
+
+[ 2017-07-27T08:35:34+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/addDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0530s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: id E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 7 行.
+SQL: INSERT INTO `rizhi` (`id`,`name`,`content`,`addtime`,`t_id`) VALUES (NULL,'dwq','dwqdwqd','2017-07-27 08:35:34','2') [ RunTime:0.0321s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0497s ]
+NOTIC: [8] Undefined variable: a E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\ImgModel.class.php 第 8 行.
+
+[ 2017-07-27T08:35:40+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/addDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0268s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: id E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 7 行.
+SQL: INSERT INTO `rizhi` (`id`,`name`,`content`,`addtime`,`t_id`) VALUES (NULL,'dwq','dwqdwqd','2017-07-27 08:35:40','2') [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0261s ]
+
+[ 2017-07-27T08:36:22+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/addDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0311s ]
+NOTIC: [8] Undefined index: id E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 7 行.
+NOTIC: [8] Undefined index: name E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 8 行.
+NOTIC: [8] Undefined index: content E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 9 行.
+NOTIC: [8] Undefined index: type E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 12 行.
+SQL: INSERT INTO `rizhi` (`id`,`name`,`content`,`addtime`,`t_id`) VALUES (NULL,NULL,NULL,'2017-07-27 08:36:22',NULL) [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0290s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: res E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-07-27T08:36:33+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/addDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0240s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: id E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 7 行.
+SQL: INSERT INTO `rizhi` (`id`,`name`,`content`,`addtime`,`t_id`) VALUES (NULL,'dwqdwq','dwqdwqd','2017-07-27 08:36:33','4') [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0246s ]
+
+[ 2017-07-27T08:38:06+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/addDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0571s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-07-27T08:38:34+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/addDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002005s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0572s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: id E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 7 行.
+SQL: INSERT INTO `rizhi` (`id`,`name`,`content`,`addtime`,`t_id`) VALUES (NULL,'dwqdwq','dwqdwqd','2017-07-27 08:38:34','4') [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0587s ]
+SQL: INSERT INTO `img` (`img_path`,`login_id`) VALUES ('./Public/Uploads/2017-07-27/5979360a492ba.png','19') [ RunTime:0.0115s ]
+SQL: INSERT INTO `img` (`img_path`,`login_id`) VALUES ('./Public/Uploads/2017-07-27/5979360a4f721.png','19') [ RunTime:0.0054s ]
+SQL: INSERT INTO `img` (`img_path`,`login_id`) VALUES ('./Public/Uploads/2017-07-27/5979360a56983.png','19') [ RunTime:0.0049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2017-07-27T08:38:35+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001476s ]
+
+[ 2017-07-27T08:38:35+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/ajax/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003917s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `rizhi` INNER JOIN type on rizhi.t_id=type.type_id INNER JOIN img on rizhi.i_id=img.img_id  WHERE ( name like '%%' )  [ RunTime:0.0052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2017-07-27T08:39:22+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/addDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0562s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: id E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 7 行.
+SQL: INSERT INTO `rizhi` (`id`,`name`,`content`,`addtime`,`t_id`) VALUES (NULL,'dwqdwq','dwqdwqd','2017-07-27 08:39:22','4') [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0550s ]
+
+[ 2017-07-27T08:39:56+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/addDo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0281s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\web\Apache\htdocs\3yue\6.28\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: id E:\web\Apache\htdocs\3yue\6.28\Application\Home\Model\RizhiModel.class.php 第 7 行.
+SQL: INSERT INTO `rizhi` (`id`,`name`,`content`,`addtime`,`t_id`) VALUES (NULL,'dwqdwq','dwqdwqd','2017-07-27 08:39:56','4') [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0252s ]
+
+[ 2017-07-27T14:48:42+08:00 ] 127.0.0.1 /3yue/6.28/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+ERR: 非法操作:index
+
+[ 2017-07-27T14:48:46+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2017-07-27T14:48:46+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Log/ajax/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: [2048] Declaration of Home\Controller\LogController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\LogController.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `rizhi` [ RunTime:0.0485s ]
+SQL: SELECT * FROM `rizhi` INNER JOIN type on rizhi.t_id=type.type_id INNER JOIN img on rizhi.i_id=img.img_id  WHERE ( name like '%%' )  [ RunTime:0.0152s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001647s ]
+
+[ 2017-07-27T14:48:55+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/index/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2017-07-27T14:48:55+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.1310s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002240s ]
+
+[ 2017-07-27T14:54:13+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/index/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2017-07-27T14:54:13+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-07-27T14:54:31+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2017-07-27T14:54:35+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/chang/id/21,
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0257s ]
+SQL: DELETE FROM `goods` WHERE `id` = 21 [ RunTime:0.0405s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0386s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001716s ]
+
+[ 2017-07-27T14:54:35+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0543s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001747s ]
+
+[ 2017-07-27T14:56:04+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/stop/id/17,
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+NOTIC: [8] Undefined variable: ida E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0330s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+
+[ 2017-07-27T14:56:10+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/index/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2017-07-27T14:56:10+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2017-07-27T14:56:14+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/stop/id/17,
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+NOTIC: [8] Undefined variable: ida E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0245s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+
+[ 2017-07-27T14:56:24+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/index/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2017-07-27T14:56:24+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0044s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-07-27T14:56:27+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/stop/id/17,22,
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+NOTIC: [8] Undefined variable: ida E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0236s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+
+[ 2017-07-27T14:56:29+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/index/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2017-07-27T14:56:29+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0271s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0069s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2017-07-27T14:56:33+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/stop/id/22,23,
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+NOTIC: [8] Undefined variable: ida E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0250s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+
+[ 2017-07-27T14:56:33+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/2/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0642s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 3,3   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001806s ]
+
+[ 2017-07-27T14:57:08+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/index/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 42 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2017-07-27T14:57:08+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0288s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2017-07-27T14:57:11+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/chang/id/17,22,
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0273s ]
+SQL: DELETE FROM `goods` WHERE `id` IN ('17','22') [ RunTime:0.0477s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2017-07-27T14:57:11+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-07-27T14:57:16+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/chang/id/28,
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0240s ]
+SQL: DELETE FROM `goods` WHERE `id` = 28 [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-07-27T14:57:16+08:00 ] 127.0.0.1 /3yue/6.28/index.php/Home/Index/ajax/p/1/sou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\web\Apache\htdocs\3yue\6.28\Application\Home\Controller\IndexController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0333s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE ( name like '%%' ) LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT * FROM `goods` WHERE ( name like '%%' ) LIMIT 0,3   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001403s ]
+

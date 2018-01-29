@@ -1,0 +1,60 @@
+[ 2017-07-13T15:55:24+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-13T15:56:04+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-13T15:56:06+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-13T15:56:23+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-13T15:57:00+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001717s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-13T15:58:01+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-13T15:58:05+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-13T15:58:48+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001671s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-13T15:59:35+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+ERR: 无法加载模块:Admin
+
+[ 2017-07-13T16:00:39+08:00 ] 127.0.0.1 /4yue/rikao/7.13/index.php/Admin/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001559s ]
+ERR: 无法加载模块:Admin
+

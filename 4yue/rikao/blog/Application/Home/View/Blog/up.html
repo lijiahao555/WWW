@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="{:U('Blog/upOne')}" method="post">
+		<table border="8">
+			<tr>
+				<td>博文标题</td>
+				<td><input type="text" name="title" value="{$list.title}"></td>
+			</tr>
+			<tr>
+				<td>博文内容</td>
+				<td><textarea name="content" id="" cols="30" rows="10">{$list.content}</textarea></td>
+			</tr>
+			<tr>
+				<td>博文标签</td>
+				<td>
+					<volist name="type" id="v">
+					<if condition=" $v['flag'] eq 1">
+						<input type="checkbox" name="label[]" value="{$v.label_id}" checked>{$v.label_name}
+					<else/>
+						<input type="checkbox" name="label[]" value="{$v.label_id}">{$v.label_name}
+					</if>
+					</volist>
+				</td>
+				<input type="hidden" name="name" value="{$id}">
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="提交"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>

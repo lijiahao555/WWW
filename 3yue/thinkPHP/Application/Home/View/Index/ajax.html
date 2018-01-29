@@ -1,0 +1,15 @@
+<foreach name="sql['list']" item="v">
+<tr>
+	<td>{$v['id']}</td>
+	<td>{$v['name']}</td>
+	<td>{$v['type']}</td>
+	<td>{$v['count']}</td>
+	<td>{$v['date']|date="Y-m-d h:i:s",###}</td>
+	<td><img src="__ROOT__/{$v['file']}" width="80"></td>
+
+	<td><a href="javascript:dele({$v['id']},{$p})">删除</a><a href="../../Home/index/save_1?id={$v['id']}">修改</a></td>
+</tr>
+</foreach>
+<tr>
+	<td colspan="6" align="center">{$sql['a']}</td>
+</tr>

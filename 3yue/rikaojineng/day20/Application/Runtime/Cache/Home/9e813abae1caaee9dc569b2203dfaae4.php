@@ -1,0 +1,111 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="/3yue/rikaojineng/day20/index.php/Home/Index/addDo" method="post" onsubmit="return sub()" enctype="multipart/form-data">
+		<table border="5">
+			<tr>
+				<td>书名</td>
+				<td><input type="text" name="book_name" id="c_name" onblur="ck_name(this)"><span id="ckr_name"></span></td>
+			</tr>
+			<tr>
+				<td>作者</td>
+				<td><input type="text" name="book_auther"></td>
+			</tr>
+			<tr>
+				<td>分类</td>
+				<td>
+					<select name="Tid">
+						<?php if(is_array($a)): foreach($a as $key=>$v): ?><option value="<?php echo ($v["type_id"]); ?>"><?php echo ($v["type_name"]); ?></option><?php endforeach; endif; ?>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>价格</td>
+				<td><input type="text" name="book_price" id="c_price" onblur="ck_price(this)"><span id="ckr_price"></span></td>
+			</tr>
+			<tr>
+				<td>封面</td>
+				<td><input type="file" name="book_photo"></td>
+			</tr>
+			<tr>
+				<td>描述</td>
+				<td>
+					<textarea name="book_desc" cols="20" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="提交"></td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+</center>
+<script>
+window.isname=false;
+
+	function ck_name(th){
+		var name=th.value;
+		if (name=='') {
+			document.getElementById('ckr_name').innerHTML="<font color='red'>用户名不能为空</font>";
+			return false;
+		};
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', '/3yue/rikaojineng/day20/index.php/Home/Index/xiao/name/'+name);
+		xhr.send();
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if (xhr.responseText==1) {
+					document.getElementById('ckr_name').innerHTML="<font color='red'>√</font>";
+					window.isname=true;
+				}else{
+					document.getElementById('ckr_name').innerHTML="<font color='red'>用户名已存在</font>";
+					window.isname=false;
+				}
+			};
+		}
+	}
+	
+	function ck_price(th){
+		var price=th.value;
+		var z_price=/^\d{1,15}$/;
+		if (z_price.test(price)=='') {
+			document.getElementById('ckr_price').innerHTML="<font color='red'>价格只能为数字且不能为空</font>";
+			return false;
+			
+		}else{
+			document.getElementById('ckr_price').innerHTML="<font color='red'>√</font>";
+			return true;
+			
+		}
+	}
+
+	function sub(){
+		var name=document.getElementById('c_name').value
+		if (name=='') {
+			document.getElementById('ckr_name').innerHTML="<font color='red'>用户名不能为空</font>";
+			return false;
+		};
+		var price=document.getElementById('c_price').value
+		var z_price=/^\d{1,15}$/;
+
+		if (z_price.test(price)=='') {
+			document.getElementById('ckr_price').innerHTML="<font color='red'>密码不能为空,且数字</font>";
+			return false;
+		};
+
+		if (window.isname==true) {
+			return true;
+		}else{
+			return false;
+		}
+	
+	}
+
+</script>
+</body>
+</html>

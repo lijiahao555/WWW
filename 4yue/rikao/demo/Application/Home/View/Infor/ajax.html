@@ -1,0 +1,17 @@
+<tr>
+	<volist name="list['list']" id="v" mod="1" empty="没有数据">
+	<td><b>{$v.name}</b>&nbsp;&nbsp;&nbsp;{$v.time}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br><hr width="485">{$v.content}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="zan({$v.id},this)">赞</button><span>{$v.zan}</span></br>{$v.type_name}</td>
+	<eq name="mod" value="0"></tr><tr></eq>
+	
+	</volist>
+</tr>
+<tr>
+	<td align='center' colspan='6'>
+	共{$list['page']['zong']}条说说
+		<input type='button'  onclick="ajax(1,{$list['h']})" value='首页'>
+		<input type='button'  onclick="ajax({$list['page']['up']},{$list['h']})" value='上一页'>
+		<input type='button'  onclick="ajax({$list['page']['next']},{$list['h']})" value='下一页'>
+		<input type='button'  onclick="ajax({$list['page']['zong']},{$list['h']})"  value="尾页">
+	</td>
+</tr>
+

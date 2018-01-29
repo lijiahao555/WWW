@@ -1,0 +1,14 @@
+<volist name="list" id="v">
+<tr>
+	<td>{$v.id}</td>
+	<td>{$v.name}</td>
+	<td>{$v.content}</td>
+	<td>{$v.height}</td>
+	<td>{$v.type_name}</td>
+	<td>{$v.date}</td>
+	<td><a href="{:U('/Home/Index/del/')}?id={$v.id}">删除</a><a href="{:U('/Home/Index/up')}?id={$v.id}">修改</a></td>
+</tr>
+</volist>
+<tr>
+	<td colspan="7" align="center">当前 {$page} 页<button onclick="ajax({$up})">上一页</button><button onclick="ajax({$next})">下一页</button></td>
+</tr>

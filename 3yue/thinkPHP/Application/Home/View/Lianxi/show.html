@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>周末练习展示</title>
+</head>
+<body>
+<center>
+<input type="text" id="sou"><input type="text" id="sou1"><button onclick="ajax(1)">搜索</button>
+	<table border="2">
+		<tr>
+			<td>ID</td>
+			<td>姓名</td>
+			<td>密码</td>
+			<td>班级</td>
+			<td>图片</td>
+			<td>内容</td>
+			<td>操作</td>
+		</tr>
+		<tbody id="t_body">
+			
+		</tbody>
+	</table>
+</center>
+<script>
+	function ajax(p){
+		var sou=document.getElementById('sou').value;
+		var sou1=document.getElementById('sou1').value;
+		if (sou==''&&sou1=='') {
+			var url='__URL__/ajax/p/'+p
+		}else{
+			var url='__URL__/ajax/p/'+p+'/sou/'+sou+'/sou1/'+sou1
+		}
+		var xhr=new XMLHttpRequest();
+		xhr.open('get',url);
+		xhr.send();
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				document.getElementById('t_body').innerHTML=xhr.responseText;
+			};
+		}
+	}
+	ajax(1)
+	function del(id,p){
+		
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','__URL__/del/id/'+id);
+		xhr.send();
+		xhr.onreadystatechange=function (){
+			if (xhr.readyState==4&&xhr.status==200) {
+				// if (xhr.responseText==1) {
+					// document.getElementById('t_body').innerHTML=xhr.responseText;
+					ajax(p);
+					
+				// }else{
+				// 	alert('删除失败');
+				// }
+			};
+		}
+	}
+
+
+
+
+</script>
+</body>
+</html>

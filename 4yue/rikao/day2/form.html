@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="data.php" method="post" onsubmit="return sub()">
+		<table border="5">
+			<tr>
+				<td>用户名</td>
+				<td><input type="text" name="name" id="c_name" onblur="ck_name()"><span id="ckr_name"></span></td>
+			</tr>
+			<tr>
+				<td>密码</td>
+				<td><input type="text" name="pwd" id="c_pwd" onblur="ck_pwd()"><span id="ckr_pwd"></span></td>
+			</tr>
+			<tr>
+				<td>确认密码</td>
+				<td><input type="text" name="rpwd" id="c_rpwd" onblur="ck_rpwd()"><span id="ckr_rpwd"></span></td>
+			</tr>
+			<tr>
+				<td>邮箱</td>
+				<td><input type="email" name="email" id="c_email" onblur="ck_email()"><span id="ckr_email"></span></td>
+			</tr>
+			<tr>
+				<td>爱好</td>
+				<td>
+					<input type="checkbox" name="box[]" onclick="ck_box()" value="游泳">游泳
+					<input type="checkbox" name="box[]" onclick="ck_box()" value="乒乓球">乒乓球
+					<input type="checkbox" name="box[]" onclick="ck_box()" value="羽毛球">羽毛球
+					<input type="checkbox" name="box[]" onclick="ck_box()" value="跑步">跑步
+					<span id="ckr_box"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>手机号</td>
+				<td><input type="text" name="tel" id="c_tel" onblur="ck_tel()"><span id="ckr_tel"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="注册"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+<script>
+	function ck_name(){
+		var name=document.getElementById('c_name').value;
+		var z_name=/^[a-z]\w{5,7}$/i;
+		if (z_name.test(name)=='') {
+			document.getElementById('ckr_name').innerHTML="<font color='red'>必填 用户名为6-8位有数字字母下划线组成 不能以数字开头</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_name').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_pwd(){
+		var pwd=document.getElementById('c_pwd').value;
+		var z_pwd=/^\d{6,10}$/i;
+		if (z_pwd.test(pwd)=='') {
+			document.getElementById('ckr_pwd').innerHTML="<font color='red'>必填 最低6位 最高10位</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_pwd').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_rpwd(){
+		var pwd=document.getElementById('c_pwd').value;
+		var rpwd=document.getElementById('c_rpwd').value;
+		if (pwd!=rpwd) {
+			document.getElementById('ckr_rpwd').innerHTML="<font color='red'>必填 必须和密码保持一致</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_rpwd').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_email(){
+		var email=document.getElementById('c_email').value;
+		var z_email=/^(\w{3,10}@qq.com)$/i;
+		if (z_email.test(email)=='') {
+			document.getElementById('ckr_email').innerHTML="<font color='red'>必填 格式例如www.@qq.com</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_email').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_tel(){
+		var tel=document.getElementById('c_tel').value;
+		var z_tel=/^\d{11}$/i;
+		if (z_tel.test(tel)=='') {
+			document.getElementById('ckr_tel').innerHTML="<font color='red'>必填 必须是11位数字</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_tel').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_box(){
+		var box=document.getElementsByName('box[]');
+		var b=0;
+		for (var i = 0; i < box.length; i++) {
+			if (box[i].checked==true) {
+				// b+=box[i].value;
+				b++;
+			}
+		}
+		
+		if (b<2) {
+			document.getElementById('ckr_box').innerHTML="<font color='red'>必选 最少2项</font>";
+			return false;
+			
+		}else{
+			document.getElementById('ckr_box').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function sub(){
+		if (ck_name()&ck_pwd()&ck_rpwd()&ck_email()&ck_tel()&ck_box()) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
+</html>

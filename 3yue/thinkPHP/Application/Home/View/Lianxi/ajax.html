@@ -1,0 +1,16 @@
+<foreach name="list['list']" item="v">
+	<tr>
+		<td>{$v.id}</td>
+		<td>{$v.name}</td>
+		<td>{$v.pwd}</td>
+		<td>{$v.type}</td>
+		<td><img src="__ROOT__/{$v.file}" width="80"></td>
+		<td>{$v.count}</td>
+		<td>{$v.price}</td>
+
+		<td><a href="javascript:del({$v.id},{$p})">删除</a></td>
+	</tr>
+</foreach>
+	<tr>
+		<td colspan="7" align="center">{$list['show']}</td>
+	</tr>

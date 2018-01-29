@@ -1,0 +1,14 @@
+<table border="1">
+	<tr>
+		<volist name="date['list']" id="v" mod="3" empty="没有数据">
+		<td><img src="__ROOT__/{$v.file}" width="60"><br/>{$v.name}<br/>{$v.date|date="Y-m-d H:i:s",###}</td>
+		<eq name="mod" value="2"></tr><tr></eq>
+		</volist>
+	</tr>
+	<tr>
+	<td colspan="3" align="center">{$date['show']}</td>
+	</tr>
+	<tr>
+		<td><button onclick="location.href='__URL__/add'">继续添加</button></td>
+	</tr>
+</table>
