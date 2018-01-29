@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+.bar {
+    height: 18px;
+    background: green;
+}
+</style>
+</head>
+<body>
+	<input id="fileupload" type="file" name="file" data-url="{:url('index/weixin/upload_photo')}" multiple>
+<div id="progress">
+    <div class="bar" style="width: 0%;"></div>
+</div>
+
+
+<!-- <div class="upload-btn">
+    <input type="file" name="pic1" id="pic" accept="image/gif,image/jpeg,image/x-png"/>
+</div> -->
+
+</body>
+</html>
+<script src="__JS__/jquery.js"></script>
+<script src="__JS__/jquery.ui.widget.js"></script>
+<script src="__JS__/jquery.iframe-transport.js"></script>
+<script src="__JS__/jquery.fileupload.js"></script>
+<script>
+$(function () {
+    $('#fileupload').fileupload({
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+                $('<p/>').text(file.name).appendTo(document.body);
+            });
+        }
+    });
+});
+$(function () {
+    $('#fileupload').fileupload({
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+                $('<p/>').text(file.name).appendTo(document.body);
+            });
+        }
+    });
+});
+
+$('#fileupload').fileupload({
+    /* ... */
+    progressall: function (e, data) {
+        var progress = parseInt(data.loaded / data.total * 100, 10);
+        $('#progress .bar').css(
+            'width',
+            progress + '%'
+        );
+    }
+});
+$(function () {
+    $('#fileupload').fileupload({
+        dataType: 'json',
+        add: function (e, data) {
+            data.context = $('<p/>').text('Uploading...').appendTo(document.body);
+            data.submit();
+        },
+        done: function (e, data) {
+            data.context.text('Upload finished.');
+        }
+    });
+});
+$(function () {
+    $('#fileupload').fileupload({
+        dataType: 'json',
+        add: function (e, data) {
+            data.context = $('<button/>').text('Upload')
+                .appendTo(document.body)
+                .click(function () {
+                    $(this).replaceWith($('<p/>').text('Uploading...'));
+                    data.submit();
+                });
+        },
+        done: function (e, data) {
+            data.context.text('Upload finished.');
+        }
+    });
+});
+$('#fileupload').fileupload({
+      dataType: 'json',
+      // 文件上传完成后，执行的回调函数
+      done: function (e, data) {
+        console.log(data.result)
+        console.log(data.result.picAddr)
+        // 将图片赋给展示出来 fileuploadPic img
+        $('.fileuploadPic img').attr('src',data.result.picAddr);
+        // 将图片信息赋给 隐藏的 input 框
+        $('#brandLogo').val(data.result.picAddr)
+      }
+    });
+</script>
+<!-- 
+<script>
+    //上传图片
+    $('#pic').change(function(event) {
+        var formData = new FormData();
+        formData.append("file", $(this).get(0).files[0]);
+        $.ajax({
+            url:"{:url('index/weixin/upload_photo')}",
+            type:'POST',
+            data:formData,
+            cache: false,
+            contentType: false,    //不可缺
+            processData: false,    //不可缺
+            success:function(data){
+                console.log(data)
+            }
+        });
+    });
+</script> -->

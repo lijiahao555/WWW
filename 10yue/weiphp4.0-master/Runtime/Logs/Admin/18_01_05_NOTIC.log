@@ -1,0 +1,764 @@
+[ 2018-01-05T09:25:29+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Update/delcache.html&mdm=367|375
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: meta_title E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\39fa4a35fab1e17ed874cf85d2ca00d3.php 第 5 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\39fa4a35fab1e17ed874cf85d2ca00d3.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\39fa4a35fab1e17ed874cf85d2ca00d3.php 第 45 行.
+
+[ 2018-01-05T09:25:30+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/lists.html&mdm=367|373
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ArticleStyleController::lists() should be compatible with Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ArticleStyleController.class.php 第 14 行.
+NOTIC: [2] Declaration of Admin\Controller\ArticleStyleController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ArticleStyleController.class.php 第 14 行.
+NOTIC: [2] Declaration of Admin\Controller\ArticleStyleController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ArticleStyleController.class.php 第 14 行.
+NOTIC: [2] Declaration of Admin\Controller\ArticleStyleController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ArticleStyleController.class.php 第 14 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined index: page E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Model.class.php 第 2219 行.
+NOTIC: [8] Undefined variable: meta_title E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 5 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 45 行.
+NOTIC: [8] Undefined index: uid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 124 行.
+NOTIC: [8] Undefined index: uid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 124 行.
+NOTIC: [8] Undefined index: uid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 124 行.
+NOTIC: [8] Undefined index: uid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 124 行.
+NOTIC: [8] Undefined index: uid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 124 行.
+NOTIC: [8] Undefined index: uid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 124 行.
+NOTIC: [8] Undefined index: uid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 124 行.
+NOTIC: [8] Undefined index: uid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 124 行.
+NOTIC: [8] Undefined index: _page E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\5b397b91137b4162804968a3b1bdbd80.php 第 138 行.
+
+[ 2018-01-05T09:25:31+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/index.html&mdm=367|372
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\f8ad8feee30091816994655e9da2013e.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\f8ad8feee30091816994655e9da2013e.php 第 45 行.
+NOTIC: [8] Undefined offset: 2 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Common\function.php 第 243 行.
+NOTIC: [8] Undefined offset: 2 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Common\function.php 第 243 行.
+
+[ 2018-01-05T09:25:32+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+
+[ 2018-01-05T09:25:40+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+
+[ 2018-01-05T09:25:41+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+
+[ 2018-01-05T09:25:49+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/3.html
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+
+[ 2018-01-05T09:25:52+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+
+[ 2018-01-05T09:25:53+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/3.html
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+
+[ 2018-01-05T09:26:01+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/6.html
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+
+[ 2018-01-05T09:26:17+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/99.html
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+
+[ 2018-01-05T09:26:19+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/PublicBind/index.html&mdm=367|386
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: meta_title E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\9477da53d926a3dcb840d6f4e2ed8ac5.php 第 5 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\9477da53d926a3dcb840d6f4e2ed8ac5.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\9477da53d926a3dcb840d6f4e2ed8ac5.php 第 45 行.
+
+[ 2018-01-05T09:26:22+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/User/index.html&mdm=376|377
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\4425cc98d7993ae1e59dc1a9c4b1cea6.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\4425cc98d7993ae1e59dc1a9c4b1cea6.php 第 45 行.
+NOTIC: [8] Undefined variable: group_id E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\4425cc98d7993ae1e59dc1a9c4b1cea6.php 第 102 行.
+NOTIC: [8] Undefined index: audit_time E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\4425cc98d7993ae1e59dc1a9c4b1cea6.php 第 135 行.
+
+[ 2018-01-05T09:26:23+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+
+[ 2018-01-05T09:26:29+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+
+[ 2018-01-05T09:26:30+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+NOTIC: [2] Cannot declare class Think\Action, because the name is already in use E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\ManageBaseController.class.php 第 316 行.
+NOTIC: [2] Declaration of Admin\Controller\AdminController::lists($model, $where = Array, $order = '', $field = true) should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::edit($id = 0) should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::add() should be compatible with Think\ManageBaseController::add($model = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] Declaration of Admin\Controller\ConfigController::del() should be compatible with Think\ManageBaseController::del($model = NULL, $ids = NULL) E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Admin\Controller\ConfigController.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/weiphp4_0-master_4958e123f81776b413821f455c4e717f.php): No such file or directory E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Addons\Card\Model\CardCustomModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 366 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 384 E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Common\Model\MenuModel.class.php 第 109 行.
+NOTIC: [8] Undefined index: Admin E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Application\Home\Model\AddonsModel.class.php 第 67 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+NOTIC: [8] Undefined variable: mid E:\phpstyudy\PHPTutorial\WWW\10yue\weiphp4.0-master\Runtime\Cache\Admin\86da4c2dbf85c195b0f369d79269c445.php 第 45 行.
+

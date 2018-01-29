@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>群发模板</title>
+</head>
+<body>
+
+	<form action="{:url('index/Weixin/getTW')}" method="post">
+		<table>
+			<tr>
+				<td>token</td>
+				<td><input type="text" name="access_token" value=""></td>
+			</tr>
+			<tr>
+				<td>Articles</td>
+				<td><input type="text" name="Articles"><span>图文消息，一个图文消息支持1到8条图文</span></td>
+			</tr>
+			<tr>
+				<td>thumb_media_id</td>
+				<td><input type="text" name="thumb_media_id" value="ok2jRPPQuvOlF44fm8SPXUA1HnVw8FCo-2Evr0_4FHRqUVwfnBAM4m5RJXf6CjyY"><span>图文消息缩略图的media_id，可以在基础支持-上传多媒体文件接口中获得</span></td>
+			</tr>
+			<tr>
+				<td>title</td>
+				<td><input type="text" name="title"><span>图文消息的标题</span></td>
+			</tr>
+			<tr>
+				<td>content</td>
+				<td><input type="text" name="content"><span>内容</span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" style="width:100px;" value="群发"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

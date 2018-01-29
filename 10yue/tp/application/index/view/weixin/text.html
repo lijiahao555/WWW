@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>群发模板</title>
+</head>
+<body>
+
+	<table border="1" width="700">
+
+		<th>请选择</th>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>头像</th>
+		<th>城市</th>
+		<th>关注时间</th>
+		{volist name="list" id="vo" empty="暂时没有数据"}
+			<tr>
+				<td><input type="checkbox" id='id' name="id" value="{$vo.openid}"></td>
+				<td>{$vo.nickname}</td>
+				<td>{$vo.sex ? '男' : '女'}</td>
+				<td><img src="{$vo.headimgurl}" width="50"></td>
+				<td>{$vo.country}-{$vo.province}-{$vo.city}</td>
+				<td>{$vo.subscribe_time | date='Y-m-d H:i:s',###}</td>
+			</tr>
+		{/volist}
+		<tr>
+			<td colspan="6"><button id="choise">选发</button><button id="all">群发</button></td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+		<td>token</td>
+		<td><input type="text" id="access_token"></td>
+	</tr>
+	<tr>
+		<td>内容</td>
+		<td><textarea id="content" cols="30" rows="5"></textarea></td>
+	</tr>
+	</table>
+	<span id="over"></span>
+	<span id="over2"></span>
+</body>
+</html>
+<script src="__JS__/jquery.js"></script>
+<script>
+
+	$(document).on('click', '#choise', function() {
+		var id = new Array();
+
+		var access_token = $('#access_token').val();
+		var content = $('#content').val();
+		if (access_token=='') {
+			alert('内容不能为空')
+			return
+		}
+		if (content=='') {
+			alert('内容不能为空')
+			return
+		}
+
+		$('input[name="id"]:checked').each(function() {
+			id.push($(this).val());
+		});
+
+		if (id.length < 2) {
+			alert('请勾选,最少2位')
+			return
+		}
+
+		$.ajax({
+			url: "{:url('index/Weixin/Text')}",
+			type: 'post',
+			dataType: 'json',
+			data: {id:id, content:content, access_token:access_token, type:0},
+			success:function(msg){
+				if (msg['errcode'] == 0) {
+					$('#over').html("<font color='red'>发送成功</font>")
+				} else if(msg['errcode'] == 45065) {
+					$('#over').html("<font color='red'>模板重复</font>")
+				} else {
+					$('#over').html("<font color='red'>发送失败</font>")
+				}
+			}
+		})
+	});
+
+	$(document).on('click', '#all', function() {
+		var access_token = $('#access_token').val();
+		var content = $('#content').val();
+		if (access_token=='') {
+			alert('内容不能为空')
+			return
+		}
+		if (content=='') {
+			alert('内容不能为空')
+			return
+		}
+
+		$.ajax({
+			url: "{:url('index/Weixin/Text')}",
+			type: 'post',
+			dataType: 'json',
+			data: {type:1, content:content, access_token,access_token},
+			success:function(msg){
+				console.log(msg)
+				if (msg['errcode'] == 0) {
+                    $('#over').html('errcode:'+msg['errcode']+'errmsg:'+msg['errmsg']+'msg_id:'+msg['msg_id'])
+                } else {
+                	console.log(msg)
+                    $('#over').html('errcode:'+msg['errcode']+'errmsg:'+msg['errmsg'])
+                }
+			}
+		})
+	});
+</script>

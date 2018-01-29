@@ -1,0 +1,1578 @@
+[ 2018-01-10T15:57:56+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Index/Index.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0231s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0022s ]
+
+[ 2018-01-10T15:57:56+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Public/login.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0012s ]
+
+[ 2018-01-10T15:57:57+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Public/login.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `nickname` = 'lijiahao' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_action` WHERE `name` = 'admin_login' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wp_user` SET `login_count`=`login_count`+1,`last_login_time`='1515571077',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0005s ]
+
+[ 2018-01-10T15:57:57+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Index/index.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+
+[ 2018-01-10T15:57:58+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0256s ]
+
+[ 2018-01-10T15:58:01+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists.html&mdm=368|369
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'menu' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 0 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0022s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'QrAdmin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Weiba' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Weiba' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'CardVouchers' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Coupon' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Ask' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Test' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Exam' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Reserve' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'SingIn' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Card' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'NoAnswer' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Leaflets' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'AutoReply' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'CustomMenu' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Wecome' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Wecome' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'WeiSite' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'WeiSite' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Invite' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'RealPrize' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'RedBag' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Coupon' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'WishCard' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Guess' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Forms' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Survey' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Vote' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Vote' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'UserCenter' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'UserCenter' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 0 LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 0 ORDER BY sort asc,id asc  [ RunTime:0.0009s ]
+
+[ 2018-01-10T15:58:04+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/2.html&mdm=368|393
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0016s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 2 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0019s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'CardVouchers' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'WeiPicture' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'WeiUserCenter' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = 'Sms' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 2 ORDER BY sort asc,id asc  [ RunTime:0.0007s ]
+
+[ 2018-01-10T15:58:04+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0014s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0009s ]
+
+[ 2018-01-10T15:58:08+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/del/id/371/model/menu/place/1/mdm/368|370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: DELETE FROM `wp_menu` WHERE `id` IN ('371') [ RunTime:0.0004s ]
+
+[ 2018-01-10T15:58:10+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0014s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0008s ]
+
+[ 2018-01-10T15:58:13+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/del/id/372/model/menu/place/1/mdm/368|370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: DELETE FROM `wp_menu` WHERE `id` IN ('372') [ RunTime:0.0009s ]
+
+[ 2018-01-10T15:58:14+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0031s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0013s ]
+
+[ 2018-01-10T15:58:15+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/del/id/373/model/menu/place/1/mdm/368|370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0014s ]
+SQL: DELETE FROM `wp_menu` WHERE `id` IN ('373') [ RunTime:0.0017s ]
+
+[ 2018-01-10T15:58:16+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0012s ]
+
+[ 2018-01-10T15:58:17+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/del/id/374/model/menu/place/1/mdm/368|370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0012s ]
+SQL: DELETE FROM `wp_menu` WHERE `id` IN ('374') [ RunTime:0.0007s ]
+
+[ 2018-01-10T15:58:18+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0009s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0008s ]
+
+[ 2018-01-10T15:58:18+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/del/id/375/model/menu/place/1/mdm/368|370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0015s ]
+SQL: DELETE FROM `wp_menu` WHERE `id` IN ('375') [ RunTime:0.0015s ]
+
+[ 2018-01-10T15:58:19+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0017s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0019s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0012s ]
+
+[ 2018-01-10T15:58:20+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/del/id/385/model/menu/place/1/mdm/368|370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: DELETE FROM `wp_menu` WHERE `id` IN ('385') [ RunTime:0.0009s ]
+
+[ 2018-01-10T15:58:21+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0007s ]
+
+[ 2018-01-10T15:58:23+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/del/id/386/model/menu/place/1/mdm/368|370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0022s ]
+SQL: DELETE FROM `wp_menu` WHERE `id` IN ('386') [ RunTime:0.0011s ]
+
+[ 2018-01-10T15:58:24+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0017s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0017s ]
+
+[ 2018-01-10T15:58:26+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add/place/1/pid/367.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0008s ]
+
+[ 2018-01-10T15:59:53+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0026s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0010s ]
+
+[ 2018-01-10T15:59:56+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0032s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0016s ]
+
+[ 2018-01-10T15:59:59+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`pid`,`sort` FROM `wp_menu` WHERE `menu_type` = 0 AND `place` = 1 ORDER BY pid asc, sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0012s ]
+
+[ 2018-01-10T16:00:15+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0012s ]
+
+[ 2018-01-10T16:00:21+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/id/367/model/menu/place/1/mdm/368|370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`pid`,`sort` FROM `wp_menu` WHERE `menu_type` = 0 AND `place` = 1 ORDER BY pid asc, sort asc  [ RunTime:0.0015s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0007s ]
+
+[ 2018-01-10T16:00:51+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0016s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571251','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'微信\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'Wecome\',
+  \'url\' => \'/weixin\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0020s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571251','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'微信\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'Wecome\',
+  \'url\' => \'/weixin\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `wp_menu` (`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place`) VALUES ('0','0','微信','1','','/weixin','_self','0','0','1') [ RunTime:0.0012s ]
+
+[ 2018-01-10T16:00:53+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0015s ]
+
+[ 2018-01-10T16:00:59+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add/place/1/pid/406.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_menu` WHERE `id` = 406 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-01-10T16:02:03+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0033s ]
+
+[ 2018-01-10T16:02:23+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0018s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571343','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0020s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571343','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='0',`place`='1' WHERE `id` = 367 [ RunTime:0.0006s ]
+
+[ 2018-01-10T16:02:28+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571348','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0009s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571348','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='0',`place`='1' WHERE `id` = 367 [ RunTime:0.0006s ]
+
+[ 2018-01-10T16:02:28+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571348','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571348','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='0',`place`='1' WHERE `id` = 367 [ RunTime:0.0007s ]
+
+[ 2018-01-10T16:02:29+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571349','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571349','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='0',`place`='1' WHERE `id` = 367 [ RunTime:0.0009s ]
+
+[ 2018-01-10T16:02:29+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0011s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571349','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0010s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571349','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='0',`place`='1' WHERE `id` = 367 [ RunTime:0.0010s ]
+
+[ 2018-01-10T16:02:29+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571349','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571349','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='0',`place`='1' WHERE `id` = 367 [ RunTime:0.0004s ]
+
+[ 2018-01-10T16:02:31+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571351','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0019s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571351','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='1',`place`='1' WHERE `id` = 367 [ RunTime:0.0007s ]
+
+[ 2018-01-10T16:02:32+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571352','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0015s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571352','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='1',`place`='1' WHERE `id` = 367 [ RunTime:0.0010s ]
+
+[ 2018-01-10T16:02:33+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0013s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571353','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0011s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571353','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='1',`place`='1' WHERE `id` = 367 [ RunTime:0.0007s ]
+
+[ 2018-01-10T16:02:33+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571353','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571353','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/mdm/368%7C370.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'系统\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/Config/group\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+  \'id\' => \'367\',
+); 
+') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 367 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='系统',`url_type`='1',`addon_name`='',`url`='Admin/Config/group',`target`='_self',`is_hide`='0',`sort`='1',`place`='1' WHERE `id` = 367 [ RunTime:0.0004s ]
+
+[ 2018-01-10T16:02:33+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0016s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0024s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0012s ]
+
+[ 2018-01-10T16:02:40+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0009s ]
+
+[ 2018-01-10T16:02:42+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add/place/1/pid/406.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0034s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0044s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `title` FROM `wp_menu` WHERE `id` = 406 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0025s ]
+
+[ 2018-01-10T16:03:11+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0009s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571391','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid\' => \'406\',
+  \'title\' => \'获取Token\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/weixin/token/\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0010s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571391','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid\' => \'406\',
+  \'title\' => \'获取Token\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/weixin/token/\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'1\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `wp_menu` (`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place`) VALUES ('1','406','获取Token','1','','Admin/weixin/token/','_self','0','1','1') [ RunTime:0.0005s ]
+
+[ 2018-01-10T16:03:13+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0026s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0019s ]
+
+[ 2018-01-10T16:03:15+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add/place/1/pid/406.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_menu` WHERE `id` = 406 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0016s ]
+
+[ 2018-01-10T16:03:56+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571436','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid\' => \'406\',
+  \'title\' => \'添加群发模板\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/weixin/add_text\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'2\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571436','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid\' => \'406\',
+  \'title\' => \'添加群发模板\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/weixin/add_text\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'2\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: INSERT INTO `wp_menu` (`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place`) VALUES ('1','406','添加群发模板','1','','Admin/weixin/add_text','_self','0','2','1') [ RunTime:0.0005s ]
+
+[ 2018-01-10T16:03:58+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0017s ]
+
+[ 2018-01-10T16:04:00+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add/place/1/pid/406.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_menu` WHERE `id` = 406 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2018-01-10T16:04:18+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571458','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid\' => \'406\',
+  \'title\' => \'群发\',
+  \'url_type\' => \'0\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'3\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0005s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571458','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid\' => \'406\',
+  \'title\' => \'群发\',
+  \'url_type\' => \'0\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'3\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `wp_menu` (`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place`) VALUES ('1','406','群发','0','0','','_self','0','3','1') [ RunTime:0.0007s ]
+
+[ 2018-01-10T16:04:20+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0027s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '0' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0010s ]
+
+[ 2018-01-10T16:04:23+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/id/409/model/menu/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0065s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 409 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `id`,`title`,`pid`,`sort` FROM `wp_menu` WHERE `menu_type` = 0 AND `place` = 1 ORDER BY pid asc, sort asc  [ RunTime:0.0021s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0018s ]
+
+[ 2018-01-10T16:04:46+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571486','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid0\' => \'406\',
+  \'pid\' => \'406\',
+  \'title\' => \'群发\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/weixin/show_text\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'3\',
+  \'place\' => \'1\',
+  \'id\' => \'409\',
+); 
+') [ RunTime:0.0011s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571486','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid0\' => \'406\',
+  \'pid\' => \'406\',
+  \'title\' => \'群发\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/weixin/show_text\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'3\',
+  \'place\' => \'1\',
+  \'id\' => \'409\',
+); 
+') [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 409 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='1',`pid`='406',`title`='群发',`url_type`='1',`addon_name`='',`url`='Admin/weixin/show_text',`target`='_self',`is_hide`='0',`sort`='3',`place`='1' WHERE `id` = 409 [ RunTime:0.0005s ]
+
+[ 2018-01-10T16:04:48+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0039s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0024s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0027s ]
+
+[ 2018-01-10T16:04:52+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add/place/1/pid/406.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_menu` WHERE `id` = 406 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0012s ]
+
+[ 2018-01-10T16:05:57+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571557','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid\' => \'406\',
+  \'title\' => \'设置菜单\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/wexin/set_menu\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'5\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571557','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/add.html
+POST: array (
+  \'menu_type\' => \'1\',
+  \'pid\' => \'406\',
+  \'title\' => \'设置菜单\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'Admin/wexin/set_menu\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'5\',
+  \'place\' => \'1\',
+); 
+') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_menu` (`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place`) VALUES ('1','406','设置菜单','1','','Admin/wexin/set_menu','_self','0','5','1') [ RunTime:0.0006s ]
+
+[ 2018-01-10T16:05:59+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0014s ]
+
+[ 2018-01-10T16:06:28+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0015s ]
+
+[ 2018-01-10T16:06:33+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0009s ]
+
+[ 2018-01-10T16:06:59+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit/id/406/model/menu/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 406 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`pid`,`sort` FROM `wp_menu` WHERE `menu_type` = 0 AND `place` = 1 ORDER BY pid asc, sort asc  [ RunTime:0.0015s ]
+SQL: SELECT `name`,`title` FROM `wp_addons` WHERE `type` = 0 ORDER BY id asc  [ RunTime:0.0023s ]
+
+[ 2018-01-10T16:07:05+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571625','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'self微信\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'/weixin\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'406\',
+); 
+') [ RunTime:0.0014s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515571625','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/edit.html
+POST: array (
+  \'menu_type\' => \'0\',
+  \'pid0\' => \'0\',
+  \'pid\' => \'0\',
+  \'title\' => \'self微信\',
+  \'url_type\' => \'1\',
+  \'addon_name\' => \'0\',
+  \'url\' => \'/weixin\',
+  \'target\' => \'_self\',
+  \'is_hide\' => \'0\',
+  \'sort\' => \'0\',
+  \'place\' => \'1\',
+  \'id\' => \'406\',
+); 
+') [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 406 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `wp_menu` SET `menu_type`='0',`pid`='0',`title`='self微信',`url_type`='1',`addon_name`='',`url`='/weixin',`target`='_self',`is_hide`='0',`sort`='0',`place`='1' WHERE `id` = 406 [ RunTime:0.0007s ]
+
+[ 2018-01-10T16:07:07+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Menu/lists/place/1.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0025s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `wp_addons` WHERE `name` = '' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0032s ]
+
+[ 2018-01-10T16:19:32+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0015s ]
+

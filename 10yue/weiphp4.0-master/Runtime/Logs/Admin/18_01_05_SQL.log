@@ -1,0 +1,240 @@
+[ 2018-01-05T09:25:29+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Update/delcache.html&mdm=367|375
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0023s ]
+
+[ 2018-01-05T09:25:30+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/ArticleStyle/lists.html&mdm=367|373
+SQL: SHOW COLUMNS FROM `wp_hooks` [ RunTime:0.0114s ]
+SQL: SELECT `name`,`addons` FROM `wp_hooks`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_addons` [ RunTime:0.0111s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wp_plugin` [ RunTime:0.0087s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('SocialComment')  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('SocialComment')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Vote','Wecome','UserCenter','WeiSite','Hitegg','Leaflets','CustomReply','Survey','Diy','CustomMenu','Invite','Game','Ask','Forms','CardVouchers','RedBag','Guess','WishCard','RealPrize','ConfigureAccount','BusinessCard','AutoReply','Payment','Comment','ShopCoupon','Coupon','Card','SingIn','Reserve','Wuguai','Sms','Exam','Test','Draw','YaoTV','Analysis','Weiba','QrAdmin','PublicBind','Cms','Feedback','WeiUserCenter','WeiPicture')  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Vote','Wecome','UserCenter','WeiSite','Hitegg','Leaflets','CustomReply','Survey','Diy','CustomMenu','Invite','Game','Ask','Forms','CardVouchers','RedBag','Guess','WishCard','RealPrize','ConfigureAccount','BusinessCard','AutoReply','Payment','Comment','ShopCoupon','Coupon','Card','SingIn','Reserve','Wuguai','Sms','Exam','Test','Draw','YaoTV','Analysis','Weiba','QrAdmin','PublicBind','Cms','Feedback','WeiUserCenter','WeiPicture')  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Cascade')  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Cascade')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Diy')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Diy')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('DynamicSelect')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('DynamicSelect')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('News')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('News')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('DynamicCheckbox')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('DynamicCheckbox')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Material')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Material')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Prize')  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Prize')  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_config` [ RunTime:0.0114s ]
+SQL: SELECT `type`,`name`,`value` FROM `wp_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wp_apps` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wp_card_custom` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wp_menu` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `wp_addons` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wp_article_style` [ RunTime:0.0124s ]
+SQL: SELECT count(1) as count FROM `wp_article_style` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_article_style` LIMIT 0,15   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wp_article_style_group` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-01-05T09:25:31+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/index.html&mdm=367|372
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_config` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `wp_config` WHERE `status` = 1 ORDER BY id LIMIT 0,20   [ RunTime:0.0020s ]
+
+[ 2018-01-05T09:25:32+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0023s ]
+
+[ 2018-01-05T09:25:40+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_admin_log` [ RunTime:0.0085s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515115539','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+POST: array (
+  \'config\' => 
+  array (
+    \'WEB_SITE_TITLE\' => \'weiphp4.0\',
+    \'SYSTEM_LOGO\' => \'\',
+    \'LOGIN_BACKGROUP\' => \'\',
+    \'WEB_SITE_CLOSE\' => \'1\',
+    \'COPYRIGHT\' => \'版本由圆梦云科技有限公司所有\',
+    \'WEB_SITE_KEYWORD\' => \'weiphp,微信开源开发框架,小程序开发框架\',
+    \'WEB_SITE_DESCRIPTION\' => \'WeiPHP4.0，为移动应用提供后端运营管理的CMS系统\',
+    \'WEB_SITE_ICP\' => \'\',
+    \'COLOR_STYLE\' => \'blue_color\',
+    \'SENSITIVE_WORDS\' => \'bitch,shit\',
+  ),
+); 
+') [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515115539','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+POST: array (
+  \'config\' => 
+  array (
+    \'WEB_SITE_TITLE\' => \'weiphp4.0\',
+    \'SYSTEM_LOGO\' => \'\',
+    \'LOGIN_BACKGROUP\' => \'\',
+    \'WEB_SITE_CLOSE\' => \'1\',
+    \'COPYRIGHT\' => \'版本由圆梦云科技有限公司所有\',
+    \'WEB_SITE_KEYWORD\' => \'weiphp,微信开源开发框架,小程序开发框架\',
+    \'WEB_SITE_DESCRIPTION\' => \'WeiPHP4.0，为移动应用提供后端运营管理的CMS系统\',
+    \'WEB_SITE_ICP\' => \'\',
+    \'COLOR_STYLE\' => \'blue_color\',
+    \'SENSITIVE_WORDS\' => \'bitch,shit\',
+  ),
+); 
+') [ RunTime:0.0005s ]
+SQL: UPDATE `wp_config` SET `value`='weiphp4.0' WHERE `name` = 'WEB_SITE_TITLE' [ RunTime:0.0005s ]
+SQL: UPDATE `wp_config` SET `value`='' WHERE `name` = 'SYSTEM_LOGO' [ RunTime:0.0005s ]
+SQL: UPDATE `wp_config` SET `value`='' WHERE `name` = 'LOGIN_BACKGROUP' [ RunTime:0.0003s ]
+SQL: UPDATE `wp_config` SET `value`='1' WHERE `name` = 'WEB_SITE_CLOSE' [ RunTime:0.0003s ]
+SQL: UPDATE `wp_config` SET `value`='版本由圆梦云科技有限公司所有' WHERE `name` = 'COPYRIGHT' [ RunTime:0.0003s ]
+SQL: UPDATE `wp_config` SET `value`='weiphp,微信开源开发框架,小程序开发框架' WHERE `name` = 'WEB_SITE_KEYWORD' [ RunTime:0.0003s ]
+SQL: UPDATE `wp_config` SET `value`='WeiPHP4.0，为移动应用提供后端运营管理的CMS系统' WHERE `name` = 'WEB_SITE_DESCRIPTION' [ RunTime:0.0003s ]
+SQL: UPDATE `wp_config` SET `value`='' WHERE `name` = 'WEB_SITE_ICP' [ RunTime:0.0003s ]
+SQL: UPDATE `wp_config` SET `value`='blue_color' WHERE `name` = 'COLOR_STYLE' [ RunTime:0.0004s ]
+SQL: UPDATE `wp_config` SET `value`='bitch,shit' WHERE `name` = 'SENSITIVE_WORDS' [ RunTime:0.0004s ]
+
+[ 2018-01-05T09:25:41+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT `type`,`name`,`value` FROM `wp_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0019s ]
+
+[ 2018-01-05T09:25:49+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/3.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 3 ORDER BY sort  [ RunTime:0.0011s ]
+
+[ 2018-01-05T09:25:52+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515115552','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+POST: array (
+  \'config\' => 
+  array (
+    \'USER_ALLOW_REGISTER\' => \'1\',
+    \'REG_AUDIT\' => \'1\',
+    \'WEB_SITE_VERIFY\' => \'0\',
+  ),
+); 
+') [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515115552','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+POST: array (
+  \'config\' => 
+  array (
+    \'USER_ALLOW_REGISTER\' => \'1\',
+    \'REG_AUDIT\' => \'1\',
+    \'WEB_SITE_VERIFY\' => \'0\',
+  ),
+); 
+') [ RunTime:0.0005s ]
+SQL: UPDATE `wp_config` SET `value`='1' WHERE `name` = 'USER_ALLOW_REGISTER' [ RunTime:0.0005s ]
+SQL: UPDATE `wp_config` SET `value`='1' WHERE `name` = 'REG_AUDIT' [ RunTime:0.0006s ]
+SQL: UPDATE `wp_config` SET `value`='0' WHERE `name` = 'WEB_SITE_VERIFY' [ RunTime:0.0005s ]
+
+[ 2018-01-05T09:25:53+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/3.html
+SQL: SELECT `type`,`name`,`value` FROM `wp_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 3 ORDER BY sort  [ RunTime:0.0008s ]
+
+[ 2018-01-05T09:26:01+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/6.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 6 ORDER BY sort  [ RunTime:0.0008s ]
+
+[ 2018-01-05T09:26:17+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group/id/99.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 99 ORDER BY sort  [ RunTime:0.0005s ]
+
+[ 2018-01-05T09:26:19+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/PublicBind/index.html&mdm=367|386
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+
+[ 2018-01-05T09:26:22+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/User/index.html&mdm=376|377
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `wp_user` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL ORDER BY uid desc LIMIT 0,20   [ RunTime:0.0018s ]
+
+[ 2018-01-05T09:26:23+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+
+[ 2018-01-05T09:26:29+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515115589','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+POST: array (
+  \'config\' => 
+  array (
+    \'WEB_SITE_TITLE\' => \'weiphp4.0\',
+    \'SYSTEM_LOGO\' => \'\',
+    \'LOGIN_BACKGROUP\' => \'\',
+    \'WEB_SITE_CLOSE\' => \'1\',
+    \'COPYRIGHT\' => \'版本由圆梦云科技有限公司所有\',
+    \'WEB_SITE_KEYWORD\' => \'weiphp,微信开源开发框架,小程序开发框架\',
+    \'WEB_SITE_DESCRIPTION\' => \'WeiPHP4.0，为移动应用提供后端运营管理的CMS系统\',
+    \'WEB_SITE_ICP\' => \'\',
+    \'COLOR_STYLE\' => \'default_color\',
+    \'SENSITIVE_WORDS\' => \'bitch,shit\',
+  ),
+); 
+') [ RunTime:0.0005s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','0.0.0.0','Admin','1515115589','http://localhost/10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/save.html
+POST: array (
+  \'config\' => 
+  array (
+    \'WEB_SITE_TITLE\' => \'weiphp4.0\',
+    \'SYSTEM_LOGO\' => \'\',
+    \'LOGIN_BACKGROUP\' => \'\',
+    \'WEB_SITE_CLOSE\' => \'1\',
+    \'COPYRIGHT\' => \'版本由圆梦云科技有限公司所有\',
+    \'WEB_SITE_KEYWORD\' => \'weiphp,微信开源开发框架,小程序开发框架\',
+    \'WEB_SITE_DESCRIPTION\' => \'WeiPHP4.0，为移动应用提供后端运营管理的CMS系统\',
+    \'WEB_SITE_ICP\' => \'\',
+    \'COLOR_STYLE\' => \'default_color\',
+    \'SENSITIVE_WORDS\' => \'bitch,shit\',
+  ),
+); 
+') [ RunTime:0.0005s ]
+SQL: UPDATE `wp_config` SET `value`='weiphp4.0' WHERE `name` = 'WEB_SITE_TITLE' [ RunTime:0.0004s ]
+SQL: UPDATE `wp_config` SET `value`='' WHERE `name` = 'SYSTEM_LOGO' [ RunTime:0.0004s ]
+SQL: UPDATE `wp_config` SET `value`='' WHERE `name` = 'LOGIN_BACKGROUP' [ RunTime:0.0004s ]
+SQL: UPDATE `wp_config` SET `value`='1' WHERE `name` = 'WEB_SITE_CLOSE' [ RunTime:0.0004s ]
+SQL: UPDATE `wp_config` SET `value`='版本由圆梦云科技有限公司所有' WHERE `name` = 'COPYRIGHT' [ RunTime:0.0004s ]
+SQL: UPDATE `wp_config` SET `value`='weiphp,微信开源开发框架,小程序开发框架' WHERE `name` = 'WEB_SITE_KEYWORD' [ RunTime:0.0004s ]
+SQL: UPDATE `wp_config` SET `value`='WeiPHP4.0，为移动应用提供后端运营管理的CMS系统' WHERE `name` = 'WEB_SITE_DESCRIPTION' [ RunTime:0.0004s ]
+SQL: UPDATE `wp_config` SET `value`='' WHERE `name` = 'WEB_SITE_ICP' [ RunTime:0.0004s ]
+SQL: UPDATE `wp_config` SET `value`='default_color' WHERE `name` = 'COLOR_STYLE' [ RunTime:0.0005s ]
+SQL: UPDATE `wp_config` SET `value`='bitch,shit' WHERE `name` = 'SENSITIVE_WORDS' [ RunTime:0.0011s ]
+
+[ 2018-01-05T09:26:30+08:00 ] ::1 /10yue/weiphp4.0-master/index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT `type`,`name`,`value` FROM `wp_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_card_custom` WHERE `token` = ''  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0011s ]
+
