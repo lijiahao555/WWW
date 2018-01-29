@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学生注册信息</title>
+</head>
+<body>
+<center>
+	<h2>欢迎注册学生信息</h2>
+	<form action="date.php" method="post" onsubmit=" return subm()">
+		<table border="1" width="400px">
+			<tr>
+				<td>姓名：</td>
+				<td><input type="text" name="name"  id="c_name" onblur="ck_name()"><span id="ckr_name"></span></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" name="pwd"  id="c_pwd" onblur="ck_pwd()"><span id="ckr_pwd"></span></td>
+			</tr>
+			<tr>
+				<td>班级</td>
+				<td><input type="text" name="class" id="c_class"  onblur="ck_class()"><span id="ckr_class"></span></td>
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td>
+					<input type="radio" value="男" name="sex" id="sex1" onclick="ck_sex()">男
+					<input type="radio" value="女" name="sex" id="sex1" onclick="ck_sex()">女<span id="ckr_sex"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>邮箱：</td>
+				<td><input type="email" name="email" id="c_email"></td>
+			</tr>
+			<tr>
+				<td>城市：</td>
+				<td>
+					<select name="city" onchange="ck_city()" id="c_city">
+						<option value="0">请选择</option>
+						<option value="北京">北京</option>
+						<option value="上海">上海</option>
+						<option value="广州">广州</option>
+					</select><span id="ckr_city"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>学院：</td>
+				<td><input type="text" name="school"  id="c_school" onblur="ck_school()"><span id="ckr_school"></span></td>
+			</tr>
+			<tr>
+				<td>课程名称：</td>
+				<td><input type="text" name="cour"  id="c_cour" onblur="ck_cour()"><span id="ckr_cour"></span></td>
+			</tr>
+			<tr>
+				<td>自我介绍：</td>
+				<td><textarea name="cont" id="c_cont" cols="20" rows="5" onkeydown="ck_cont()"></textarea>
+				<span id="ckr_cont"></span></td>
+			</tr>
+			<tr>
+				<td align="right"><input type="submit" value="提交"></td>
+				<td><input type="reset" value="重置"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+<script>
+	function ck_name(){
+		var name=document.getElementById('c_name').value
+		if (name=='') {
+			document.getElementById('ckr_name').innerHTML="<font color='red'>用户名不能为空</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_name').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	};
+
+	function ck_pwd(){
+		var pwd=document.getElementById('c_pwd').value
+		if (pwd=='') {
+			document.getElementById('ckr_pwd').innerHTML="<font color='red'>密码不能为空</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_pwd').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	};
+	
+	function ck_class(){
+		var aclass=document.getElementById('c_class').value
+		if (aclass=='') {
+			document.getElementById('ckr_class').innerHTML="<font color='red'>班级不能为空</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_class').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	};
+
+	function ck_sex(){
+		var sex=document.getElementsByName('sex')
+		if (sex[0].checked==true||sex[1].checked==true) {
+			document.getElementById('ckr_sex').innerHTML="<font color='red'>√</font>";
+			return true;
+		}else{
+			document.getElementById('ckr_sex').innerHTML="<font color='red'>*姓名必选</font>";
+			return false;
+		}
+	};
+
+	function ck_city(){
+		var city=document.getElementById('c_city').value
+		if (city==0) {
+			document.getElementById('ckr_city').innerHTML="<font color='red'>*必须选</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_city').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	};
+
+	function ck_school(){
+		var school=document.getElementById('c_school').value
+		if (school=='') {
+			document.getElementById('ckr_school').innerHTML="<font color='red'>学院不能为空</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_school').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	};
+
+	function ck_cour(){
+		var cour=document.getElementById('c_cour').value
+		if (cour=='') {
+			document.getElementById('ckr_cour').innerHTML="<font color='red'>课程为空</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_cour').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	};
+
+	function ck_cont(){
+		var cont=document.getElementById('c_cont').value
+		if (cont=='') {
+			document.getElementById('ckr_cont').innerHTML="<font color='red'>学院不能为空</font>";
+			return false;
+		}
+		if (cont.length>=20) {
+			document.getElementById('ckr_cont').innerHTML="<font color='red'>字多了</font>";
+			return false;
+		};
+			document.getElementById('ckr_cont').innerHTML="<font color='red'>√</font>";
+			return true;
+		
+	};
+
+	function subm(){
+		if (ck_name()==true&&ck_pwd()==true&&ck_class()==true&&ck_sex()==true&&ck_city()==true&&ck_school()==true&&ck_cour()==true&&ck_cont()==true) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+
+
+	
+</script>
+</html>

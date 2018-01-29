@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+请选择背景颜色：<select id='data' onchange='fun()'>
+	<option value='red'>红色</a>
+	<option value='yellow'>黄色</a>
+	<option value='blue'>蓝色</a>
+</select>
+
+</body>
+<script>
+function fun(){
+	var i=document.getElementById("data").value;
+	document.bgColor=i;
+}
+</script>
+</html>

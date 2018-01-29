@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>六合彩</title>
+</head>
+<body>
+	<h1>六合彩</h1>
+	<input type="text" placeholder="请输入数字,已,号隔开" id="jiang"><span id="zhong"></span><button onclick="ck()">开奖</button>
+	<hr>
+	开奖号码：<span id="span1"></span><br>
+	选择号码：<span id="span2"></span><br>
+	中奖率：<span id="span3"></span>
+</body>
+<script>
+	function ck(){
+		num=document.getElementById('jiang').value;
+		if (num=='') {
+			document.getElementById('zhong').innerHTML="不能为空";
+			return false;
+		}
+
+		arr=new Array(3)
+		for (var i = 0; i <3; i++) {
+			arr[i]=Math.floor(Math.random()*31);
+		};
+
+		var num_arr=num.split(',')
+		num_lv=0;
+		for (var k = 0; k <num.length ; k++) {
+			for (var n = 0; n < arr.length; n++) {
+				if (arr[n]==num_arr[k]) {
+					num_lv+=1
+				}
+			}
+		}
+
+		document.getElementById('span3').innerHTML=(num_lv/3);
+		document.getElementById('span2').innerHTML=num;
+		document.getElementById('span1').innerHTML='<font color="red">'+arr.join(',')+'</font>';
+	}
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="num1" value="11"></br>
+	<input type="text" id="num2" value="22"></br>
+	2数之<span id="id1">0</span></br>
+	2数值<span id="id2">0</span></br>
+</body>
+<script>
+	var num1=document.getElementById('num1').value
+	var num2=document.getElementById('num2').value
+	var	num3=parseInt(num1)+parseInt(num2)
+	var	num4=parseInt(num1)-parseInt(num2)
+	document.getElementById('id1').innerHTML=num3
+	document.getElementById('id2').innerHTML=num4
+</script>
+</html>

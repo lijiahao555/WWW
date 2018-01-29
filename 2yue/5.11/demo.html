@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	验证码:<span id="cont"></span><br>
+	<hr>
+	<input type="text" placeholder="请输入连傻逼" id="de">
+	<button onclick="exam()">生成</button><input type="reset">
+</body>
+	<script>
+	function exam(){
+		var text=document.getElementById('de').value
+		var exam=""
+		for (var i = 1; i<=text; i++) {
+			exam+=Math.floor(Math.random()*10)
+
+		};
+		document.getElementById('cont').innerHTML="<font color='red'>"+exam+"</font>"
+	}
+	</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>走动的时钟</title>
+</head>
+<body>
+	<span id="date"></span>
+</body>
+<script>
+	setInterval( 'js_run()', 1000);
+	function js_run(){
+		var date=new Date();
+
+		var year=date.getFullYear();
+		var month=date.getMonth()+1;
+		var ri=date.getDate();
+		var h=date.getHours();
+		var i=date.getMinutes();
+		var s=date.getSeconds();
+
+		var str_time=year+'年'+month+'月'+ri+'日'+h+'时'+i+'分'+s+'秒';
+		document.getElementById('date').innerHTML=str_time;
+	 }
+
+</script>
+</html>

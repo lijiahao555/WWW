@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>点名表</title>
+</head>
+<body>
+	<div id="div" style="border:1px solid red;width:200px;height:200px;" >
+		
+	</div>
+	<input type="submit" value="点名" onclick="start()"><input type="submit" value="停止" onclick="stop()"><span id="d"></span>
+</body>
+<script>
+	is=0
+	function start(){
+	if (is==1){
+			document.getElementById('d').innerHTML="<font color='red'>*已经在运行了</font>"
+	}else{
+		 i=setInterval('dianming()', 1000)
+		 is=1
+	}
+		
+	}
+	function dianming(){
+	var arr = Array('张浩', '李琪', '李颖', '郭永康', '刘宇', '王轩', '方鑫淼', '王中兴', '温虎', '邓丽飞', '黄鼎伦', '张军', '程晓晓', '庞兴', '金雪建', '王煜', '柏奕晨', '赵晓辉', '李欢', '刘壮', '陆丰粮', '李岩', '王博', '李家豪', '王亚伟', '陈媛媛', '宋旭光', '汪钾林', '陈鑫', '葛永强', '张良', '范楠楠', '杜雨露', '周卫星', '刘云童', '尹晓伟', '阴帅虎', '杨家铵', '温元琦', '张晓芸', '陈树翔', '申超', '李秉谦', '郝蒙恩', '张启航', '崔金荣', '王雪鑫', '孙学伟', '张怡', '宋希望', '常正凯', '宋攀', '刘森', '王新倩', '连腾宇', '胡继鑫', '肖宇', '冯远章', '陈世裕', '郭鑫', '郝秀峰', '潘红壮', '刘亚宁', '周涛', '张鹏飞', '仲雨轩', '邢骐薇','杨春帅','姚胜杰','张裕铭','刘端','刘海滨','孙富强','刘政显');
+	//s=Math.floor(Math.random()*arr.length);
+	//数组单方，数字放【】里，.length array对象长度
+	document.getElementById('div').innerHTML=arr[Math.floor(Math.random()*50)];
+	}
+	function stop(){
+		clearInterval(i)
+		is=0
+	}
+</script>
+</html>

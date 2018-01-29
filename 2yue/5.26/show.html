@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>展示</title>
+</head>
+<body>
+<center>
+<input type="text" id="c_sou" placeholder="请根据名字搜索"><button onclick="t_body(1)">搜索</button>
+	<table border="1">
+		<thead>
+			<th>hhe </th>
+			<th>ID</th>
+			<th>名字</th>
+			<th>性别</th>
+			<th>分类</th>
+			<th>图片</th>
+			<th>内容</th>
+			<th>多选</th>
+			<th>操作</th>
+		</thead>
+		<tbody id="t_body">
+			
+		</tbody>
+	</table>
+</center>
+</body>
+<script>
+	function t_body(page){
+		var sou=document.getElementById('c_sou').value
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','show.php?page='+page+'&sou='+sou);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+				document.getElementById('t_body').innerHTML=xhr.responseText;
+			};
+		}
+	}
+	t_body(1);
+
+	function del(id,page){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','del.php?id='+id+'&page'+page);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if (xhr.responseText==1) {
+					t_body(page);
+				}else{
+					alert('删除失败');
+				}
+			};
+		}
+	}
+
+	function pi(page){
+		var box=document.getElementsByName('box');
+		var pi=''
+		for (var i = 0; i < box.length; i++) {
+			if (box[i].checked==true) {
+				pi+=box[i].value+',';
+			};
+		};
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','del.php?id='+pi);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if (xhr.responseText==1) {
+					t_body(page);
+				}else{
+				alert('删除失败');
+				}
+			}
+		}
+	}
+
+</script>
+</html>

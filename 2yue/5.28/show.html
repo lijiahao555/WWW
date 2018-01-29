@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>展示</title>
+</head>
+<body>
+<center>
+<input type="text" id="sou" placeholder="根据新闻名搜索"><button onclick="t_body(1)">搜索</button>
+	<table border="1" >
+		<thead>
+			<h1>新闻展示页面</h1>
+			<th></th>
+			<th>ID</th>
+			<th>新闻名</th>
+			<th>新闻分类</th>
+			<th>发布人</th>
+			<th>内容</th>
+			<th>图片</th>
+			<th>添加时间</th>
+			<th>操作</th>
+		</thead>
+		<tbody id="t_body">
+			
+		</tbody>
+	</table>
+</center>
+</body>
+<script>
+
+
+	function t_body(page,zong){
+		 	if (page==0) {
+		 		alert("傻吊已经在第一页啦");
+		 		return false;
+		 	}
+		 	if (page>zong) {
+		 		alert("傻吊已经在最后一页啦");
+		 		return false;
+		 	}
+
+		var sou=document.getElementById('sou').value;
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', 'show.php?page='+page+'&sou='+sou);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+					document.getElementById('t_body').innerHTML=xhr.responseText;
+			};
+		}
+	}
+	t_body(1);
+
+	function del(id,page){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', 'delete.php?id='+id+'&page='+page);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if (xhr.responseText==1) {
+					t_body(page);
+				}else{
+					alert('删除失败');
+				}
+			}
+		}
+	}
+
+	function quan(){
+		var box=document.getElementsByName('box');
+		for (var i = 0; i < box.length; i++) {
+			box[i].checked=true;
+		};
+	}
+
+	function buxuan(){
+		var box=document.getElementsByName('box');
+		for (var i = 0; i < box.length; i++) {
+			box[i].checked=false;
+		};
+	}
+
+	function fan(){
+		var box=document.getElementsByName('box');
+		for (var i = 0; i < box.length; i++) {
+			if(box[i].checked==true){
+				box[i].checked=false;
+			}else{
+				box[i].checked=true;
+			}
+		};
+	}
+
+	function pi(page){
+		var box=document.getElementsByName('box')
+		var pi=''
+		for (var i = 0; i < box.length; i++) {
+			if (box[i].checked==true) {
+				pi+=box[i].value+',';
+			};
+		};
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','delete.php?id='+pi+'&page='+page);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if (xhr.responseText==1) {
+					t_body(page);
+				}else{
+					alert('删除失败');
+				}
+			};
+		}
+
+	}
+
+</script>
+</html>

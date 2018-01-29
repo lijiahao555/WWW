@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<hr>
+<h3>定时器</h3>
+<hr>
+<input type="text" id="time" value="0"><span id="a"></span><br>
+<button onclick="dianji()">开始</button><button onclick="stop()">停止</button>
+</body>
+<script>
+	is=0
+	function dianji(){
+		  if (is==1) {
+		  	arr='*计时器开始，不要再点了'
+		  	document.getElementById('a').innerHTML="<font color='red'>"+arr+"</font>"
+
+		  }else{
+		  	start=setInterval('run()',1000)
+		  	is=1
+		  }
+
+	}
+	function run(){
+		 var num=document.getElementById('time').value
+		 num++
+		document.getElementById('time').value=num
+
+	}
+	function stop(){
+		clearInterval(start)
+		is=0
+	}
+
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	生成的验证码：<span id="exam"></span></br>
+	<hr>
+	<input type="text" placeholder="请输入验证码位数(1-15)" id="a">
+	<button onclick="sub()">生成</button><button>刷新</button>
+</body>
+<script>
+function sub(){
+	var text=document.getElementById('a').value
+	var dome=""
+	for (var i = 1; i <=text; i++) {
+		var suiji=Math.floor(Math.random()*10)
+		dome+=suiji
+		
+	};
+	document.getElementById('exam').innerHTML="<font color='red'>"+dome+"</font>"
+
+}
+
+</script>
+</html>

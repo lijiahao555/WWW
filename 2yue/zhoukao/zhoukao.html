@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>周考技能</title>
+</head>
+<body>
+<center>
+<div style="width:700px;height:500px;border:1px solid black">
+	<form action="date.php" method="post" onsubmit="return subm()">
+	<h2>百游通行注册</h2>
+		<table>
+			<tr>
+				<td>百游通行证账号：</td>
+				<td><input type="text" name="name" id="ck_name" onblur="cc_name()"><span id="ckr_name"></span></td>
+			</tr>
+			<tr>
+				<td>通行证密码：</td>
+				<td><input type="password" name="pwd" id="ck_pwd" onblur="cc_pwd()"><span id="ckr_pwd"></span></td>
+			</tr>
+			<tr>
+				<td>确认通行证密码：</td>
+				<td><input type="password" name="rpwd" id="ck_rpwd" onblur="cc_rpwd()"><span id="ckr_rpwd"></span></td>
+			</tr>
+			<tr>
+				<td>真实姓名：</td>
+				<td><input type="text" name="username" id="ck_username" onblur="cc_username()"><span id="ckr_username"></span></td>
+			</tr>
+			<tr>
+				<td>身份证号：</td>
+				<td><input type="text" name="shenfen" id="ck_shenfen" onblur="cc_shenfen()"><span id="ckr_shenfen"></span></td>
+			</tr>
+			<tr>
+				<td>邮箱：</td>
+				<td><input type="email" name="email" id="ck_email" onblur="cc_email()"><span id="ckr_email"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="checkbox" name="box" id="ck_box" onclick="cc_box()">我已经加看过并同意《百游通行证用户协议》<span id="ckr_box"></span></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="注册我的百游通行证" style="background:red"></td>
+			</tr>
+		</table>
+	</form>
+</div>
+</center>
+</body>
+<script>
+	function cc_name(){
+		name=document.getElementById('ck_name').value;
+		if (name=='') {
+			document.getElementById('ckr_name').innerHTML="<font color='red' style='font-size:10px;'>*请输入账号,可以包含数字、字母、下划线(不区分大小写,以字母开头)</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_name').innerHTML="<font color='green'>*输入正确</font>";
+			return true;
+		}
+	}
+
+	function cc_pwd(){
+		pwd=document.getElementById('ck_pwd').value;
+		if (pwd=='') {
+			document.getElementById('ckr_pwd').innerHTML="<font color='red' style='font-size:10px;'>*请输入密码,可以包含数字、字母、下划线(不区分大小写)长度为6-10位</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_pwd').innerHTML="<font color='green'>*输入正确</font>";
+			return true;
+		}
+	}
+
+	function cc_rpwd(){
+		rpwd=document.getElementById('ck_rpwd').value;
+		if (rpwd=='') {
+			document.getElementById('ckr_rpwd').innerHTML="<font color='red' style='font-size:10px;'>*请输入重复密码</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_rpwd').innerHTML="<font color='green'>*输入正确</font>";
+			return true;
+		}
+	}
+
+	function cc_username(){
+		username=document.getElementById('ck_username').value;
+		if (username=='') {
+			document.getElementById('ckr_username').innerHTML="<font color='red' style='font-size:10px;'>*请输入正确姓名,不可以为空</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_username').innerHTML="<font color='green'>*输入正确</font>";
+			return true;
+		}
+	}
+
+	function cc_shenfen(){
+		shenfen=document.getElementById('ck_shenfen').value;
+		if (shenfen=='') {
+			document.getElementById('ckr_shenfen').innerHTML="<font color='red' style='font-size:10px;'>*请输入正确身份证,不可以为空</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_shenfen').innerHTML="<font color='green'>*输入正确</font>";
+			return true;
+		}
+	}
+
+	function cc_email(){
+		email=document.getElementById('ck_email').value;
+		if (email=='') {
+			document.getElementById('ckr_email').innerHTML="<font color='red' style='font-size:10px;'>*请输入邮箱,复合邮箱格式</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_email').innerHTML="<font color='green'>*输入正确</font>";
+			return true;
+		}
+	}
+
+	function cc_box(){
+		box=document.getElementsByName('box')
+		if (box[0].checked==true) {
+			document.getElementById('ckr_box').innerHTML="<font color='green' style='font-size:10px;'>√</font>";
+			return true;
+		}else{
+			document.getElementById('ckr_box').innerHTML="<font color='red'>*必选</font>";
+			return false;
+		}
+	}
+
+	function subm(){
+		if (cc_name()==true&&cc_pwd()==true&&cc_rpwd()==true&&cc_username()==true&&cc_shenfen()==true&&cc_email()==true&&cc_box()==true) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+</script>
+</html>

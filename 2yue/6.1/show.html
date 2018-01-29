@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<table border="1">
+		<thead>
+		
+			<th>ID</th>
+			<th>数量</th>
+			<th>名字</th>
+			<th>价格</th>
+			<th>状态</th>
+			<th>操作</th>
+		</thead>
+		<tbody id="t_body">
+			
+		</tbody>
+	</table>
+</center>
+</body>
+<script>
+	function t_body(huan){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', 'show.php?huan='+huan);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+					document.getElementById('t_body').innerHTML=xhr.responseText;
+			};
+		}
+	}
+	
+	t_body(1);
+
+	function jia(jia1){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', 'update.php?jia1='+jia1);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+					if (xhr.responseText==1) {
+						t_body(jia);
+					}else{
+						alert('修改失败');
+					}
+			};
+		}
+	}
+	function jia2(jia2){
+		var xhr=new XMLHttpRequest();
+		xhr.open('get', 'update.php?jia2='+jia2);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+					if (xhr.responseText==1) {
+						t_body(jia);
+					}else{
+						alert('修改失败');
+					}
+			};
+		}
+	}
+</script>
+</html>

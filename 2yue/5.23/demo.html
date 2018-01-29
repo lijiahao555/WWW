@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+<input type="text" id="seek"><button onclick="t_body(1)">搜索</button>
+	<table border="1">
+	<thead>
+		<th></th>
+		<th>ID</th>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>电话</th>
+		<th>学历</th>
+		<th>学校</th>
+		<th>状态</th>
+	
+		<th>操作</th>
+	</thead>
+	<tbody id="t_body">
+		
+	</tbody>
+	<tfoot id="t_foot">
+		
+	</tfoot>
+	</table>
+</center>
+</body>
+<script>
+	function t_body(page){
+		var seek = document.getElementById('seek').value
+		var xhr = new XMLHttpRequest();
+		xhr.open('get','date.php?page='+page+'&seek='+seek);
+		xhr.send(null);
+		xhr.onreadystatechange = function (){
+			if(xhr.readyState == 4 && xhr.status == 200) {
+				document.getElementById('t_body').innerHTML = xhr.responseText;
+			
+			};
+		}
+
+	}	
+	t_body(1)
+	// function t_foot(page){
+	// 	var xhr=new XMLHttpRequest();
+	// 	xhr.open('get','date.php?page='+page);
+	// 	xhr.send(null);
+	// 	xhr.onreadystatechange = function (){
+	// 		if(xhr.readyState == 4 && xhr.status == 200) {
+	// 			document.getElementById('t_foot').innerHTML = xhr.responseText;
+	// 		};
+	// 	}
+	// }
+	// t_foot(1)
+	function del(id,page){
+		if (confirm('你确认删除么？')) {
+			var xhr = new XMLHttpRequest();
+				xhr.open('get','tel.php?id='+id);
+				xhr.send(null);
+				xhr.onreadystatechange = function(){
+				if (xhr.readyState == 4 && xhr.status ==200 ){
+					if (xhr.responseText == 1) {
+						t_body(page);
+					}else{
+					alert('删除失败');
+					}
+				}
+			}
+
+		};
+	}
+
+	function pi(page){
+		if (confirm('您确认删除么')) {
+		var box=document.getElementsByName('box')
+		var pi=''
+		for (var i = 0; i < box.length; i++) {
+			if(box[i].checked==true){
+				pi+=box[i].value+',';
+			}
+		};
+		var xhr = new XMLHttpRequest();
+		xhr.open('get','tel.php?id='+pi);
+		xhr.send(null);
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				if (xhr.responseText == 1) {
+					t_body(page);
+				}else{
+					alert('删除失败');
+				}
+			};
+		}
+	}
+};
+
+function update(id,1){
+	var xhr = new XMLHttpRequest();
+		xhr.open('get','update.php?id='+id+'&idd='+1);
+		xhr.send(null);
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				if (xhr.responseText == 1) {
+					t_body(1);
+			}
+		}
+	}
+}
+function updat(id,2){
+	var xhr = new XMLHttpRequest();
+		xhr.open('get','update.php?id='+id+'&idx='+2);
+		xhr.send(null);
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				if (xhr.responseText == 1) {
+					t_body(1);
+			}
+		}
+	}
+}
+</script>
+</html>

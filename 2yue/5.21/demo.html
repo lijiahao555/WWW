@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="">
+		<table>
+			<tr>
+				<td>姓名</td>
+				<td><input type="text" name="name" id="c_name" onblur="ck_name()"><span id="ckr_name"></span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+<script>
+	function ck_name(){
+		var name=document.getElementById('c_name').value;
+		 //	var z_name=/^[\u4e00-\u9fa5]{1,10}$/;
+		 // if (z_name.test(name)=='') {
+		 // 	document.getElementById('ckr_name').innerHTML="不能空";
+		 // }else{
+		 // 	document.getElementById('ckr_name').innerHTML="√";
+		 // }
+		//创建对象
+		var xhr=new XMLHttpRequest();
+		//初始化对象,打开链接,创建链接
+		xhr.open('get','c_name.php?name='+name);
+		// 发送对象,请求
+		xhr.send(null);
+		//调用检查
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState==4 && xhr.status==200) {
+			//业务处理
+				if (xhr.responseText==1) {
+					document.getElementById('ckr_name').innerHTML="√";
+				}else{
+					document.getElementById('ckr_name').innerHTML="用户名已存在";
+				}
+				
+			};
+		}
+
+	}
+</script>
+</html>

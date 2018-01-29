@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div style="width:300px;height:300px;">
+		<img id="d" src="a.jpg" width="300" height="300px">
+	</div>
+	<div style="width:300px;height:300px;">
+		<img id="a" onmouseover="aaa(this)" onmouseout="aa()" width="94" height="100px" src="11.png">
+		<img id="b" onmouseover="aaa(this)" onmouseout="aa()" width="94" height="100px" src="61.png">
+		<img id="c" onmouseover="aaa(this)" onmouseout="aa()" width="94" height="100px" src="img1.jpg">
+	</div>
+</body>
+<script>
+	function aaa(tp){
+		document.getElementById('d').src=tp.src
+		
+	}
+	function aa(){
+              document.getElementById('d').src = "a.jpg"
+            }
+</script>
+</html>

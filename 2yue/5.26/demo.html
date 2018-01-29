@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>18日考</title>
+</head>
+<body>
+<center>
+	<form action="date.php" onsubmit="return subm()" enctype="multipart/form-data" method="post">
+		<table border="1" width="800px" height="300px">
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" style="width:300px" name="name" id="c_name" onblur="ck_name()"><span id="ckr_name"></span></td>
+			</tr>
+			<tr>
+				<td>性别:</td>
+				<td>
+					<input type="radio" name="sex" value="男" id="c_sex1" onclick="ck_sex()">男
+					<input type="radio" name="sex" value="女" id="c_sex2" onclick="ck_sex()">女
+					<span id="ckr_sex"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>分类:</td>
+				<td>
+					<select name="type" id="c_type" onchange="ck_type()">
+						<option value="大学">大学</option>
+						<option value="博士">博士</option>
+						<option value="高中">高中</option>
+						<option value="中学">中学</option>
+						<option value="小学">小学</option>
+					</select>
+					<span id="ckr_type"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>图片:</td>
+				<td>
+					<input type="file" name="picture" id="c_file" onchange="ck_file()"><span id="ckr_file"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>多选:</td>
+				<td>
+					<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="打篮球">打篮球
+					<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="打乒乓球">打乒乓球
+					<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="踢足球">踢足球
+					<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="打飞机">打飞机
+					<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="打炮">打炮
+					<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="打奶球">打奶球
+					<span id="ckr_box"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>内容:</td>
+				<td>
+					<textarea name="count" id="c_count" onblur="ck_count()" cols="30" rows="5"></textarea><span id="ckr_count"></span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td align="center">
+				<input type="submit" value="确定">
+				<input type="reset" value="重置">
+				</td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+<script>
+	function ck_name(){
+		var name=document.getElementById('c_name').value;
+		var z_name=/^[\u4e00-\u9fa5]{2,15}$/;
+		if (z_name.test(name)=='') {
+			document.getElementById('ckr_name').innerHTML="<font color='red'>用户名不能为空且1-16个汉字</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_name').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+	
+	function ck_sex(){
+		var sex=document.getElementsByName('sex');
+		
+		if (sex[0].checked==true||sex[1].checked==true) {
+			var z_sex=/^[男女]$/;
+			var sex_value=sex[0].checked==true?sex[0].value:sex[1].value
+			if (z_sex.test(sex_value)) {
+				document.getElementById('ckr_sex').innerHTML="<font color='red'>√</font>";
+				return true;
+			}else{
+
+				document.getElementById('ckr_sex').innerHTML="<font color='red'>不合法</font>";
+				return false;
+		}
+	}else{
+			document.getElementById('ckr_sex').innerHTML="<font color='red'>必须选一项</font>";
+			return false;
+	}
+}
+
+	function ck_type(){
+		var type=document.getElementById('c_type').value;
+		if (type=='') {
+			document.getElementById('ckr_type').innerHTML="<font color='red'>请选择</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_type').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_file(){
+		var file=document.getElementById('c_file').value;
+		if (file=='') {
+			document.getElementById('ckr_file').innerHTML="<font color='red'>必须上传</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_file').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_box(){
+		var box=document.getElementsByName('box[]');
+		var c_num=0;
+		for (var i = 0; i < box.length; i++) {
+			if (box[i].checked==true) {
+				c_num++;
+			}
+		}
+		if (c_num>=2){ 
+			document.getElementById('ckr_box').innerHTML="<font color='red'>√</font>";
+			return true;
+		}else{
+			document.getElementById('ckr_box').innerHTML="<font color='red'>必须选2项</font>";
+			return false;
+		
+		}
+	}
+	
+
+	function ck_count(){
+		var count=document.getElementById('c_count').value;
+		var z_count=/^[\u4e00-\u9fa5]{1,15}$/;
+		if (z_count.test(count)=='') {
+			document.getElementById('ckr_count').innerHTML="<font color='red'>内容不能为空且1-16个汉字</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_count').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+	
+
+	
+
+	function subm(){
+		if (ck_name()&ck_sex()&ck_type()&ck_file()&ck_count()&ck_box()) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
+</html>

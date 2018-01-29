@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品添加</title>
+</head>
+<body>
+<center>
+		<table border="1">
+			<tr>
+				<td>商品名称</td>
+				<td><input type="text" id="name"></td>
+			</tr>
+			<tr>
+				<td>库存量</td>
+				<td><input type="text" id="number"></td>
+			</tr>
+			<tr>
+				<td>单价</td>
+				<td><input type="text" id="price"></td>
+			</tr>
+			<tr>
+				<td>状态</td>
+				<td>
+					<input type="radio" id="shang" value="0">上架
+					<input type="radio" id="shang" value="1">下架
+				</td>
+			</tr>
+			<tr>
+				<td>商品分类</td>
+				<td>
+					<select name="" id="type">
+						<option value="0">请选择</option>
+						<option value="苹果">苹果</option>
+						<option value="三星">三星</option>
+						<option value="小米">小米</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>详情</td>
+				<td><input type="text" id="count"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="提交" onclick="sub()"></td>
+			</tr>
+	</table>
+</center>
+</body>
+<script>
+	function sub(){
+		var name=document.getElementById('name').value;
+		var number=document.getElementById('number').value;
+		var price=document.getElementById('price').value;
+		var type=document.getElementById('type').value;
+		var count=document.getElementById('count').value;
+		var shang=document.getElementById('shang').value;
+		var xhr=new XMLHttpRequest();
+		xhr.open('get','date.php?name='+name+'&number='+number+'&price='+price+'&type='+type+'&count='+count+'&shang='+shang);
+		xhr.send(null);
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4&&xhr.status==200) {
+				if (xhr.responseText==1) {
+					location.href='show.html';
+				}else{
+					alert('添加失败');
+				}
+			};
+		}
+	}
+</script>
+</html>

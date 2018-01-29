@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<center>
+	<form action="a.php" onsubmit="return sub()">
+		<table border="1">
+		<tr>
+			<select id="bg" onchange="bg_color()">
+				<option value="0">请选择</option>
+				<option value="red">红色</option>
+				<option value="blue">蓝色</option>
+				<option value="yellow">黄色</option>
+				<option value="white">白色</option>
+			</select>
+		</tr>
+		<tr>
+			<td>用户名：</td>
+			<td><input type="text" id="name" onblur="username_a()"><span id="username_aa"></span></td>
+		</tr>
+		<tr>
+			<td>密码：</td>
+			<td><input type="text" id="pwd" onblur="username_b()"><span id="username_bb"></td>
+		</tr>
+		<tr>
+			<td>简介：</td>
+			<td><textarea id="cont" cols="15" rows="5" onkeyup="cont_a()"></textarea>
+			<span id="cont_aa"></span>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+			<input type="submit">
+			</td>
+		</tr>
+		</table>
+	</form>
+	</center>
+</body>
+<script>
+function bg_color(){
+	var bg=document.getElementById('bg').value
+	document.bgColor=bg
+}
+
+function username_a(){
+		var name=document.getElementById('name').value
+		if (name =='') {
+			document.getElementById('username_aa').innerHTML = "<font color='red'>用户名不能为空</font>"
+			return false;
+		}else{
+			document.getElementById('username_aa').innerHTML="<font color='red'>√</dont>"
+			return true;
+		}
+	};
+
+	function username_b(){
+		var pwd=document.getElementById('pwd').value
+		if (pwd =='') {
+			document.getElementById('username_bb').innerHTML = "<font color='red'>密码不能为空</font>"
+			return false;
+		}else{
+			document.getElementById('username_bb').innerHTML="<font color='red'>√</dont>"
+			return true;
+		}
+	};
+
+	function cont_a(){
+		var cont=document.getElementById('cont').value
+		if (cont=='') {
+			document.getElementById('cont_aa').innerHTML = "<font color='red'>简介不能为空</font>"
+			return false;
+		}
+		if(cont.length >= 20){
+			document.getElementById('cont_aa').innerHTML = "<font color='red'>简介不能超过20个</font>"
+			return false
+		}
+		document.getElementById('cont_aa').innerHTML = "<font color='green'>√</font>"
+		return true
+
+	};
+
+	function sub(){
+		if (username_a()==true && username_b() == true && cont_a ==true &&) {
+			return true
+		}else{
+			return false
+		}
+	}
+</script>
+</html>

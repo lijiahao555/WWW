@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>周考三</title>
+</head>
+<body>
+<center>
+	<form action="date.php" method="post" onsubmit="return subm()">
+		<table border="1" width="600px;" height="300px;">
+			<tr>
+				<td>用户名</td>
+				<td><input type="text" name="username" id="c_username" onblur="ck_username()"><span id="ckr_username"></span></td>
+			</tr>
+			<tr>
+				<td>密码</td>
+				<td><input type="password" name="pwd" id="c_pwd" onblur="ck_pwd()"><span id="ckr_pwd"></span></td>
+			</tr>
+			<tr>
+				<td>确认密码</td>
+				<td><input type="password" name="rpwd" id="c_rpwd" onblur="ck_rpwd()"><span id="ckr_rpwd"></span></td>
+			</tr>
+			<tr>
+				<td>email</td>
+				<td><input type="text" name="email" id="c_email" onblur="ck_email()"><span id="ckr_email"></span></td>
+			</tr>
+			<tr>
+				<td>昵称</td>
+				<td><input type="text" name="rname" id="c_rname" onblur="ck_rname()"><span id="ckr_rname"></span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="注册">&nbsp;&nbsp;<input type="submit" value="我有账号，我要登录"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+<script>
+	function ck_username(){
+		var username=document.getElementById('c_username').value;
+		var z_username=/^[a-z0-9]{4,16}$/;
+		if (z_username.test(username)==''){
+			document.getElementById('ckr_username').innerHTML="<font color='red' font-size='12px;'>用户名必须为4-16位英文字母或者数字</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_username').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+	
+	function ck_pwd(){
+		var pwd=document.getElementById('c_pwd').value;
+		var z_pwd=/^[a-z0-9]{6,16}$/;
+		if (z_pwd.test(pwd)==''){
+			document.getElementById('ckr_pwd').innerHTML="<font color='red' font-size='12px;'>密码必须为6-16位</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_pwd').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+		function ck_rpwd(){
+		var rpwd=document.getElementById('c_rpwd').value;
+		var pwd=document.getElementById('c_pwd').value;
+		if (rpwd != pwd){
+			document.getElementById('ckr_rpwd').innerHTML="<font color='red' font-size='12px;'>俩次密码输入要一致</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_rpwd').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_email(){
+		var email=document.getElementById('c_email').value;
+		var z_email=/^\d{4,11}@qq[.]com$/;
+		if (z_email.test(email)==''){
+			document.getElementById('ckr_email').innerHTML="<font color='red' font-size='12px;'>Email格式要正确</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_email').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_rname(){
+		var rname=document.getElementById('c_rname').value;
+		var z_rname=/^[\u4e00-\u9fa5]{2,16}$/;
+		if (z_rname.test(rname)==''){
+			document.getElementById('ckr_rname').innerHTML="<font color='red' font-size='12px;'>昵称必须为2-16位数字</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_rname').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+	function subm(){
+		if (ck_username() & ck_pwd() & ck_rpwd() & ck_email() & ck_rname()) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加</title>
+</head>
+<body>
+<form action="date.php" method="post" onsubmit="return sub()" enctype="multipart/form-data">
+
+	<center>
+		<table border="1">
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" name="name" id="c_name" onblur="ck_name()"><span id="ckr_name"></span></td>
+			</tr>
+			<tr>
+				<td>设置密码：</td>
+				<td><input type="password" name="pwd" id="c_pwd" onblur="ck_pwd()"><span id="ckr_pwd"></span></td>
+			</tr>
+			<tr>
+				<td>确认密码：</td>
+				<td><input type="password" name="rpwd" id="c_rpwd" onblur="ck_rpwd()"><span id="ckr_rpwd"></span></td>
+			</tr>
+			<tr>
+				<td>头像上传：</td>
+				<td><input type="file" name="file" id="c_file" onblur="ck_file()"><span id="ckr_file"></span></td>
+			</tr>
+			<tr>
+				<td>身份证号：</td>
+				<td><input type="text" name="card" id="c_card" onblur="ck_card()"><span id="ckr_card"></span></td>
+			</tr>
+			<tr>
+				<td>电子邮箱：</td>
+				<td><input type="email" name="email" id="c_email" onblur="ck_email()"><span id="ckr_email"></span></td>
+			</tr>
+			<tr>
+				<td>手机号：</td>
+				<td><input type="text" name="tel" id="c_tel" onblur="ck_tel()"><span id="ckr_tel"></span></td>
+			</tr>
+			<tr>
+				<td>个人简介：</td>
+				<td><textarea name="count" id="c_count" onkeyup="ck_count()" cols="30" rows="5"></textarea><span id="ckr_count"></span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="添加新员工" style="background:red;width:200px;height:40px"></td>
+			</tr>
+		</table>
+	</center>
+</form>
+</body>
+<script>
+ function ck_name(){
+ 	var name=document.getElementById('c_name').value;
+ 	var z_name=/^[a-z]{6,10}$/i;
+ 	if (z_name.test(name)=='') {
+ 		document.getElementById('ckr_name').innerHTML="<font color='red'>6-10位字母组成，开头不能是数字或者2-3位中文组成</font>";
+ 		return false;
+ 	}else{
+		document.getElementById('ckr_name').innerHTML="<font color='red'>√</font>";
+		return true;
+ 	}
+ }
+
+  function ck_pwd(){
+ 	var pwd=document.getElementById('c_pwd').value;
+ 	var z_pwd=/^[a-z].{6,}$/i;
+ 	if (z_pwd.test(pwd)=='') {
+ 		document.getElementById('ckr_pwd').innerHTML="<font color='red'>字母开头，不能是纯数字，6位以上</font>";
+ 		return false;
+ 	}else{
+		document.getElementById('ckr_pwd').innerHTML="<font color='red'>√</font>";
+		return true;
+ 	}
+ }
+
+ function ck_rpwd(){
+ 	var pwd=document.getElementById('c_pwd').value;
+ 	var rpwd=document.getElementById('c_rpwd').value;
+ 	if (rpwd!=pwd) {
+ 		document.getElementById('ckr_rpwd').innerHTML="<font color='red'>密码不一致</font>";
+ 		return false;
+ 	}else{
+		document.getElementById('ckr_rpwd').innerHTML="<font color='red'>√</font>";
+		return true;
+ 	}
+ }
+
+   function ck_card(){
+ 	var card=document.getElementById('c_card').value;
+ 	var z_card=/^(\d{18}|\d{17}[a-z])$/i;
+ 	if (z_card.test(card)=='') {
+ 		document.getElementById('ckr_card').innerHTML="<font color='red'>身份证号必须为18位或者17位加X</font>";
+ 		return false;
+ 	}else{
+		document.getElementById('ckr_card').innerHTML="<font color='red'>√</font>";
+		return true;
+ 	}
+ }
+
+    function ck_tel(){
+ 	var tel=document.getElementById('c_tel').value;
+ 	var z_tel=/^1[358]\d{9}$/;
+ 	if (z_tel.test(tel)=='') {
+ 		document.getElementById('ckr_tel').innerHTML="<font color='red'>必须是13或15或18开头的11位数字</font>";
+ 		return false;
+ 	}else{
+		document.getElementById('ckr_tel').innerHTML="<font color='red'>√</font>";
+		return true;
+ 	}
+ }
+
+   function ck_email(){
+ 	var email=document.getElementById('c_email').value;
+ 	var z_email=/^\d{3,13}@qq.com$/;
+ 	if (z_email.test(email)=='') {
+ 		document.getElementById('ckr_email').innerHTML="<font color='red'>正确的QQ邮箱</font>";
+ 		return false;
+ 	}else{
+		document.getElementById('ckr_email').innerHTML="<font color='red'>√</font>";
+		return true;
+ 	}
+ }
+
+  function ck_count(){
+ 	var count=document.getElementById('c_count').value;
+ 	var z_count=/^[\u4e00-\u9fa5]{1,20}$/;
+ 	if (z_count.test(count)=='') {
+ 		document.getElementById('ckr_count').innerHTML="<font color='red'>不能为空，20个字以内</font>";
+ 		return false;
+ 	}else{
+		document.getElementById('ckr_count').innerHTML="<font color='red'>√</font>";
+		return true;
+ 	}
+ }
+
+ function sub(){
+ 	if (ck_name() &ck_pwd() &ck_rpwd() &ck_card() &ck_tel() &ck_email() &ck_count()) {
+ 		return true;
+ 	}else{
+ 		return false;
+ 	}
+ }
+</script>
+</html>

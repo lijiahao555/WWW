@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+		<form action="a.php" onsubmit="return subm()">
+			<table border="1" width="500" height="300">
+				<tr>
+					<td  align="center">用户名：</td>
+					<td><input type="text" id="username" onblur="ck_username()"><span id="ck_name"></span></td>
+				</tr>
+				<tr>
+					<td align="center">密码：</td>
+					<td><input type="text" id="pwd" onblur="ck_pwd()"><span id="ck_pwd1"></span></td>
+				</tr>
+				<tr>
+					<td align="center">性别：</td>
+					<td>
+						<input type="radio" name="sex" id="sex1" value="男" onclick="ck_sex()">男
+						<input type="radio" name="sex" id="sex2" value="女" onclick="ck_sex()">女
+						<span id="ck_sex1"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">部门：</td>
+					<td>
+						<select id="type" onchange="ck_type()">
+							<option value="0">选择市场部</option>
+							<option value="市场部">市场部</option>
+							<option value="策略部">策略部</option>
+							<option value="财务部">财务部</option>
+							<option value="技术部">技术部</option>
+							<option value="网络部">网络部</option>
+						</select>
+						<span id="ck_type1"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">简介:</td>
+					<td><textarea id="cont" cols="20" rows="5" onkeyup="ck_cont()"></textarea><span id="ck_cont1"></span></td>
+				</tr>
+				<tr>
+					<td align="center"><input type="submit" value="提交"></td>
+					<td><input type="reset" value="重置"></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+<script>
+	function ck_username(){
+		var username = document.getElementById('username').value
+		if (username == '') {
+			document.getElementById('ck_name').innerHTML="<font color='red'>用户名不能为空</font>";
+			return false;
+		}else{
+			document.getElementById('ck_name').innerHTML="<font color='red'>√</font>";
+			return true;
+		};
+	};
+
+	function ck_pwd(){
+		var pwd = document.getElementById('pwd').value
+		if (pwd == '') {
+			document.getElementById('ck_pwd1').innerHTML="<font color='red'>密码不能为空</font>";
+			return false;
+		}else{
+			document.getElementById('ck_pwd1').innerHTML="<font color='red'>√</font>";
+			return true;
+		};
+	};
+
+	function ck_cont(){
+		var cont = document.getElementById('cont').value
+		if (cont == '') {
+			document.getElementById('ck_cont1').innerHTML="<font color='red'>简介不能为空</font>";
+			return false;
+		}
+		if (cont.length >= 20) {
+			document.getElementById('ck_cont1').innerHTML="<font color='red'>不能超过20字</font>";
+			return false
+		};
+			document.getElementById('ck_cont1').innerHTML="<font color='red'>√</font>";
+			return true;
+		
+	};	
+
+	function ck_type(){
+		var type=document.getElementById('type').value
+		if (type==0 ) {
+			document.getElementById('ck_type1').innerHTML="<font color='red'>必须选一项</font>"
+			return false;
+		}else{
+			document.getElementById('ck_type1').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_sex(){
+		var sex=document.getElementsByName('sex')
+		if (sex[0].checked==true ||sex[1].checked==true ) {
+			document.getElementById('ck_sex1').innerHTML="<font color='red'>√</font>"
+			return true;
+		}else{
+			document.getElementById('ck_sex1').innerHTML="<font color='red'>必须选</font>";
+			return false;
+		}
+	}	
+
+
+	function subm(){
+		var is_username=ck_username()
+		var is_pwd=ck_pwd()
+		var is_cont=ck_cont()
+		var is_type=ck_type()
+		var is_sex=ck_sex()
+		if (is_username && is_pwd && is_cont && is_type && is_sex) {
+			return true
+		}else{
+			return false
+		}
+	}
+</script>
+</html>

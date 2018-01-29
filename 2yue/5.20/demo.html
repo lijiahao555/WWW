@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>技能测试</title>
+</head>
+<body>
+<center>
+<form action="dete.php" onsubmit="return subm()" enctype="multipart/form-data" method="post">
+	<h1>技能信息-编辑</h1>
+	<table border="1" width="800px;" height="500px;">
+		<tr>
+			<td>姓名：</td>
+			<td><input type="text" name="username" id="c_username" onblur="ck_username()"><span id="ckr_username"></span></td>
+		</tr>
+		<tr>
+			<td>性别：</td>
+			<td>
+				<input type="radio" name="sex" value="男" id="sex1" onclick="ck_sex()">男
+				<input type="radio" name="sex" value="女" id="sex2" onclick="ck_sex()">女
+				<span id="ckr_sex"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>出生年月：</td>
+			<td><input type="text" name="month" id="c_month" onblur="ck_month()"><span id="ckr_month"></span></td>
+		</tr>
+		<tr>
+			<td>身份证号：</td>
+			<td><input type="text" name="card" id="c_card" onblur="ck_card()"><span id="ckr_card"></span></td>
+		</tr>
+		<tr>
+			<td>头像：</td>
+			<td>
+				<input type="file" name="touxiang" id="c_file" onchange="ck_file()"><span id="ckr_file"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>手机：</td>
+			<td>
+				<input type="tel" name="tel" id="c_tel" onblur="ck_tel()"><span id="ckr_tel"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>邮箱：</td>
+			<td>
+				<input type="text" name="email" id="c_email" onblur="ck_email()"><span id="ckr_email"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>学历：</td>
+			<td>
+				<select name="xueli" id="c_xueli" onclick="ck_xueli()">
+					<option value="0">请选择</option>
+					<option value="博士">博士</option>
+					<option value="硕士">硕士</option>
+					<option value="本科">本科</option>
+					<option value="大专">大专</option>
+				</select>
+				<span id="ckr_xueli"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>毕业院校：</td>
+			<td>
+				<input type="text" name="school" id="c_school" onblur="ck_school()"><span id="ckr_school"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>毕业时间：</td>
+			<td>
+				<input type="text" name="time" id="c_time" onblur="ck_time()"><span id="ckr_time"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>精通语言：</td>
+			<td>
+				<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="PHP">PHP
+				<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="RUBY">RUBY
+				<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="C">C
+				<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="PYTHON">PYTHON
+				<input type="checkbox" name="box[]" id="c_box" onclick="ck_box()" value="JAVA">JAVA
+				<span id="ckr_box"></span>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" value="提交"></td>
+		</tr>
+	</table>
+</form>
+</center>
+</body>
+<script>
+	function ck_username(){
+		var name=document.getElementById('c_username').value;
+		var r_username=/^[\u4e00-\u9fa5]{2,4}$/;
+		if (r_username.test(name)=='') {
+			document.getElementById('ckr_username').innerHTML="<font color='red'>不能为空，必须是2-4个中文汉字</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_username').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_sex(){
+		var sex=document.getElementsByName('sex');
+		if (sex[0].checked==true||sex[1].checked==true) {
+			var sex_c=sex[0].checked==true ? sex[0].value : sex['1'].value;
+			var sex3=/^[男女]$/
+			if (sex3.test(sex_c)) {
+				document.getElementById('ckr_sex').innerHTML="<font color='red'>√</font>";
+			return true;
+		}else{
+			document.getElementById('ckr_sex').innerHTML="<font color='red'>不合法</font>";
+			return false;
+		}
+			
+		}else{ 
+			document.getElementById('ckr_sex').innerHTML="<font color='red'>必须选一项,选中的值必须是范围之内(男,女)</font>";
+			return false;
+		}
+	}
+
+	function ck_month(){
+		var month=document.getElementById('c_month').value;
+		var r_month=/^\d{4}-\d{2}-\d{2}$/i;
+		if (r_month.test(month)=='') {
+			document.getElementById('ckr_month').innerHTML="<font color='red'>不能为空，格式为YYYY-MM-DD</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_month').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_card(){
+		var card=document.getElementById('c_card').value;
+		var r_card=/^(\d{15}|\d{18}|\d{17}x)$/i;
+		if (r_card.test(card)=='') {
+			document.getElementById('ckr_card').innerHTML="<font color='red'>不能为空，15位或者18位纯数字组成，18位最后一位可以是X</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_card').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+	function ck_file(){
+		var file=document.getElementById('c_file').value;
+		
+		if (file=='') {
+			document.getElementById('ckr_file').innerHTML="<font color='red'>不能为空</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_file').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_tel(){
+		var tel=document.getElementById('c_tel').value;
+		var r_tel=/^1[1875]\d{9}$/;
+		if (r_tel.test(tel)=='') {
+			document.getElementById('ckr_tel').innerHTML="<font color='red'>不能为空，必须是11位纯数字，以13,18,17,15开头</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_tel').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_email(){
+		var email=document.getElementById('c_email').value;
+		var r_email=/^\d{5,11}@(qq.com|.cn|.net)$/;
+		if (r_email.test(email)=='') {
+			document.getElementById('ckr_email').innerHTML="<font color='red'>不能为空，必须是包含@符号,以.com或.cn或.net结尾</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_email').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+	
+	function ck_xueli(){
+		var xueli=document.getElementById('c_xueli').value;
+		
+		if (xueli==0) {
+
+			document.getElementById('ckr_xueli').innerHTML="<font color='red'>必须选一项,选中的值必须是范围之内(博士,硕士,大专,本科)</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_xueli').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_school(){
+		var school=document.getElementById('c_school').value;
+		var r_school=/^[\u4e00-\u9fa5]{1,20}$/;
+		if (r_school.test(school)=='') {
+			document.getElementById('ckr_school').innerHTML="<font color='red'>不能为空，必须是1-20个中文汉字</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_school').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_time(){
+		var time=document.getElementById('c_time').value;
+		var r_time=/^\d{4}-\d{2}-\d{2}$/i;
+		if (r_time.test(time)=='') {
+			document.getElementById('ckr_time').innerHTML="<font color='red'>不能为空，格式为YYYY-MM-DD</font>";
+			return false;
+		}else{
+			document.getElementById('ckr_time').innerHTML="<font color='red'>√</font>";
+			return true;
+		}
+	}
+
+	function ck_box(){
+		var box=document.getElementsByName('box[]');
+		var box1=0;
+			for (var i = 0; i < box.length; i++) {
+				if (box[i].checked==true) {
+					box1++
+				};
+				
+			};
+		if (box1>=2) {
+			document.getElementById('ckr_box').innerHTML="<font color='red'>√</font>";
+			return true;
+		}else{
+			document.getElementById('ckr_box').innerHTML="<font color='red'>不能为空，至少选2项</font>";
+			return false;
+		}
+	}
+	function subm(){
+		if (ck_username()&ck_sex()& ck_month()& ck_card()& ck_file()& ck_tel()& ck_email()& ck_xueli()& ck_school()& ck_time()& ck_box()) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
+</html>
