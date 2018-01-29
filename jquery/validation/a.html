@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <form action="a.php" method="post">
+      <div class="form_control">
+        <input value="315359131@qq.com" type="text" name="email" data-tip="请输入您的邮箱" data-valid="isNonEmpty||isEmail" data-error="email不能为空||邮箱格式不正确">
+      </div>
+      <tr class="form_control">
+        <td><input type="text"  class="required" data-tip="请输入邮箱" data-valid="isNonEmpty||isEmail" data-error="email不能为空||邮箱格式不正确"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input id="submit" type="submit"></td>
+        <td></td>
+      </tr>
+    </form>
+  </table>
+
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script type="text/javascript" src="jquery-validate.js"></script>
+<script>
+  $('form_control').validate({
+    type:{
+      isChecked: function(value, errorMsg, el) {
+        var i = 0;
+        var $collection = $(el).find('input:checked');
+        if (!$collection.length) {
+          return errorMsg;
+        }
+      }
+    },
+    onFocus: function() {
+      this.parent().addClass('active');
+      return false;
+    },
+    onBlur: function() {
+      var $parent = this.parent();
+      var _status = parseInt(this.attr('data-status'));
+      $parent.removeClass('active');
+      if (!_status) {
+        $parent.addClass('error');
+      }
+      return false;
+    }
+
+  });
+
+  $(document).on('submit', function(event) {
+      event.preventDefault();
+      $(this).validate('submitValidate'); //return true or false;
+
+  });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form id="commentForm" method="post" action="a.php">
+	    <legend>输入您的名字，邮箱，URL，备注。</legend>
+	    <p>
+	      <label for="cname">Name (必需, 最小两个字母)</label>
+	      <input id="cname" name="name" minlength="2" type="text" required>
+	    </p>
+	    <p>
+	      <label for="cemail">E-Mail (必需)</label>
+	      <input id="cemail" type="email" name="email" required>
+	    </p>
+	    <p>
+	      <label for="curl">URL (可选)</label>
+	      <input id="curl" type="url" name="url">
+	    </p>
+	    <p>
+	      <label for="ccomment">备注 (必需)</label>
+	      <textarea id="ccomment" name="comment" required></textarea>
+	    </p>
+	    <p>
+	      <input type="submit" value="Submit">
+	    </p>
+	</form>
+</body>
+</html>
+<script src="jquery.js"></script>
+<script src="jquery.validate.min.js"></script>
+<script src="messages_zh.js"></script>
+
+<script>
+$().ready(function() {
+    $("#commentForm").validate();
+});
+</script>
