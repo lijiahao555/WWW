@@ -1,0 +1,20 @@
+[ 2017-08-15T08:47:25+08:00 ] ::1 /6yue/rikao/day1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002891s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\phpStudy\WWW\6yue\rikao\day1\Application\Home\Controller\IndexController.class.php 第 11 行.
+ERR: 非法操作:index
+
+[ 2017-08-15T08:47:58+08:00 ] ::1 /6yue/rikao/day1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with that of Think\Controller::show() E:\phpStudy\WWW\6yue\rikao\day1\Application\Home\Controller\IndexController.class.php 第 11 行.
+ERR: 非法操作:index
+

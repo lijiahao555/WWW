@@ -1,0 +1,10 @@
+[ 2017-12-26T18:57:20+08:00 ] ::1 /6yue/rikao/day1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') E:\phpStudy\WWW\6yue\rikao\day1\Application\Home\Controller\IndexController.class.php 第 11 行.
+ERR: 非法操作:index
+
