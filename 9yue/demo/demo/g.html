@@ -1,0 +1,46 @@
+
+<!-- js写一个ajax请求，post提交数据"name=张三，id=123" 到url=http://www.test.com/test.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="bnt()">发送</button>
+</body>
+</html>
+
+<script>
+	function bnt(){
+		var name = '张三';
+		var id = '123';
+		var url="http://www.test.com/test.php"
+		//初始化
+		var xml = new XMLHttpRequest();
+		//建立连接
+			xml.open('POST', url, true);
+		//header头
+			xml.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+		//发送参数
+			xml.send('name='+name+'&id='+id);
+			xml.onreadystatechange=function(){
+				if (xml.readyState==4 && xml.status==200) {
+
+					alert(xml.responseText);
+				};
+
+				// if(xmlhttp.readyState==1||xmlhttp.readyState==2||xmlhttp.readyState==3){
+				// 	// 本地提示：加载中/处理中
+				// 	alert('1')
+				// }
+				// if (xmlhttp.readyState==4 && xmlhttp.status==200){
+				// 	var d=xmlhttp.responseText; // 返回值
+				// 	// 处理返回值
+				// 	alert(d)
+				// }
+			}
+
+
+	}
+</script>
